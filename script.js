@@ -36,19 +36,3 @@ const observer = new IntersectionObserver(
   { threshold: 0.12 }
 );
 revealEls.forEach((el) => observer.observe(el));
-
-// Contact form (front-end only demo — wire to a backend or service to actually send)
-const form = document.getElementById('contactForm');
-const note = document.getElementById('formNote');
-
-form.addEventListener('submit', (e) => {
-  e.preventDefault();
-  if (!form.checkValidity()) {
-    form.reportValidity();
-    return;
-  }
-  const name = document.getElementById('name').value.trim();
-  note.hidden = false;
-  note.textContent = `شكرًا ${name}! تم استلام رسالتك، وسأتواصل معك قريبًا.`;
-  form.reset();
-});

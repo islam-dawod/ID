@@ -239,45 +239,32 @@ a { color: inherit; text-decoration: none; }
 .contact { background: var(--text); color: var(--bg); }
 .contact .kicker { color: #e6b8aa; }
 .contact .kicker::before { background: #e6b8aa; }
-.contact-card {
-  display: grid;
-  grid-template-columns: 1.05fr .95fr;
-  gap: 64px;
-  padding: 0;
-}
-.contact-intro h2 { font-size: clamp(2rem, 4vw, 2.9rem); margin: 18px 0 20px; color: var(--bg); }
-.contact-intro > p { color: #c9bfb0; margin: 0 0 34px; font-family: var(--serif); font-size: 1.12rem; }
-.contact-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 4px; }
-.contact-list li { display: flex; align-items: center; gap: 18px; padding: 18px 0; border-top: 1px solid rgba(255,255,255,.14); }
-.contact-list li:last-child { border-bottom: 1px solid rgba(255,255,255,.14); }
-.contact-list .ci { font-size: 1.15rem; opacity: .7; width: 22px; text-align: center; }
-.contact-list .cl { display: block; color: #a99e8d; font-size: .72rem; letter-spacing: .18em; text-transform: uppercase; }
-.contact-list a, .contact-list div > span:not(.cl) { font-family: var(--serif); font-size: 1.15rem; color: var(--bg); }
-.contact-list a:hover { color: #e6b8aa; }
+.contact-inner { max-width: 720px; margin: 0 auto; text-align: center; }
+.contact-inner .kicker { justify-content: center; }
+.contact-inner h2 { font-size: clamp(2.1rem, 4.4vw, 3rem); margin: 20px 0 22px; color: var(--bg); }
+.contact-lead { color: #c9bfb0; margin: 0 auto 40px; font-family: var(--serif); font-size: 1.18rem; max-width: 640px; }
 
-/* Form */
-.contact-form { display: grid; gap: 20px; align-content: start; }
-.field { display: grid; gap: 8px; }
-.field label { font-size: .72rem; letter-spacing: .18em; text-transform: uppercase; color: #a99e8d; font-weight: 700; }
-.field input, .field select, .field textarea {
-  font-family: var(--sans);
-  font-size: 1rem;
+/* Contact buttons (with icons) */
+.contact-actions { display: flex; justify-content: center; flex-wrap: wrap; gap: 16px; }
+.contact-actions .btn svg { width: 20px; height: 20px; flex: none; }
+.contact .btn-primary { background: var(--bg); color: var(--text); border-color: var(--bg); }
+.contact .btn-primary:hover { background: var(--accent); border-color: var(--accent); color: #fff; }
+.contact .btn-ghost { color: var(--bg); border-color: rgba(255,255,255,.4); }
+.contact .btn-ghost:hover { background: var(--bg); color: var(--text); border-color: var(--bg); }
+
+/* Social icons */
+.social { list-style: none; display: flex; justify-content: center; flex-wrap: wrap; gap: 14px; margin: 48px 0 0; padding: 0; }
+.social a {
+  display: grid;
+  place-items: center;
+  width: 50px; height: 50px;
+  border: 1px solid rgba(255,255,255,.28);
+  border-radius: 50%;
   color: var(--bg);
-  background: transparent;
-  border: 0;
-  border-bottom: 1px solid rgba(255,255,255,.24);
-  border-radius: 0;
-  padding: 10px 2px;
-  outline: none;
-  transition: border-color .2s;
+  transition: background .25s ease, color .25s ease, border-color .25s ease, transform .25s ease;
 }
-.field textarea { resize: vertical; }
-.field select option { color: var(--text); }
-.field input::placeholder, .field textarea::placeholder { color: #8a8072; }
-.field input:focus, .field select:focus, .field textarea:focus { border-bottom-color: #e6b8aa; }
-.contact-form .btn-primary { background: var(--bg); color: var(--text); border-color: var(--bg); margin-top: 8px; }
-.contact-form .btn-primary:hover { background: var(--accent); border-color: var(--accent); color: #fff; }
-.form-note { margin: 6px 0 0; text-align: center; font-weight: 600; color: #e6b8aa; font-family: var(--serif); }
+.social a:hover { background: var(--accent); border-color: var(--accent); color: #fff; transform: translateY(-3px); }
+.social svg { width: 20px; height: 20px; }
 
 /* Footer */
 .site-footer { border-top: 1px solid var(--border); padding: 46px 0; background: var(--bg); }
@@ -288,9 +275,6 @@ a { color: inherit; text-decoration: none; }
 .copy { color: var(--muted); font-size: .85rem; }
 
 /* Responsive */
-@media (max-width: 860px) {
-  .contact-card { grid-template-columns: 1fr; gap: 44px; }
-}
 @media (max-width: 720px) {
   .nav {
     position: fixed;
