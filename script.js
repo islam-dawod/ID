@@ -21,7 +21,7 @@ nav.querySelectorAll('a').forEach((link) => {
 document.getElementById('year').textContent = new Date().getFullYear();
 
 // Reveal-on-scroll animation
-const revealEls = document.querySelectorAll('.card, .feature, .section-head, .contact-card');
+const revealEls = document.querySelectorAll('.card, .feature, .work, .section-head, .contact-card');
 revealEls.forEach((el) => el.classList.add('reveal'));
 
 const observer = new IntersectionObserver(
