@@ -16,7 +16,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=4" />
+  <link rel="stylesheet" href="styles.css?v=5" />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💎</text></svg>" />
 </head>
 <body>
@@ -28,6 +28,7 @@
         <span class="logo-text">إسلام داود</span>
       </a>
       <nav class="nav" id="nav">
+        <a href="#about">نبذة عني</a>
         <a href="#services">الخدمات</a>
         <a href="#portfolio">أعمالي</a>
         <a href="#why">لماذا تختارني</a>
@@ -44,20 +45,51 @@
   <section class="hero">
     <div class="hero-bg" aria-hidden="true"></div>
     <div class="container hero-inner">
-      <p class="eyebrow">مصمم ومطور مواقع · التسويق الرقمي · إدارة المحتوى</p>
-      <h1 class="hero-title">إسلام داود</h1>
-      <p class="hero-lead">
-        أساعد الأفراد والشركات على بناء حضور رقمي احترافي من خلال تصميم وتطوير مواقع
-        إلكترونية عصرية، وإنشاء المتاجر الإلكترونية، وتقديم حلول متكاملة في التسويق
-        الإلكتروني وإدارة منصات التواصل الاجتماعي.
-      </p>
-      <p class="hero-sub">
-        أجمع بين الجانب التقني والإبداعي لأقدم حلولًا رقمية تساعدك على الوصول إلى جمهورك،
-        تعزيز حضور علامتك التجارية، وتحقيق أهدافك على الإنترنت.
-      </p>
-      <div class="hero-actions">
-        <a href="#contact" class="btn btn-primary btn-lg">ابدأ مشروعك الرقمي اليوم</a>
-        <a href="#services" class="btn btn-ghost btn-lg">تعرّف على خدماتي</a>
+      <div class="hero-text">
+        <p class="eyebrow">مصمم ومطور مواقع · التسويق الرقمي · إدارة المحتوى</p>
+        <h1 class="hero-title">إسلام داود</h1>
+        <p class="hero-lead">
+          أساعد الأفراد والشركات على بناء حضور رقمي احترافي من خلال تصميم وتطوير مواقع
+          إلكترونية عصرية، وإنشاء المتاجر الإلكترونية، وتقديم حلول متكاملة في التسويق
+          الإلكتروني وإدارة منصات التواصل الاجتماعي.
+        </p>
+        <p class="hero-sub">
+          أجمع بين الجانب التقني والإبداعي لأقدم حلولًا رقمية تساعدك على الوصول إلى جمهورك،
+          تعزيز حضور علامتك التجارية، وتحقيق أهدافك على الإنترنت.
+        </p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary btn-lg">ابدأ مشروعك الرقمي اليوم</a>
+          <a href="#services" class="btn btn-ghost btn-lg">تعرّف على خدماتي</a>
+        </div>
+      </div>
+      <figure class="hero-portrait" onerror="this.style.display='none'">
+        <img src="assets/me/portrait.jpg" alt="إسلام داود" loading="eager"
+             onerror="this.closest('.hero-portrait').style.display='none'" />
+      </figure>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section section-alt" id="about">
+    <div class="container about-inner">
+      <figure class="about-photo">
+        <img src="assets/me/working.jpg" alt="إسلام داود أثناء العمل في المكتب" loading="lazy"
+             onerror="this.closest('.about-photo').style.display='none'" />
+      </figure>
+      <div class="about-text">
+        <span class="kicker">نبذة عني</span>
+        <h2>أحوّل الأفكار إلى مشاريع رقمية ناجحة</h2>
+        <p>
+          أنا إسلام داود، مصمم ومطور مواقع ومتخصص في التسويق الرقمي وإدارة المحتوى.
+          أجمع بين الخبرة التقنية والحسّ الإبداعي لأساعد الأفراد والشركات على بناء
+          حضور رقمي احترافي يعكس هوية علامتهم ويحقق أهدافهم.
+        </p>
+        <p>
+          من تصميم المواقع والمتاجر الإلكترونية، إلى إدارة حسابات التواصل الاجتماعي
+          وصناعة المحتوى بالعربية والإنجليزية — أعمل معك خطوة بخطوة لتقديم حل رقمي
+          متكامل يناسب احتياجاتك وميزانيتك.
+        </p>
+        <a href="#contact" class="btn btn-primary btn-lg">لنعمل معًا</a>
       </div>
     </div>
   </section>
@@ -279,6 +311,10 @@
   <section class="section contact" id="contact">
     <div class="container">
       <div class="contact-inner">
+        <figure class="contact-avatar" onerror="this.style.display='none'">
+          <img src="assets/me/avatar.jpg" alt="إسلام داود" loading="lazy"
+               onerror="this.closest('.contact-avatar').style.display='none'" />
+        </figure>
         <span class="kicker">هل لديك مشروع أو فكرة؟</span>
         <h2>لنحوّل فكرتك إلى حضور رقمي احترافي</h2>
         <p class="contact-lead">
@@ -335,6 +371,6 @@
     </div>
   </footer>
 
-  <script src="script.js?v=4"></script>
+  <script src="script.js?v=5"></script>
 </body>
 </html>
