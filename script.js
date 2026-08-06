@@ -17,9 +17,6 @@ nav.querySelectorAll('a').forEach((link) => {
   });
 });
 
-// Current year in footer
-document.getElementById('year').textContent = new Date().getFullYear();
-
 // Reveal-on-scroll animation
 const revealEls = document.querySelectorAll('.card, .feature, .work, .section-head, .about-photo, .about-text, .contact-inner');
 revealEls.forEach((el) => el.classList.add('reveal'));
