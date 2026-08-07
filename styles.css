@@ -441,6 +441,21 @@ html[lang="en"] .contact-inner h2 { white-space: normal; }
 
 .contact-actions { display: flex; justify-content: center; flex-wrap: wrap; gap: 16px; }
 .contact-actions .btn svg { width: 20px; height: 20px; flex: none; }
+
+/* Contact details (phone + email) shown below the buttons */
+.contact-details {
+  display: flex; justify-content: center; flex-wrap: wrap;
+  gap: 14px 30px; margin-top: 26px;
+}
+.cd-item {
+  display: inline-flex; align-items: center; gap: 10px;
+  color: #cdd6ec; font-weight: 600; font-size: 1.02rem;
+  transition: color .2s ease;
+}
+.cd-item svg { width: 20px; height: 20px; flex: none; color: #8fa4d8; transition: color .2s ease; }
+.cd-item span { direction: ltr; }
+.cd-item:hover { color: #fff; }
+.cd-item:hover svg { color: #fff; }
 .contact .btn-ghost { background: rgba(255, 255, 255, .04); color: #fff; border-color: rgba(255, 255, 255, .35); }
 .contact .btn-ghost:hover { background: #fff; color: var(--text); border-color: #fff; }
 
