@@ -154,11 +154,14 @@ a { color: inherit; text-decoration: none; }
   100% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
 }
 
-/* Gradient accent on the name */
+/* Gradient accent on the name (animated shimmer) */
 .hero-title .grad {
-  background: var(--grad);
+  background: linear-gradient(90deg, #0066cc, #7a3fd1, #22a7ff, #0066cc);
+  background-size: 250% auto;
   -webkit-background-clip: text; background-clip: text; color: transparent;
+  animation: shimmer 5s linear infinite;
 }
+@keyframes shimmer { to { background-position: 250% center; } }
 
 /* Entrance animations */
 .hero-text > * { opacity: 0; animation: heroUp .7s ease forwards; }
@@ -471,11 +474,45 @@ a { color: inherit; text-decoration: none; }
 }
 .btn-primary:hover::after { inset-inline-start: 130%; }
 
+/* TEXT ANIMATION — underline draws under section headings on reveal */
+.section-head h2 { position: relative; }
+.section-head h2::after {
+  content: ""; display: block;
+  width: 72px; height: 4px; margin: 16px auto 0;
+  background: var(--grad); border-radius: 2px;
+  transform: scaleX(0); transform-origin: center;
+  transition: transform .6s ease .25s;
+}
+.section-head.visible h2::after { transform: scaleX(1); }
+.contact-inner h2 { position: relative; }
+.contact-inner h2::after {
+  content: ""; display: block;
+  width: 72px; height: 4px; margin: 18px auto 0;
+  background: linear-gradient(90deg, #cfe0ff, #a2b6df); border-radius: 2px;
+  transform: scaleX(0); transform-origin: center;
+  transition: transform .6s ease .25s;
+}
+.contact-inner.visible h2::after { transform: scaleX(1); }
+
+/* IMAGE ANIMATION — reveal wipe + hover overlay/zoom on portfolio */
+.work-thumb { position: relative; }
+.work-thumb::after {
+  content: ""; position: absolute; inset: 0; z-index: 1;
+  background: linear-gradient(to top, rgba(15, 26, 64, .45), transparent 55%);
+  opacity: 0; transition: opacity .35s ease;
+}
+.work:hover .work-thumb::after { opacity: 1; }
+.work .work-thumb img { transition: transform .6s ease, clip-path .7s ease .1s; }
+.work.reveal .work-thumb img { clip-path: inset(0 0 0 100%); }
+.work.reveal.visible .work-thumb img { clip-path: inset(0 0 0 0); }
+
 @media (prefers-reduced-motion: reduce) {
   .reveal { opacity: 1; transform: none; transition: none; }
   html { scroll-behavior: auto; }
   .hero-bg::before, .hero-status .dot, .hero-portrait img, .float-chip,
-  .hero-text > *, .hero-portrait { animation: none !important; opacity: 1 !important; transform: none !important; }
+  .hero-text > *, .hero-portrait, .hero-title .grad { animation: none !important; opacity: 1 !important; transform: none !important; }
   .scroll-progress { display: none; }
   .btn-primary::after { display: none; }
+  .section-head h2::after, .contact-inner h2::after { transform: scaleX(1) !important; transition: none; }
+  .work .work-thumb img { clip-path: none !important; }
 }
