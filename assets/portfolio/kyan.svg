@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" font-family="'Segoe UI',Tahoma,sans-serif" direction="rtl">
+  <defs>
+    <linearGradient id="ky" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f2942"/>
+      <stop offset="1" stop-color="#1d4e6b"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="#eef2f5"/>
+  <!-- browser window -->
+  <rect x="70" y="70" width="1060" height="660" rx="22" fill="#ffffff" stroke="#dbe2e8" stroke-width="2"/>
+  <rect x="70" y="70" width="1060" height="70" rx="22" fill="#f4f7f9"/>
+  <rect x="70" y="118" width="1060" height="22" fill="#f4f7f9"/>
+  <circle cx="112" cy="105" r="9" fill="#ff5f57"/>
+  <circle cx="146" cy="105" r="9" fill="#febc2e"/>
+  <circle cx="180" cy="105" r="9" fill="#28c840"/>
+  <rect x="360" y="90" width="640" height="30" rx="15" fill="#ffffff" stroke="#dbe2e8"/>
+  <text x="680" y="111" fill="#1d4e6b" font-size="17" text-anchor="middle" direction="ltr">🔒 kyanksa.com</text>
+  <!-- hero -->
+  <rect x="90" y="160" width="1020" height="290" rx="14" fill="url(#ky)"/>
+  <text x="1050" y="248" fill="#ffffff" font-size="44" font-weight="800" text-anchor="end">شركة كيان</text>
+  <text x="1050" y="300" fill="#cfe0ea" font-size="22" text-anchor="end">حقن التربة · كشف التسربات · ترميم وعزل بالرياض</text>
+  <rect x="820" y="335" width="230" height="56" rx="10" fill="#f59e0b"/>
+  <text x="935" y="372" fill="#0f2942" font-size="22" font-weight="800" text-anchor="middle">اتصل الآن</text>
+  <!-- gear / engineering mark -->
+  <g transform="translate(165,205)" fill="#ffffff" fill-opacity=".9">
+    <rect x="0" y="0" width="150" height="150" rx="24" fill="#ffffff" fill-opacity=".14"/>
+    <circle cx="75" cy="75" r="30" fill="none" stroke="#ffffff" stroke-width="10"/>
+    <circle cx="75" cy="75" r="10" fill="#ffffff"/>
+    <g stroke="#ffffff" stroke-width="10" stroke-linecap="round">
+      <line x1="75" y1="28" x2="75" y2="14"/><line x1="75" y1="136" x2="75" y2="122"/>
+      <line x1="28" y1="75" x2="14" y2="75"/><line x1="136" y1="75" x2="122" y2="75"/>
+      <line x1="42" y1="42" x2="32" y2="32"/><line x1="118" y1="118" x2="108" y2="108"/>
+      <line x1="108" y1="42" x2="118" y2="32"/><line x1="32" y1="118" x2="42" y2="108"/>
+    </g>
+  </g>
+  <!-- service cards -->
+  <g>
+    <rect x="150" y="500" width="230" height="180" rx="14" fill="#ffffff" stroke="#e3e9ee"/>
+    <rect x="410" y="500" width="230" height="180" rx="14" fill="#ffffff" stroke="#e3e9ee"/>
+    <rect x="670" y="500" width="230" height="180" rx="14" fill="#ffffff" stroke="#e3e9ee"/>
+    <rect x="930" y="500" width="120" height="180" rx="14" fill="#ffffff" stroke="#e3e9ee"/>
+    <circle cx="335" cy="555" r="24" fill="#1d4e6b" fill-opacity=".12"/>
+    <circle cx="595" cy="555" r="24" fill="#1d4e6b" fill-opacity=".12"/>
+    <circle cx="855" cy="555" r="24" fill="#1d4e6b" fill-opacity=".12"/>
+    <text x="360" y="620" fill="#0f2942" font-size="19" font-weight="700" text-anchor="end">حقن التربة</text>
+    <text x="620" y="620" fill="#0f2942" font-size="19" font-weight="700" text-anchor="end">كشف التسربات</text>
+    <text x="880" y="620" fill="#0f2942" font-size="19" font-weight="700" text-anchor="end">عزل الأسطح</text>
+    <rect x="180" y="640" width="150" height="11" rx="5" fill="#e2e8ee"/>
+    <rect x="440" y="640" width="150" height="11" rx="5" fill="#e2e8ee"/>
+    <rect x="700" y="640" width="150" height="11" rx="5" fill="#e2e8ee"/>
+  </g>
+</svg>
