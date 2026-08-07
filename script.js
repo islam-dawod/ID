@@ -17,6 +17,16 @@ nav.querySelectorAll('a').forEach((link) => {
   });
 });
 
+// Back-to-top: force smooth scroll to the very top (href="#top" alone fails
+// because the sticky header is always in view)
+const backTopBtn = document.querySelector('.back-top');
+if (backTopBtn) {
+  backTopBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+}
+
 // Scroll progress bar
 const progress = document.createElement('div');
 progress.className = 'scroll-progress';
