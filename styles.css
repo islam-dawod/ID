@@ -471,7 +471,7 @@ html[lang="en"] .contact-inner h2 { white-space: normal; }
 .form-title { color: #fff; font-size: 1.35rem; font-weight: 700; margin: 0 0 4px; }
 .field { display: grid; gap: 7px; }
 .field label { color: #cdd6ec; font-size: .88rem; font-weight: 600; }
-.field input, .field textarea {
+.field input, .field textarea, .field select {
   font-family: inherit; font-size: 1rem; color: #fff;
   background: rgba(255, 255, 255, .06);
   border: 1px solid rgba(255, 255, 255, .16);
@@ -479,8 +479,10 @@ html[lang="en"] .contact-inner h2 { white-space: normal; }
   transition: border-color .2s ease, box-shadow .2s ease;
 }
 .field textarea { resize: vertical; }
+.field select { cursor: pointer; }
+.field select option { color: #16213e; background: #fff; }
 .field input::placeholder, .field textarea::placeholder { color: #8b98bd; }
-.field input:focus, .field textarea:focus { border-color: #8a6bff; box-shadow: 0 0 0 3px rgba(122, 63, 209, .25); }
+.field input:focus, .field textarea:focus, .field select:focus { border-color: #8a6bff; box-shadow: 0 0 0 3px rgba(122, 63, 209, .25); }
 .form-note { margin: 4px 0 0; text-align: center; font-weight: 600; color: #7ee0b0; }
 
 @media (max-width: 820px) {

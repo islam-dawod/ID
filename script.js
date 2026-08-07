@@ -79,12 +79,16 @@ if (contactForm) {
     const to = 'islam.d@example.com'; // TODO: replace with the real email
     const name = document.getElementById('cf-name').value.trim();
     const email = document.getElementById('cf-email').value.trim();
+    const phone = document.getElementById('cf-phone').value.trim();
+    const service = document.getElementById('cf-service').value.trim();
     const message = document.getElementById('cf-message').value.trim();
     const en = document.documentElement.lang === 'en';
     const subject = encodeURIComponent((en ? 'New message from ' : 'رسالة جديدة من ') + (name || (en ? 'a visitor' : 'زائر')));
     const body = encodeURIComponent(
       (en ? 'Name: ' : 'الاسم: ') + name + '\n' +
-      (en ? 'Email: ' : 'البريد: ') + email + '\n\n' + message
+      (en ? 'Email: ' : 'البريد: ') + email + '\n' +
+      (en ? 'Phone: ' : 'الهاتف: ') + phone + '\n' +
+      (en ? 'Service: ' : 'الخدمة: ') + service + '\n\n' + message
     );
     window.location.href = 'mailto:' + to + '?subject=' + subject + '&body=' + body;
     const note = document.getElementById('formNote');
