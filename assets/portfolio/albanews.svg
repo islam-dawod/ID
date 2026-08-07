@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" font-family="'Segoe UI',Tahoma,sans-serif" direction="rtl">
+  <defs>
+    <linearGradient id="an" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#b91c1c"/>
+      <stop offset="1" stop-color="#7f1d1d"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="#f1f3f6"/>
+  <!-- browser window -->
+  <rect x="70" y="70" width="1060" height="660" rx="22" fill="#ffffff" stroke="#dde1e8" stroke-width="2"/>
+  <rect x="70" y="70" width="1060" height="70" rx="22" fill="#f5f6f9"/>
+  <rect x="70" y="118" width="1060" height="22" fill="#f5f6f9"/>
+  <circle cx="112" cy="105" r="9" fill="#ff5f57"/>
+  <circle cx="146" cy="105" r="9" fill="#febc2e"/>
+  <circle cx="180" cy="105" r="9" fill="#28c840"/>
+  <rect x="360" y="90" width="640" height="30" rx="15" fill="#ffffff" stroke="#dde1e8"/>
+  <text x="680" y="111" fill="#b91c1c" font-size="16" text-anchor="middle" direction="ltr">🔒 demo.albaadani.com/news</text>
+  <!-- site header / nav -->
+  <rect x="90" y="160" width="1020" height="70" fill="url(#an)"/>
+  <text x="1070" y="205" fill="#ffffff" font-size="30" font-weight="800" text-anchor="end">AlbaNews</text>
+  <text x="720" y="203" fill="#ffffff" fill-opacity=".92" font-size="19" text-anchor="end">رياضة</text>
+  <text x="620" y="203" fill="#ffffff" fill-opacity=".92" font-size="19" text-anchor="end">تقنية</text>
+  <text x="520" y="203" fill="#ffffff" fill-opacity=".92" font-size="19" text-anchor="end">صحة</text>
+  <text x="420" y="203" fill="#ffffff" fill-opacity=".92" font-size="19" text-anchor="end">سياحة</text>
+  <!-- breaking bar -->
+  <rect x="90" y="230" width="1020" height="40" fill="#111827"/>
+  <rect x="1010" y="230" width="100" height="40" fill="#b91c1c"/>
+  <text x="1060" y="257" fill="#ffffff" font-size="16" font-weight="800" text-anchor="middle">عاجل</text>
+  <rect x="360" y="245" width="620" height="11" rx="5" fill="#374151"/>
+  <!-- featured story -->
+  <rect x="600" y="300" width="510" height="330" rx="12" fill="#e8ebf0"/>
+  <rect x="600" y="300" width="510" height="220" rx="12" fill="#cbd3de"/>
+  <rect x="620" y="540" width="360" height="18" rx="9" fill="#9aa6b6"/>
+  <rect x="620" y="575" width="470" height="12" rx="6" fill="#c2cad6"/>
+  <rect x="620" y="597" width="430" height="12" rx="6" fill="#c2cad6"/>
+  <rect x="620" y="315" width="120" height="34" rx="6" fill="#b91c1c"/>
+  <text x="680" y="339" fill="#ffffff" font-size="16" font-weight="700" text-anchor="middle">الأبرز</text>
+  <!-- side headlines list -->
+  <g>
+    <rect x="150" y="300" width="410" height="100" rx="10" fill="#ffffff" stroke="#e3e7ee"/>
+    <rect x="150" y="415" width="410" height="100" rx="10" fill="#ffffff" stroke="#e3e7ee"/>
+    <rect x="150" y="530" width="410" height="100" rx="10" fill="#ffffff" stroke="#e3e7ee"/>
+    <rect x="440" y="320" width="100" height="60" rx="8" fill="#dfe4ec"/>
+    <rect x="440" y="435" width="100" height="60" rx="8" fill="#dfe4ec"/>
+    <rect x="440" y="550" width="100" height="60" rx="8" fill="#dfe4ec"/>
+    <rect x="180" y="330" width="230" height="14" rx="7" fill="#4b5563"/>
+    <rect x="180" y="356" width="180" height="11" rx="5" fill="#c2cad6"/>
+    <rect x="180" y="445" width="230" height="14" rx="7" fill="#4b5563"/>
+    <rect x="180" y="471" width="180" height="11" rx="5" fill="#c2cad6"/>
+    <rect x="180" y="560" width="230" height="14" rx="7" fill="#4b5563"/>
+    <rect x="180" y="586" width="180" height="11" rx="5" fill="#c2cad6"/>
+  </g>
+</svg>
