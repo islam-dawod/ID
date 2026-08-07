@@ -382,46 +382,62 @@ a { color: inherit; text-decoration: none; }
   display: inline-block;
 }
 
-/* Contact — light, comfortable */
+/* Contact — elegant dark */
 .contact {
   position: relative; overflow: hidden;
-  color: var(--text);
-  border-top: 1px solid var(--border);
+  color: #fff;
   background:
-    radial-gradient(45% 55% at 85% 6%, rgba(122, 63, 209, .10), transparent 70%),
-    radial-gradient(45% 55% at 10% 96%, rgba(0, 102, 204, .10), transparent 70%),
-    linear-gradient(180deg, #ffffff, var(--bg-alt));
+    radial-gradient(55% 60% at 50% -12%, rgba(122, 63, 209, .30), transparent 70%),
+    radial-gradient(45% 55% at 88% 108%, rgba(0, 102, 204, .28), transparent 70%),
+    linear-gradient(160deg, #182452 0%, #0d1533 100%);
 }
-.contact-inner { position: relative; z-index: 1; max-width: 720px; margin: 0 auto; text-align: center; }
-.contact-avatar { position: relative; margin: 0 auto 24px; width: 116px; height: 116px; }
+/* subtle dotted texture */
+.contact::before {
+  content: ""; position: absolute; inset: 0; z-index: 0; opacity: .6;
+  background-image: radial-gradient(rgba(255, 255, 255, .06) 1px, transparent 1px);
+  background-size: 24px 24px;
+  -webkit-mask-image: radial-gradient(70% 65% at 50% 40%, #000, transparent 78%);
+  mask-image: radial-gradient(70% 65% at 50% 40%, #000, transparent 78%);
+}
+/* glowing gradient hairline at the top */
+.contact::after {
+  content: ""; position: absolute; top: 0; inset-inline: 0; height: 1px; z-index: 1;
+  background: linear-gradient(90deg, transparent, rgba(122, 63, 209, .7), rgba(0, 102, 204, .7), transparent);
+}
+.contact-inner { position: relative; z-index: 2; max-width: 720px; margin: 0 auto; text-align: center; }
+.contact-avatar { position: relative; margin: 0 auto 26px; width: 118px; height: 118px; }
 .contact-avatar::before {
-  content: ""; position: absolute; inset: -5px; z-index: 0;
-  border-radius: 50%; background: var(--grad); opacity: .5;
+  content: ""; position: absolute; inset: -6px; z-index: 0;
+  border-radius: 50%; background: var(--grad); opacity: .6;
+  filter: blur(10px);
 }
 .contact-avatar img {
   position: relative; z-index: 1;
   width: 100%; height: 100%; object-fit: cover; border-radius: 50%;
-  border: 4px solid #fff; box-shadow: var(--shadow-sm);
+  border: 3px solid rgba(255, 255, 255, .85);
+  box-shadow: 0 12px 30px -10px rgba(0, 0, 0, .5);
 }
-.contact-inner h2 { font-size: clamp(1.6rem, 4.2vw, 2.7rem); margin: 18px 0 18px; color: var(--text); white-space: nowrap; }
+.contact .kicker { color: #dbe6ff; background: rgba(255, 255, 255, .08); border-color: rgba(255, 255, 255, .18); }
+.contact-inner h2 { font-size: clamp(1.6rem, 4.2vw, 2.7rem); margin: 18px 0 18px; color: #fff; white-space: nowrap; }
 @media (max-width: 560px) { .contact-inner h2 { white-space: normal; } }
-.contact-lead { color: var(--muted); margin: 0 auto 34px; font-size: 1.12rem; max-width: 620px; }
+.contact-lead { color: #b9c4e0; margin: 0 auto 34px; font-size: 1.12rem; max-width: 620px; }
 
 .contact-actions { display: flex; justify-content: center; flex-wrap: wrap; gap: 16px; }
 .contact-actions .btn svg { width: 20px; height: 20px; flex: none; }
+.contact .btn-ghost { background: rgba(255, 255, 255, .04); color: #fff; border-color: rgba(255, 255, 255, .35); }
+.contact .btn-ghost:hover { background: #fff; color: var(--text); border-color: #fff; }
 
 .social { list-style: none; display: flex; justify-content: center; flex-wrap: wrap; gap: 14px; margin: 46px 0 0; padding: 0; }
 .social a {
   display: grid; place-items: center;
   width: 50px; height: 50px;
-  background: #fff;
-  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, .05);
+  border: 1px solid rgba(255, 255, 255, .22);
   border-radius: 50%;
-  color: var(--text);
-  box-shadow: var(--shadow-sm);
-  transition: background .25s ease, border-color .25s ease, transform .25s ease, color .25s ease;
+  color: #fff;
+  transition: background .25s ease, border-color .25s ease, transform .25s ease;
 }
-.social a:hover { background: var(--grad); border-color: transparent; color: #fff; transform: translateY(-3px); }
+.social a:hover { background: var(--grad); border-color: transparent; transform: translateY(-3px); }
 .social svg { width: 20px; height: 20px; }
 
 /* Footer */
