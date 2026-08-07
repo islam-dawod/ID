@@ -1,3 +1,41 @@
+// Bilingual toggle (Arabic default, English optional)
+const langToggle = document.getElementById('langToggle');
+const LANG_KEY = 'site-lang';
+
+function applyLang(lang) {
+  const en = lang === 'en';
+  const root = document.documentElement;
+  root.lang = en ? 'en' : 'ar';
+  root.dir = en ? 'ltr' : 'rtl';
+
+  // swap inner HTML for elements that have an English variant
+  document.querySelectorAll('[data-en]').forEach((el) => {
+    if (el.dataset.ar === undefined) el.dataset.ar = el.innerHTML.trim();
+    el.innerHTML = en ? el.dataset.en : el.dataset.ar;
+  });
+  // swap aria-labels
+  document.querySelectorAll('[data-en-label]').forEach((el) => {
+    if (el.dataset.arLabel === undefined) el.dataset.arLabel = el.getAttribute('aria-label') || '';
+    el.setAttribute('aria-label', en ? el.dataset.enLabel : el.dataset.arLabel);
+  });
+
+  if (langToggle) {
+    langToggle.textContent = en ? 'ع' : 'EN';
+    langToggle.setAttribute('aria-label', en ? 'التبديل إلى العربية' : 'Switch to English');
+  }
+  try { localStorage.setItem(LANG_KEY, lang); } catch (e) {}
+}
+
+let savedLang = 'ar';
+try { if (localStorage.getItem(LANG_KEY) === 'en') savedLang = 'en'; } catch (e) {}
+applyLang(savedLang);
+
+if (langToggle) {
+  langToggle.addEventListener('click', () => {
+    applyLang(document.documentElement.lang === 'ar' ? 'en' : 'ar');
+  });
+}
+
 // Mobile navigation toggle
 const navToggle = document.getElementById('navToggle');
 const nav = document.getElementById('nav');

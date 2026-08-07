@@ -92,6 +92,23 @@ a { color: inherit; text-decoration: none; }
 .nav .nav-cta { color: #fff; }
 .nav .nav-cta:hover { color: #fff; }
 
+.header-actions { display: flex; align-items: center; gap: 12px; }
+.lang-toggle {
+  font-family: inherit; font-weight: 700; font-size: .85rem;
+  color: var(--primary);
+  background: rgba(0, 102, 204, .08);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 7px 14px; min-width: 44px;
+  cursor: pointer;
+  transition: background .2s ease, color .2s ease, border-color .2s ease;
+}
+.lang-toggle:hover { background: var(--grad); color: #fff; border-color: transparent; }
+
+/* English (LTR) mode: allow long headings to wrap */
+html[lang="en"] .section-head h2,
+html[lang="en"] .contact-inner h2 { white-space: normal; }
+
 .nav-toggle { display: none; flex-direction: column; gap: 5px; background: none; border: 0; cursor: pointer; padding: 8px; }
 .nav-toggle span { width: 25px; height: 2px; background: var(--text); border-radius: 2px; transition: .25s; }
 
