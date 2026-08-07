@@ -506,13 +506,14 @@ a { color: inherit; text-decoration: none; }
 .work.reveal .work-thumb img { clip-path: inset(0 0 0 100%); }
 .work.reveal.visible .work-thumb img { clip-path: inset(0 0 0 0); }
 
+/* Respect reduced-motion only for continuous/looping decorative motion.
+   One-time reveals, underlines, image wipes and entrances stay active. */
 @media (prefers-reduced-motion: reduce) {
-  .reveal { opacity: 1; transform: none; transition: none; }
-  html { scroll-behavior: auto; }
-  .hero-bg::before, .hero-status .dot, .hero-portrait img, .float-chip,
-  .hero-text > *, .hero-portrait, .hero-title .grad { animation: none !important; opacity: 1 !important; transform: none !important; }
-  .scroll-progress { display: none; }
-  .btn-primary::after { display: none; }
-  .section-head h2::after, .contact-inner h2::after { transform: scaleX(1) !important; transition: none; }
-  .work .work-thumb img { clip-path: none !important; }
+  .hero-bg::before,
+  .hero-portrait img,
+  .float-chip,
+  .hero-status .dot,
+  .hero-title .grad {
+    animation: none !important;
+  }
 }
