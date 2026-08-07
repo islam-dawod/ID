@@ -444,10 +444,10 @@ a { color: inherit; text-decoration: none; }
 .back-top {
   position: relative;
   display: grid; place-items: center;
-  width: 54px; height: 54px; margin: 40px auto 0;
+  width: 68px; height: 68px; margin: 42px auto 0;
   border-radius: 50%;
   background: var(--grad); color: #fff;
-  box-shadow: 0 14px 30px -8px rgba(79, 107, 255, .6);
+  box-shadow: 0 16px 34px -8px rgba(79, 107, 255, .6);
   transition: transform .25s ease, box-shadow .25s ease;
 }
 .back-top::before {
@@ -455,10 +455,14 @@ a { color: inherit; text-decoration: none; }
   border-radius: 50%; background: var(--grad); opacity: .5;
   animation: backTopPulse 2.4s ease-out infinite;
 }
-.back-top svg { width: 22px; height: 22px; animation: arrowNudge 1.6s ease-in-out infinite; }
-.back-top:hover { transform: translateY(-5px); box-shadow: 0 20px 36px -8px rgba(122, 63, 209, .7); }
-.back-top:hover svg { animation-duration: .7s; }
-@keyframes arrowNudge { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-5px); } }
+.back-top svg { width: 32px; height: 32px; animation: arrowBounce 2s cubic-bezier(.45, 0, .4, 1) infinite; }
+.back-top:hover { transform: translateY(-6px); box-shadow: 0 22px 40px -8px rgba(122, 63, 209, .7); }
+.back-top:hover svg { animation-duration: 1s; }
+@keyframes arrowBounce {
+  0%, 15% { transform: translateY(0); }
+  45% { transform: translateY(-10px); }
+  70%, 100% { transform: translateY(0); }
+}
 @keyframes backTopPulse {
   0% { transform: scale(1); opacity: .5; }
   70% { transform: scale(1.6); opacity: 0; }
@@ -610,8 +614,7 @@ a { color: inherit; text-decoration: none; }
   .hero-status .dot,
   .hero-title .grad,
   .wa-fab::before,
-  .back-top::before,
-  .back-top svg {
+  .back-top::before {
     animation: none !important;
   }
 }
