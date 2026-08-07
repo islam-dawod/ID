@@ -70,37 +70,6 @@ if (backTopBtn) {
   });
 }
 
-// Contact form → opens the user's email client with the message prefilled
-const contactForm = document.getElementById('contactForm');
-if (contactForm) {
-  contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    if (!contactForm.checkValidity()) { contactForm.reportValidity(); return; }
-    const to = 'islam.d@example.com'; // TODO: replace with the real email
-    const name = document.getElementById('cf-name').value.trim();
-    const email = document.getElementById('cf-email').value.trim();
-    const phone = document.getElementById('cf-phone').value.trim();
-    const service = document.getElementById('cf-service').value.trim();
-    const message = document.getElementById('cf-message').value.trim();
-    const en = document.documentElement.lang === 'en';
-    const subject = encodeURIComponent((en ? 'New message from ' : 'رسالة جديدة من ') + (name || (en ? 'a visitor' : 'زائر')));
-    const body = encodeURIComponent(
-      (en ? 'Name: ' : 'الاسم: ') + name + '\n' +
-      (en ? 'Email: ' : 'البريد: ') + email + '\n' +
-      (en ? 'Phone: ' : 'الهاتف: ') + phone + '\n' +
-      (en ? 'Service: ' : 'الخدمة: ') + service + '\n\n' + message
-    );
-    window.location.href = 'mailto:' + to + '?subject=' + subject + '&body=' + body;
-    const note = document.getElementById('formNote');
-    if (note) {
-      note.hidden = false;
-      note.textContent = en
-        ? 'Opening your email app… if it does not open, email me directly.'
-        : 'يتم فتح تطبيق البريد لديك… إن لم يفتح، راسلني مباشرة على البريد.';
-    }
-  });
-}
-
 // Scroll progress bar
 const progress = document.createElement('div');
 progress.className = 'scroll-progress';
