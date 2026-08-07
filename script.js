@@ -18,6 +18,11 @@ function applyLang(lang) {
     if (el.dataset.arLabel === undefined) el.dataset.arLabel = el.getAttribute('aria-label') || '';
     el.setAttribute('aria-label', en ? el.dataset.enLabel : el.dataset.arLabel);
   });
+  // swap input/textarea placeholders
+  document.querySelectorAll('[data-en-ph]').forEach((el) => {
+    if (el.dataset.arPh === undefined) el.dataset.arPh = el.getAttribute('placeholder') || '';
+    el.setAttribute('placeholder', en ? el.dataset.enPh : el.dataset.arPh);
+  });
 
   if (langToggle) {
     langToggle.textContent = en ? 'ع' : 'EN';
@@ -62,6 +67,33 @@ if (backTopBtn) {
   backTopBtn.addEventListener('click', (e) => {
     e.preventDefault();
     window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+}
+
+// Contact form → opens the user's email client with the message prefilled
+const contactForm = document.getElementById('contactForm');
+if (contactForm) {
+  contactForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    if (!contactForm.checkValidity()) { contactForm.reportValidity(); return; }
+    const to = 'islam.d@example.com'; // TODO: replace with the real email
+    const name = document.getElementById('cf-name').value.trim();
+    const email = document.getElementById('cf-email').value.trim();
+    const message = document.getElementById('cf-message').value.trim();
+    const en = document.documentElement.lang === 'en';
+    const subject = encodeURIComponent((en ? 'New message from ' : 'رسالة جديدة من ') + (name || (en ? 'a visitor' : 'زائر')));
+    const body = encodeURIComponent(
+      (en ? 'Name: ' : 'الاسم: ') + name + '\n' +
+      (en ? 'Email: ' : 'البريد: ') + email + '\n\n' + message
+    );
+    window.location.href = 'mailto:' + to + '?subject=' + subject + '&body=' + body;
+    const note = document.getElementById('formNote');
+    if (note) {
+      note.hidden = false;
+      note.textContent = en
+        ? 'Opening your email app… if it does not open, email me directly.'
+        : 'يتم فتح تطبيق البريد لديك… إن لم يفتح، راسلني مباشرة على البريد.';
+    }
   });
 }
 
