@@ -456,6 +456,35 @@ a { color: inherit; text-decoration: none; }
   transition: width .1s linear;
 }
 
+/* Floating WhatsApp button (fixed on the bottom-right, site-wide) */
+.wa-fab {
+  position: fixed;
+  bottom: 22px; right: 22px;
+  z-index: 90;
+  width: 58px; height: 58px;
+  display: grid; place-items: center;
+  border-radius: 50%;
+  background: #25d366; color: #fff;
+  box-shadow: 0 12px 28px -8px rgba(37, 211, 102, .65);
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+.wa-fab svg { width: 30px; height: 30px; }
+.wa-fab:hover { transform: scale(1.08); box-shadow: 0 16px 34px -8px rgba(37, 211, 102, .8); }
+.wa-fab::before {
+  content: ""; position: absolute; inset: 0; z-index: -1;
+  border-radius: 50%; background: #25d366; opacity: .55;
+  animation: waPulse 2.2s ease-out infinite;
+}
+@keyframes waPulse {
+  0% { transform: scale(1); opacity: .55; }
+  70% { transform: scale(1.7); opacity: 0; }
+  100% { opacity: 0; }
+}
+@media (max-width: 600px) {
+  .wa-fab { width: 52px; height: 52px; bottom: 16px; right: 16px; }
+  .wa-fab svg { width: 27px; height: 27px; }
+}
+
 /* Header shadow once scrolled */
 .site-header.scrolled { box-shadow: 0 8px 30px -14px rgba(15, 26, 64, .25); }
 
@@ -514,7 +543,8 @@ a { color: inherit; text-decoration: none; }
   .hero-portrait img,
   .float-chip,
   .hero-status .dot,
-  .hero-title .grad {
+  .hero-title .grad,
+  .wa-fab::before {
     animation: none !important;
   }
 }
