@@ -700,3 +700,34 @@ body.modal-open { overflow: hidden; }
 /* Reduce empty space below the back-to-top arrow (last section) */
 .contact { padding-bottom: 40px; }
 .contact .back-top { margin-top: 34px; }
+
+/* ===== Smaller typography & form on mobile ===== */
+@media (max-width: 600px) {
+  body { font-size: .94rem; line-height: 1.75; }
+  .hero { padding: 54px 0 58px; }
+  .hero-title { font-size: 2.15rem; }
+  .hero-lead { font-size: 1.02rem; }
+  .hero-sub { font-size: .95rem; }
+  .eyebrow, .hero-status { font-size: .8rem; }
+  .section { padding: 58px 0; }
+  .section-head { margin-bottom: 38px; }
+  .section-head h2, .contact-inner h2 { font-size: 1.5rem; }
+  .section-head p { font-size: .98rem; }
+  .card, .feature { padding: 24px 20px; border-radius: 16px; }
+  .card h3, .feature h3, .work-body h3 { font-size: 1.12rem; }
+  .card p, .feature p, .work-body p, .contact-lead { font-size: .93rem; }
+  .kicker { font-size: .82rem; }
+  .btn { font-size: .92rem; padding: 12px 20px; }
+  .btn-lg { font-size: .96rem; padding: 13px 24px; }
+  .feature-num { font-size: 2.6rem; }
+  /* consultation modal / form */
+  .modal { padding: 14px; }
+  .modal-box { padding: 24px 18px 20px; border-radius: 16px; }
+  .modal-box h3 { font-size: 1.25rem; }
+  .modal-sub { font-size: .9rem; margin-bottom: 16px; }
+  .modal-badge { width: 50px; height: 50px; font-size: 1.4rem; }
+  #consultForm { gap: 11px; }
+  #consultForm label { font-size: .82rem; }
+  #consultForm input, #consultForm textarea { font-size: .92rem; padding: 10px 12px; }
+  .modal-thanks h3 { font-size: 1.3rem; }
+}
