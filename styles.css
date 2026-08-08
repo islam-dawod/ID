@@ -214,17 +214,28 @@ html[lang="en"] .contact-inner h2 { white-space: normal; }
 .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; }
 
 .hero-portrait { margin: 0; position: relative; }
+/* morphing water-droplet glow behind the photo */
 .hero-portrait::before {
-  content: ""; position: absolute; inset: -14px;
-  background: var(--grad); border-radius: 26px; opacity: .18; z-index: 0;
+  content: ""; position: absolute; inset: -24px; z-index: 0;
+  background: var(--grad); opacity: .32; filter: blur(28px);
+  border-radius: 46% 54% 60% 40% / 47% 42% 58% 53%;
+  animation: blobMorph 9s ease-in-out infinite;
 }
+/* circular photo with animated torn/droplet edges */
 .hero-portrait img {
   position: relative; z-index: 1;
   width: 100%; aspect-ratio: 1 / 1; object-fit: cover;
   display: block;
-  border-radius: 20px;
+  border: 5px solid #fff;
+  border-radius: 46% 54% 60% 40% / 47% 42% 58% 53%;
   box-shadow: var(--shadow);
-  animation: portraitFloat 6s ease-in-out infinite;
+  animation: blobMorph 9s ease-in-out infinite, portraitFloat 6s ease-in-out infinite;
+}
+@keyframes blobMorph {
+  0%, 100% { border-radius: 46% 54% 60% 40% / 47% 42% 58% 53%; }
+  25% { border-radius: 60% 40% 50% 50% / 55% 55% 45% 45%; }
+  50% { border-radius: 40% 60% 44% 56% / 42% 48% 52% 58%; }
+  75% { border-radius: 56% 44% 62% 38% / 58% 40% 60% 42%; }
 }
 @keyframes portraitFloat {
   0%, 100% { transform: translateY(0); }
@@ -235,8 +246,8 @@ html[lang="en"] .contact-inner h2 { white-space: normal; }
   position: absolute; z-index: 2;
   display: inline-flex; align-items: center; gap: 8px;
   background: #fff; color: var(--text);
-  font-weight: 700; font-size: .92rem;
-  padding: 10px 16px; border-radius: 14px;
+  font-weight: 700; font-size: .9rem; white-space: nowrap;
+  padding: 9px 15px; border-radius: 14px;
   border: 1px solid var(--border);
   box-shadow: var(--shadow-sm);
   animation: chipFloat 5s ease-in-out infinite;
@@ -246,8 +257,9 @@ html[lang="en"] .contact-inner h2 { white-space: normal; }
   width: 28px; height: 28px; border-radius: 8px; font-size: 1rem;
   background: linear-gradient(135deg, rgba(0,102,204,.14), rgba(122,63,209,.16));
 }
-.float-chip.chip-1 { top: 26px; inset-inline-start: -34px; animation-delay: .4s; }
-.float-chip.chip-2 { bottom: 30px; inset-inline-end: -30px; animation-delay: 1.4s; }
+.float-chip.chip-1 { top: 16px; inset-inline-start: -22px; animation-delay: .2s; }
+.float-chip.chip-2 { top: 45%; inset-inline-end: -26px; animation-delay: 1.0s; }
+.float-chip.chip-3 { bottom: 14px; inset-inline-start: 12px; animation-delay: 1.8s; }
 @keyframes chipFloat {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-10px); }
@@ -634,8 +646,6 @@ html[lang="en"] .contact-inner h2 { white-space: normal; }
    One-time reveals, underlines, image wipes and entrances stay active. */
 @media (prefers-reduced-motion: reduce) {
   .hero-bg::before,
-  .hero-portrait img,
-  .float-chip,
   .hero-status .dot,
   .hero-title .grad,
   .wa-fab::before,
