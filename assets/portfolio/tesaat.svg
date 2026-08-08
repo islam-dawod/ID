@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" font-family="'Segoe UI',Tahoma,sans-serif" direction="rtl">
+  <defs>
+    <linearGradient id="ts" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f766e"/>
+      <stop offset="1" stop-color="#0891b2"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="#ecf6f7"/>
+  <!-- browser window -->
+  <rect x="70" y="70" width="1060" height="660" rx="22" fill="#ffffff" stroke="#d6e8ea" stroke-width="2"/>
+  <rect x="70" y="70" width="1060" height="70" rx="22" fill="#f2fafb"/>
+  <rect x="70" y="118" width="1060" height="22" fill="#f2fafb"/>
+  <circle cx="112" cy="105" r="9" fill="#ff5f57"/>
+  <circle cx="146" cy="105" r="9" fill="#febc2e"/>
+  <circle cx="180" cy="105" r="9" fill="#28c840"/>
+  <rect x="360" y="90" width="640" height="30" rx="15" fill="#ffffff" stroke="#d6e8ea"/>
+  <text x="680" y="111" fill="#0891b2" font-size="17" text-anchor="middle" direction="ltr">🔒 tesaat.com</text>
+  <!-- hero -->
+  <rect x="90" y="160" width="1020" height="250" rx="14" fill="url(#ts)"/>
+  <text x="1050" y="248" fill="#ffffff" font-size="44" font-weight="800" text-anchor="end">متجر تسعات</text>
+  <text x="1050" y="300" fill="#d5f2f4" font-size="23" text-anchor="end">سماعات · شواحن · كيابل · ساعات ذكية</text>
+  <rect x="820" y="335" width="230" height="56" rx="28" fill="#f59e0b"/>
+  <text x="935" y="372" fill="#0f2942" font-size="22" font-weight="800" text-anchor="middle">تسوّق الآن</text>
+  <!-- headphone illustration -->
+  <g transform="translate(160,200)" fill="none" stroke="#ffffff" stroke-width="12" stroke-linecap="round">
+    <path d="M20 90 A70 70 0 0 1 160 90"/>
+    <rect x="8" y="88" width="34" height="60" rx="16" fill="#ffffff" stroke="none"/>
+    <rect x="138" y="88" width="34" height="60" rx="16" fill="#ffffff" stroke="none"/>
+  </g>
+  <!-- product cards -->
+  <g>
+    <rect x="150" y="450" width="290" height="230" rx="14" fill="#ffffff" stroke="#e0eef0"/>
+    <rect x="470" y="450" width="290" height="230" rx="14" fill="#ffffff" stroke="#e0eef0"/>
+    <rect x="790" y="450" width="260" height="230" rx="14" fill="#ffffff" stroke="#e0eef0"/>
+    <rect x="180" y="475" width="230" height="110" rx="10" fill="#ecf6f7"/>
+    <rect x="500" y="475" width="230" height="110" rx="10" fill="#ecf6f7"/>
+    <rect x="815" y="475" width="210" height="110" rx="10" fill="#ecf6f7"/>
+    <circle cx="295" cy="530" r="34" fill="none" stroke="#0891b2" stroke-width="8"/>
+    <rect x="585" y="500" width="60" height="60" rx="14" fill="none" stroke="#0891b2" stroke-width="8"/>
+    <rect x="895" y="498" width="50" height="64" rx="12" fill="none" stroke="#0891b2" stroke-width="8"/>
+    <rect x="250" y="605" width="160" height="13" rx="6" fill="#e2edef"/>
+    <rect x="570" y="605" width="160" height="13" rx="6" fill="#e2edef"/>
+    <rect x="875" y="605" width="150" height="13" rx="6" fill="#e2edef"/>
+    <text x="410" y="662" fill="#0f766e" font-size="21" font-weight="800" text-anchor="end">﷼ 89</text>
+    <text x="730" y="662" fill="#0f766e" font-size="21" font-weight="800" text-anchor="end">﷼ 45</text>
+    <text x="1025" y="662" fill="#0f766e" font-size="21" font-weight="800" text-anchor="end">﷼ 250</text>
+  </g>
+</svg>
