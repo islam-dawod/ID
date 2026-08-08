@@ -833,7 +833,19 @@ body.modal-open { overflow: hidden; }
   .hire-actions .btn { width: 100%; justify-content: center; }
 }
 
-/* "Hire me" nav button — outline, paired next to the gradient CTA */
-.nav-cta-hire { background: #fff; border-color: var(--primary); color: var(--primary); }
-.nav-cta-hire:hover { background: var(--primary); border-color: var(--primary); color: #fff; }
-.nav .nav-cta-hire { margin-inline-start: -10px; }
+/* "Hire me" nav button — gradient-border pill with briefcase icon */
+.nav-cta-hire {
+  color: var(--primary);
+  font-weight: 700;
+  border: 2px solid transparent;
+  background: linear-gradient(#fff, #fff) padding-box, var(--grad) border-box;
+  box-shadow: 0 6px 16px -8px rgba(122, 63, 209, .5);
+}
+.nav-cta-hire svg { width: 16px; height: 16px; flex: none; }
+.nav-cta-hire:hover {
+  color: #fff;
+  background: var(--grad) padding-box, var(--grad) border-box;
+  box-shadow: 0 12px 24px -8px rgba(122, 63, 209, .6);
+}
+.nav .nav-cta-hire:hover { color: #fff; }
+.nav .nav-cta-hire { margin-inline-start: -14px; }
