@@ -882,6 +882,3 @@ body.modal-open { overflow: hidden; }
   .hero-portrait { max-width: 210px; }
 }
 
-/* Header wordmark logo image */
-.logo-img { height: 30px; width: auto; display: block; }
-@media (max-width: 600px) { .logo-img { height: 25px; } }
