@@ -15,7 +15,7 @@
   --shadow-sm: 0 10px 24px rgba(41, 51, 61, 0.08);
   --radius: 14px;
   --maxw: 1160px;
-  --sans: "Cairo", "Tajawal", system-ui, sans-serif;
+  --sans: "Poppins", "Cairo", "Tajawal", system-ui, sans-serif;
 }
 
 * { box-sizing: border-box; }
