@@ -60,15 +60,14 @@ nav.querySelectorAll('a').forEach((link) => {
   });
 });
 
-// Back-to-top: force smooth scroll to the very top (href="#top" alone fails
-// because the sticky header is always in view)
-const backTopBtn = document.querySelector('.back-top');
-if (backTopBtn) {
-  backTopBtn.addEventListener('click', (e) => {
+// Scroll to the very top for links to #top (back-to-top button + logo).
+// href="#top" alone fails because the sticky header is always in view.
+document.querySelectorAll('.back-top, a.logo').forEach((el) => {
+  el.addEventListener('click', (e) => {
     e.preventDefault();
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
-}
+});
 
 // Scroll progress bar
 const progress = document.createElement('div');
@@ -184,3 +183,21 @@ if (consultModal && openConsultBtn) {
     }
   });
 }
+
+// Localized (Arabic) form validation messages
+(function () {
+  const dict = {
+    ar: { fill: 'يرجى تعبئة هذا الحقل', email: 'يرجى إدخال بريد إلكتروني صحيح', check: 'يرجى التحقق من هذا الحقل' },
+    en: { fill: 'Please fill out this field.', email: 'Please enter a valid email address.', check: 'Please check this field.' }
+  };
+  const msgFor = (el) => {
+    const t = dict[document.documentElement.lang === 'en' ? 'en' : 'ar'];
+    if (el.validity.valueMissing) return t.fill;
+    if (el.validity.typeMismatch) return el.type === 'email' ? t.email : t.check;
+    return t.check;
+  };
+  document.querySelectorAll('#consultForm input, #consultForm textarea').forEach((el) => {
+    el.addEventListener('invalid', () => el.setCustomValidity(msgFor(el)));
+    el.addEventListener('input', () => el.setCustomValidity(''));
+  });
+})();

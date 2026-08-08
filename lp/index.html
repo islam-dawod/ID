@@ -225,6 +225,18 @@
       note.textContent = 'يتم فتح واتساب لإرسال طلبك… شكرًا لتواصلك!';
       form.reset();
     });
+
+    // Arabic validation messages
+    function lfMsg(el) {
+      if (el.validity.valueMissing) return 'يرجى تعبئة هذا الحقل';
+      if (el.validity.typeMismatch) return el.type === 'email' ? 'يرجى إدخال بريد إلكتروني صحيح' : 'يرجى التحقق من هذا الحقل';
+      return 'يرجى التحقق من هذا الحقل';
+    }
+    form.querySelectorAll('input, textarea, select').forEach(function (el) {
+      el.addEventListener('invalid', function () { el.setCustomValidity(lfMsg(el)); });
+      el.addEventListener('input', function () { el.setCustomValidity(''); });
+      el.addEventListener('change', function () { el.setCustomValidity(''); });
+    });
   </script>
 </body>
 </html>
