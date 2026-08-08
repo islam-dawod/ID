@@ -781,8 +781,8 @@ body.modal-open { overflow: hidden; }
 
 /* Raise the 'digital marketing' chip and keep it off the photo (stacked layout) */
 @media (max-width: 900px) {
-  .float-chip.chip-2 { bottom: auto; top: 44%; inset-inline-end: -150px; }
+  .float-chip.chip-2 { bottom: auto; top: 22%; inset-inline-end: -165px; }
 }
-@media (max-width: 640px) {
-  .float-chip.chip-2 { inset-inline-end: -70px; }
+@media (max-width: 680px) {
+  .float-chip.chip-2 { inset-inline-end: -80px; }
 }
