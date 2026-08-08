@@ -849,3 +849,6 @@ body.modal-open { overflow: hidden; }
 }
 .nav .nav-cta-hire:hover { color: #fff; }
 .nav .nav-cta-hire { margin-inline-start: -14px; }
+
+/* Icons inside hero action buttons */
+.hero-actions .btn svg { width: 20px; height: 20px; flex: none; }
