@@ -142,12 +142,45 @@ if (consultModal && openConsultBtn) {
     if (e.key === 'Escape' && !consultModal.hidden) closeModal();
   });
 
-  cForm.addEventListener('submit', (e) => {
+  const FORM_ENDPOINT = 'https://formsubmit.co/ajax/islam.daw@gmail.com';
+  cForm.addEventListener('submit', async (e) => {
     e.preventDefault();
     if (!cForm.checkValidity()) { cForm.reportValidity(); return; }
-    // (front-end) show a thank-you message
-    cForm.reset();
-    cBody.hidden = true;
-    cThanks.hidden = false;
+    const en = document.documentElement.lang === 'en';
+    const btn = cForm.querySelector('button[type="submit"]');
+    const orig = btn.innerHTML;
+    btn.disabled = true;
+    btn.textContent = en ? 'Sending…' : 'جارٍ الإرسال…';
+    const payload = {
+      name: document.getElementById('cm-name').value.trim(),
+      email: document.getElementById('cm-email').value.trim(),
+      phone: document.getElementById('cm-phone').value.trim(),
+      message: document.getElementById('cm-message').value.trim(),
+      _subject: 'طلب استشارة جديد من الموقع',
+      _template: 'table',
+      _captcha: 'false'
+    };
+    try {
+      const res = await fetch(FORM_ENDPOINT, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify(payload)
+      });
+      const json = await res.json().catch(() => ({}));
+      if (json && String(json.success) === 'true') {
+        cForm.reset();
+        cBody.hidden = true;
+        cThanks.hidden = false;
+      } else {
+        throw new Error(json && json.message ? json.message : 'send failed');
+      }
+    } catch (err) {
+      alert(en
+        ? 'Sorry, sending failed. Please contact me on WhatsApp: +970 599 268 700'
+        : 'عذرًا، تعذّر الإرسال. يرجى التواصل عبر واتساب: 970599268700+');
+    } finally {
+      btn.disabled = false;
+      btn.innerHTML = orig;
+    }
   });
 }
