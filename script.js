@@ -88,7 +88,7 @@ onScroll();
 
 // Reveal-on-scroll animation (with per-group stagger)
 const revealEls = document.querySelectorAll(
-  '.card, .feature, .work, .section-head, .contact-inner, .contact-actions, .social'
+  '.card, .feature, .work, .section-head, .contact-inner, .contact-actions, .social, .hire-panel'
 );
 revealEls.forEach((el) => el.classList.add('reveal'));
 

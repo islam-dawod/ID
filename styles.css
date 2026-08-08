@@ -786,3 +786,49 @@ body.modal-open { overflow: hidden; }
 @media (max-width: 680px) {
   .float-chip.chip-2 { inset-inline-end: -80px; }
 }
+
+/* ===== For companies / hire full-time ===== */
+#hire { padding: 80px 0; }
+.hire-panel {
+  position: relative;
+  border-radius: 30px;
+  padding: clamp(40px, 5vw, 66px) clamp(24px, 5vw, 68px);
+  background: var(--grad);
+  color: #fff;
+  text-align: center;
+  overflow: hidden;
+  box-shadow: 0 34px 70px -26px rgba(122, 63, 209, .6);
+}
+.hire-glow {
+  position: absolute; inset: 0; z-index: 0; pointer-events: none;
+  background:
+    radial-gradient(440px circle at 12% 15%, rgba(255,255,255,.22), transparent 60%),
+    radial-gradient(440px circle at 88% 88%, rgba(255,255,255,.15), transparent 60%);
+}
+.hire-content { position: relative; z-index: 1; max-width: 760px; margin: 0 auto; }
+.hire-badge {
+  display: inline-flex; align-items: center; gap: 9px;
+  background: rgba(255,255,255,.14); border: 1px solid rgba(255,255,255,.3);
+  color: #fff; padding: 8px 18px; border-radius: 999px; font-weight: 600; font-size: .92rem;
+}
+.hire-badge .dot { width: 9px; height: 9px; border-radius: 50%; background: #7dffa8; animation: hirePulse 2s infinite; }
+@keyframes hirePulse {
+  0% { box-shadow: 0 0 0 0 rgba(125,255,168,.6); }
+  70% { box-shadow: 0 0 0 10px rgba(125,255,168,0); }
+  100% { box-shadow: 0 0 0 0 rgba(125,255,168,0); }
+}
+.hire-panel h2 { color: #fff; font-size: clamp(1.6rem, 3.6vw, 2.5rem); margin: 20px 0 16px; line-height: 1.35; }
+.hire-content p { color: rgba(255,255,255,.92); font-size: 1.1rem; margin: 0 auto 26px; max-width: 640px; }
+.hire-skills { list-style: none; padding: 0; margin: 0 0 34px; display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
+.hire-skills li { background: rgba(255,255,255,.12); border: 1px solid rgba(255,255,255,.24); padding: 8px 16px; border-radius: 12px; font-size: .95rem; font-weight: 500; }
+.hire-actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 16px; }
+.hire-actions .btn { display: inline-flex; align-items: center; gap: 10px; }
+.hire-actions .btn svg { width: 20px; height: 20px; flex: none; }
+.hire-cv { background: #fff; color: var(--primary); border: 2px solid #fff; }
+.hire-cv:hover { transform: translateY(-3px); box-shadow: 0 16px 32px -10px rgba(0,0,0,.4); }
+.hire-contact { background: transparent; color: #fff; border: 2px solid rgba(255,255,255,.6); }
+.hire-contact:hover { background: #fff; color: var(--primary); border-color: #fff; }
+@media (max-width: 560px) {
+  .hire-actions { flex-direction: column; }
+  .hire-actions .btn { width: 100%; justify-content: center; }
+}
