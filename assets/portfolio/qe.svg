@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" font-family="'Segoe UI',Tahoma,sans-serif" direction="rtl">
+  <defs>
+    <linearGradient id="qe" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4c1d95"/>
+      <stop offset="1" stop-color="#9d174d"/>
+    </linearGradient>
+    <linearGradient id="qegold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f5d787"/>
+      <stop offset="1" stop-color="#d4a72c"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="#f2eef7"/>
+  <!-- browser window -->
+  <rect x="70" y="70" width="1060" height="660" rx="22" fill="#ffffff" stroke="#e2daec" stroke-width="2"/>
+  <rect x="70" y="70" width="1060" height="70" rx="22" fill="#f7f3fb"/>
+  <rect x="70" y="118" width="1060" height="22" fill="#f7f3fb"/>
+  <circle cx="112" cy="105" r="9" fill="#ff5f57"/>
+  <circle cx="146" cy="105" r="9" fill="#febc2e"/>
+  <circle cx="180" cy="105" r="9" fill="#28c840"/>
+  <rect x="360" y="90" width="640" height="30" rx="15" fill="#ffffff" stroke="#e2daec"/>
+  <text x="680" y="111" fill="#7c1d6f" font-size="17" text-anchor="middle" direction="ltr">🔒 qe.sa</text>
+  <!-- hero -->
+  <rect x="90" y="160" width="1020" height="300" rx="14" fill="url(#qe)"/>
+  <!-- confetti -->
+  <g opacity=".9">
+    <circle cx="200" cy="200" r="6" fill="#f5d787"/>
+    <rect x="280" y="185" width="10" height="10" rx="2" fill="#ff8fb1"/>
+    <circle cx="360" cy="215" r="5" fill="#7dd3fc"/>
+    <rect x="150" y="250" width="9" height="9" rx="2" fill="#f5d787"/>
+    <circle cx="330" cy="270" r="5" fill="#ffffff"/>
+  </g>
+  <text x="1050" y="248" fill="url(#qegold)" font-size="42" font-weight="800" text-anchor="end">نخبة الجودة للترفيه</text>
+  <text x="1050" y="300" fill="#f0dcef" font-size="22" text-anchor="end">تنظيم فعاليات · مؤتمرات · معارض · حفلات</text>
+  <rect x="810" y="335" width="240" height="56" rx="28" fill="url(#qegold)"/>
+  <text x="930" y="372" fill="#4c1d95" font-size="22" font-weight="800" text-anchor="middle">احجز فعاليتك</text>
+  <!-- service cards -->
+  <g>
+    <rect x="150" y="500" width="290" height="180" rx="14" fill="#ffffff" stroke="#ece3f3"/>
+    <rect x="470" y="500" width="290" height="180" rx="14" fill="#ffffff" stroke="#ece3f3"/>
+    <rect x="790" y="500" width="260" height="180" rx="14" fill="#ffffff" stroke="#ece3f3"/>
+    <circle cx="335" cy="555" r="26" fill="#9d174d" fill-opacity=".12"/>
+    <circle cx="655" cy="555" r="26" fill="#9d174d" fill-opacity=".12"/>
+    <circle cx="975" cy="555" r="26" fill="#9d174d" fill-opacity=".12"/>
+    <text x="360" y="622" fill="#4c1d95" font-size="20" font-weight="700" text-anchor="end">المؤتمرات</text>
+    <text x="680" y="622" fill="#4c1d95" font-size="20" font-weight="700" text-anchor="end">المعارض</text>
+    <text x="1000" y="622" fill="#4c1d95" font-size="20" font-weight="700" text-anchor="end">الحفلات</text>
+    <rect x="180" y="642" width="150" height="11" rx="5" fill="#eee3f4"/>
+    <rect x="500" y="642" width="150" height="11" rx="5" fill="#eee3f4"/>
+    <rect x="820" y="642" width="150" height="11" rx="5" fill="#eee3f4"/>
+  </g>
+</svg>
