@@ -696,3 +696,7 @@ body.modal-open { overflow: hidden; }
 @media (prefers-reduced-motion: reduce) {
   .modal-overlay, .modal-box { animation: none; }
 }
+
+/* Reduce empty space below the back-to-top arrow (last section) */
+.contact { padding-bottom: 40px; }
+.contact .back-top { margin-top: 34px; }
