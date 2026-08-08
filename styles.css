@@ -852,3 +852,15 @@ body.modal-open { overflow: hidden; }
 
 /* Icons inside hero action buttons */
 .hero-actions .btn svg { width: 20px; height: 20px; flex: none; }
+
+/* Nav "Start project" CTA icon */
+.nav-cta svg { width: 16px; height: 16px; flex: none; }
+
+/* Mobile: center card content in services & portfolio, tune hero buttons */
+@media (max-width: 600px) {
+  .card { text-align: center; }
+  .card-icon { margin-inline: auto; }
+  .work-body { text-align: center; }
+  .hero-actions .btn { padding: 12px 12px; gap: 6px; font-size: .82rem; }
+  .hero-actions .btn svg { width: 15px; height: 15px; }
+}
