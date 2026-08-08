@@ -864,3 +864,9 @@ body.modal-open { overflow: hidden; }
   .hero-actions .btn { padding: 12px 12px; gap: 6px; font-size: .82rem; }
   .hero-actions .btn svg { width: 15px; height: 15px; }
 }
+
+/* Mobile: center hero (first section) content */
+@media (max-width: 600px) {
+  .hero-text { text-align: center; }
+  .hero-status { margin-inline: auto; }
+}
