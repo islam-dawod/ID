@@ -870,3 +870,9 @@ body.modal-open { overflow: hidden; }
   .hero-text { text-align: center; }
   .hero-status { margin-inline: auto; }
 }
+
+/* Mobile: show hero image first, then the text */
+@media (max-width: 600px) {
+  .hero-portrait { order: -1; }
+  .hero-text { order: 0; }
+}
