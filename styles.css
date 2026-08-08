@@ -770,3 +770,11 @@ body.modal-open { overflow: hidden; }
 /* Services card titles on a single line */
 .card h3 { font-size: 1.02rem; white-space: nowrap; }
 @media (max-width: 600px) { .card h3 { font-size: .96rem; } }
+
+/* ===== Mobile: hide "why" section + hero buttons side-by-side ===== */
+@media (max-width: 600px) {
+  #why { display: none; }
+  .nav a[href="#why"] { display: none; }
+  .hero-actions { flex-wrap: nowrap; gap: 10px; }
+  .hero-actions .btn { flex: 1 1 0; min-width: 0; padding: 12px 8px; font-size: .85rem; white-space: nowrap; }
+}
