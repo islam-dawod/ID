@@ -832,3 +832,8 @@ body.modal-open { overflow: hidden; }
   .hire-actions { flex-direction: column; }
   .hire-actions .btn { width: 100%; justify-content: center; }
 }
+
+/* "Hire me" nav button — outline, paired next to the gradient CTA */
+.nav-cta-hire { background: #fff; border-color: var(--primary); color: var(--primary); }
+.nav-cta-hire:hover { background: var(--primary); border-color: var(--primary); color: #fff; }
+.nav .nav-cta-hire { margin-inline-start: -10px; }
