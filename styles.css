@@ -876,3 +876,8 @@ body.modal-open { overflow: hidden; }
   .hero-portrait { order: -1; }
   .hero-text { order: 0; }
 }
+
+/* Mobile: shrink hero photo ~30% */
+@media (max-width: 600px) {
+  .hero-portrait { max-width: 210px; }
+}
