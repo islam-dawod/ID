@@ -170,3 +170,73 @@ a { color: inherit; text-decoration: none; }
   .hero-bg::before, .wa-fab::before { animation: none; }
   html { scroll-behavior: auto; }
 }
+
+/* ===== v2: hero form layout + works + dark footer ===== */
+.hero-inner { align-items: center; }
+.hero-copy .btn { margin-top: 6px; }
+
+/* Hero contact form card (left column) */
+.hero-form {
+  background: #fff; border: 1px solid var(--border); border-radius: 20px;
+  padding: 30px 28px; box-shadow: var(--shadow);
+  display: grid; gap: 14px; align-content: start;
+}
+.hero-form h3 { font-size: 1.5rem; margin: 0; }
+.hf-sub { color: var(--muted); margin: -6px 0 4px; font-size: .98rem; }
+.hero-form .field { display: grid; gap: 6px; }
+.hero-form label { font-size: .85rem; font-weight: 600; color: var(--muted); }
+.hero-form input, .hero-form select, .hero-form textarea {
+  font-family: inherit; font-size: 1rem; color: var(--text);
+  background: var(--bg-alt); border: 1px solid var(--border);
+  border-radius: 10px; padding: 12px 14px; outline: none;
+  transition: border-color .2s ease, box-shadow .2s ease;
+}
+.hero-form textarea { resize: vertical; }
+.hero-form select { cursor: pointer; }
+.hero-form input::placeholder, .hero-form textarea::placeholder { color: #9aa8c4; }
+.hero-form input:focus, .hero-form select:focus, .hero-form textarea:focus {
+  border-color: var(--primary); box-shadow: 0 0 0 3px rgba(0,102,204,.15);
+}
+.form-note { margin: 4px 0 0; text-align: center; font-weight: 600; color: #0a7d4b; }
+
+/* Works / portfolio */
+.works { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; }
+.work { display: flex; flex-direction: column; background: var(--surface);
+  border: 1px solid var(--border); border-radius: 16px; overflow: hidden;
+  box-shadow: var(--shadow-sm); transition: transform .25s ease, box-shadow .25s ease; }
+.work:hover { transform: translateY(-6px); box-shadow: var(--shadow); }
+.work-thumb { aspect-ratio: 3 / 2; overflow: hidden; background: var(--bg-alt); }
+.work-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .5s ease; }
+.work:hover .work-thumb img { transform: scale(1.05); }
+.work-body { padding: 18px 20px 22px; text-align: start; }
+.work-tag { display: inline-block; font-size: .8rem; font-weight: 700; color: var(--primary);
+  background: rgba(0,102,204,.08); border: 1px solid var(--border); padding: 4px 12px; border-radius: 999px; margin-bottom: 10px; }
+.work-body h3 { font-size: 1.18rem; margin: 0; }
+
+/* Dark footer (like the main site) */
+.lp-footer { position: relative; overflow: hidden; color: #fff; padding: 74px 0 38px;
+  background: radial-gradient(55% 60% at 50% -12%, rgba(122,63,209,.30), transparent 70%),
+              radial-gradient(45% 55% at 88% 108%, rgba(0,102,204,.28), transparent 70%),
+              linear-gradient(160deg, #182452, #0d1533); }
+.lp-footer-inner { position: relative; z-index: 1; max-width: 720px; margin: 0 auto; text-align: center; }
+.lp-footer .kicker { color: #dbe6ff; background: rgba(255,255,255,.08); border-color: rgba(255,255,255,.18); }
+.lp-footer h2 { color: #fff; font-size: clamp(1.7rem, 4vw, 2.4rem); margin: 12px 0 12px; }
+.lp-foot-lead { color: #b9c4e0; margin: 0 auto 26px; font-size: 1.06rem; max-width: 540px; }
+.lp-foot-actions { display: flex; justify-content: center; flex-wrap: wrap; gap: 14px; }
+.lp-footer .btn-ghost { background: rgba(255,255,255,.04); color: #fff; border-color: rgba(255,255,255,.35); }
+.lp-footer .btn-ghost:hover { background: #fff; color: var(--text); border-color: #fff; }
+.lp-contact-details { display: flex; justify-content: center; flex-wrap: wrap; gap: 8px 26px; margin-top: 22px; }
+.lp-contact-details .cd-item { color: #cdd6ec; font-weight: 600; transition: color .2s ease; }
+.lp-contact-details .cd-item span { direction: ltr; }
+.lp-contact-details .cd-item:hover { color: #fff; }
+.social { list-style: none; display: flex; justify-content: center; flex-wrap: wrap; gap: 12px; margin: 26px 0 22px; padding: 0; }
+.social a { display: grid; place-items: center; width: 46px; height: 46px; border-radius: 50%;
+  background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.22); color: #fff;
+  transition: background .25s ease, border-color .25s ease, transform .25s ease; }
+.social a:hover { background: var(--grad); border-color: transparent; transform: translateY(-3px); }
+.social svg { width: 19px; height: 19px; }
+.lp-copy { color: #9fb0d6; font-size: .9rem; margin: 6px 0 0; }
+
+@media (max-width: 860px) {
+  .hero-form { order: 2; }
+}
