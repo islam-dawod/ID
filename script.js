@@ -25,7 +25,7 @@ function applyLang(lang) {
   });
 
   if (langToggle) {
-    langToggle.textContent = en ? 'ع' : 'EN';
+    langToggle.textContent = en ? 'العربية' : 'EN';
     langToggle.setAttribute('aria-label', en ? 'التبديل إلى العربية' : 'Switch to English');
   }
   try { localStorage.setItem(LANG_KEY, lang); } catch (e) {}
