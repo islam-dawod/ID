@@ -114,3 +114,40 @@ const observer = new IntersectionObserver(
   { threshold: 0.12 }
 );
 revealEls.forEach((el) => observer.observe(el));
+
+// ===== Consultation modal =====
+const consultModal = document.getElementById('consultModal');
+const openConsultBtn = document.getElementById('openConsult');
+if (consultModal && openConsultBtn) {
+  const cBody = document.getElementById('consultBody');
+  const cThanks = document.getElementById('consultThanks');
+  const cForm = document.getElementById('consultForm');
+
+  const openModal = () => {
+    cBody.hidden = false;
+    cThanks.hidden = true;
+    consultModal.hidden = false;
+    document.body.classList.add('modal-open');
+    const first = document.getElementById('cm-name');
+    if (first) setTimeout(() => first.focus(), 50);
+  };
+  const closeModal = () => {
+    consultModal.hidden = true;
+    document.body.classList.remove('modal-open');
+  };
+
+  openConsultBtn.addEventListener('click', openModal);
+  consultModal.querySelectorAll('[data-close]').forEach((el) => el.addEventListener('click', closeModal));
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && !consultModal.hidden) closeModal();
+  });
+
+  cForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    if (!cForm.checkValidity()) { cForm.reportValidity(); return; }
+    // (front-end) show a thank-you message
+    cForm.reset();
+    cBody.hidden = true;
+    cThanks.hidden = false;
+  });
+}

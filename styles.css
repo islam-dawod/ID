@@ -643,3 +643,56 @@ html[lang="en"] .contact-inner h2 { white-space: normal; }
     animation: none !important;
   }
 }
+
+/* ===== Consultation modal ===== */
+.modal { position: fixed; inset: 0; z-index: 120; display: grid; place-items: center; padding: 20px; }
+.modal[hidden] { display: none; }
+.modal-overlay { position: absolute; inset: 0; background: rgba(9, 14, 33, .6); backdrop-filter: blur(4px); animation: fadeIn .25s ease; }
+.modal-box {
+  position: relative; z-index: 1;
+  width: 100%; max-width: 460px; max-height: 92vh; overflow-y: auto;
+  background: #fff; color: var(--text);
+  border-radius: 20px; padding: 34px 30px 30px;
+  box-shadow: 0 30px 70px -20px rgba(0,0,0,.5);
+  animation: popIn .28s cubic-bezier(.2,.8,.3,1);
+}
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes popIn { from { opacity: 0; transform: translateY(16px) scale(.96); } to { opacity: 1; transform: none; } }
+.modal-close {
+  position: absolute; inset-inline-end: 16px; top: 14px;
+  width: 36px; height: 36px; border-radius: 50%;
+  border: 1px solid var(--border); background: var(--bg-alt); color: var(--muted);
+  font-size: 1.5rem; line-height: 1; cursor: pointer; transition: background .2s, color .2s;
+}
+.modal-close:hover { background: var(--primary); color: #fff; border-color: transparent; }
+.modal-badge {
+  display: inline-grid; place-items: center; width: 58px; height: 58px; border-radius: 16px;
+  font-size: 1.7rem; margin-bottom: 14px;
+  background: linear-gradient(135deg, rgba(0,102,204,.12), rgba(122,63,209,.16));
+}
+.modal-box h3 { font-size: 1.5rem; margin-bottom: 6px; }
+.modal-sub { color: var(--muted); margin: 0 0 20px; font-size: 1rem; }
+#consultForm { display: grid; gap: 14px; text-align: start; }
+#consultForm .field { display: grid; gap: 6px; }
+#consultForm label { font-size: .85rem; font-weight: 600; color: var(--muted); }
+#consultForm input, #consultForm textarea {
+  font-family: inherit; font-size: 1rem; color: var(--text);
+  background: var(--bg-alt); border: 1px solid var(--border);
+  border-radius: 10px; padding: 12px 14px; outline: none;
+  transition: border-color .2s, box-shadow .2s;
+}
+#consultForm textarea { resize: vertical; }
+#consultForm input:focus, #consultForm textarea:focus { border-color: var(--primary); box-shadow: 0 0 0 3px rgba(0,102,204,.15); }
+#consultForm .btn { margin-top: 6px; }
+.modal-thanks { text-align: center; padding: 16px 6px 6px; }
+.thanks-ic {
+  display: inline-grid; place-items: center; width: 74px; height: 74px; border-radius: 50%;
+  font-size: 2.2rem; margin-bottom: 12px;
+  background: rgba(16,185,129,.12); border: 1px solid rgba(16,185,129,.3);
+}
+.modal-thanks h3 { font-size: 1.6rem; margin-bottom: 8px; }
+.modal-thanks p { color: var(--muted); margin: 0 0 22px; }
+body.modal-open { overflow: hidden; }
+@media (prefers-reduced-motion: reduce) {
+  .modal-overlay, .modal-box { animation: none; }
+}
