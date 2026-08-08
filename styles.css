@@ -778,3 +778,8 @@ body.modal-open { overflow: hidden; }
   .hero-actions { flex-wrap: nowrap; gap: 10px; }
   .hero-actions .btn { flex: 1 1 0; min-width: 0; padding: 12px 8px; font-size: .85rem; white-space: nowrap; }
 }
+
+/* Raise the 'digital marketing' chip and keep it off the photo (stacked layout) */
+@media (max-width: 900px) {
+  .float-chip.chip-2 { bottom: auto; top: 44%; inset-inline-end: -85px; }
+}
