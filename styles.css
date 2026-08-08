@@ -766,3 +766,7 @@ body.modal-open { overflow: hidden; }
 }
 .card h3 { transition: color .3s ease; }
 .card:hover h3 { color: var(--primary); }
+
+/* Services card titles on a single line */
+.card h3 { font-size: 1.02rem; white-space: nowrap; }
+@media (max-width: 600px) { .card h3 { font-size: .96rem; } }
