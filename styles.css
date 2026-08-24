@@ -520,8 +520,6 @@ html[lang="en"] .contact-inner h2 { white-space: normal; }
   .hero-portrait { max-width: 360px; margin-inline: auto; }
   .about-inner { grid-template-columns: 1fr; gap: 38px; }
   .about-photo { order: -1; max-width: 480px; }
-}
-@media (max-width: 480px) {
   .float-chip { display: none; }
 }
 @media (max-width: 720px) {
