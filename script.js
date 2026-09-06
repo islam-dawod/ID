@@ -88,12 +88,12 @@ onScroll();
 
 // Reveal-on-scroll animation (with per-group stagger)
 const revealEls = document.querySelectorAll(
-  '.card, .feature, .work, .section-head, .contact-inner, .contact-actions, .social, .hire-panel'
+  '.card, .feature, .work, .zscreen, .zuwar-intro, .section-head, .contact-inner, .contact-actions, .social, .hire-panel'
 );
 revealEls.forEach((el) => el.classList.add('reveal'));
 
 // Stagger items that share the same grid/parent
-document.querySelectorAll('.cards, .features, .portfolio-grid').forEach((grid) => {
+document.querySelectorAll('.cards, .features, .portfolio-grid, .zuwar-gallery').forEach((grid) => {
   Array.from(grid.children).forEach((child, i) => {
     child.style.transitionDelay = (i % 3) * 0.09 + 0.05 * Math.floor(i / 3) + 's';
   });

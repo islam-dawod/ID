@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ar"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&amp;family=Montserrat:wght@500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#FBF9F5;}body{overscroll-behavior:none;font-family:'Cairo',sans-serif;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-primary-fixed-variant": "#30476b", "surface-container-lowest": "#ffffff", "on-secondary": "#ffffff", "secondary-fixed": "#ffdf98", "secondary-container": "#fece57", "surface-container-highest": "#dbe3f2", "error": "#ba1a1a", "surface-container-low": "#eff4ff", "olive-accent": "#526343", "surface-container-high": "#e1e8f8", "surface-cream": "#FBF9F5", "surface-dim": "#d2daea", "on-error": "#ffffff", "on-primary": "#ffffff", "outline-variant": "#c4c6cf", "on-secondary-container": "#735700", "on-surface-variant": "#44474e", "on-surface": "#141c27", "on-error-container": "#93000a", "surface-variant": "#dbe3f2", "inverse-surface": "#29313c", "background": "#f8f9ff", "primary": "#00142f", "surface-cream-alt": "#F3EFE6", "primary-fixed": "#d5e3ff", "inverse-primary": "#b0c8f2", "tertiary-container": "#352600", "on-tertiary": "#ffffff", "on-primary-fixed": "#001b3c", "on-background": "#141c27", "surface-bright": "#f8f9ff", "on-secondary-fixed": "#251a00", "error-container": "#ffdad6", "gold-light": "#E5C86E", "inverse-on-surface": "#eaf1ff", "on-tertiary-fixed": "#251a00", "navy-deep": "#07172C", "surface": "#f8f9ff", "secondary-fixed-dim": "#eec14b", "tertiary-fixed": "#ffdf9c", "on-tertiary-container": "#ad8b3b", "primary-container": "#0e294b", "pomegranate": "#8A242B", "surface-tint": "#485f84", "surface-container": "#e6eefe", "primary-fixed-dim": "#b0c8f2", "outline": "#74777f", "navy-elevated": "#173660", "on-secondary-fixed-variant": "#5a4300", "on-primary-container": "#7991b9", "tertiary": "#1c1300", "on-tertiary-fixed-variant": "#5b4300", "secondary": "#775a00", "gold-pressed": "#9E7B1A", "tertiary-fixed-dim": "#e8c26b" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-sm": "0.75rem", "space-xxs": "0.25rem", "gutter-mobile": "1rem", "safe-bottom-action": "5.5rem", "space-2xl": "3rem", "space-3xl": "4rem", "space-xs": "0.5rem", "space-lg": "1.5rem", "space-xl": "2rem", "gutter-tablet": "1.5rem", "margin-screen": "1.25rem", "space-md": "1rem" }, fontFamily: { "display-hero-mobile": ["Cairo"], "price-tag": ["Montserrat"], "label-md": ["Montserrat"], "body-sm": ["Cairo"], "body-md": ["Cairo"], "headline-md": ["Cairo"], "headline-sm": ["Cairo"], "body-lg": ["Cairo"], "headline-lg": ["Cairo"], "display-hero": ["Cairo"], "label-lg": ["Cairo"], "label-sm": ["Montserrat"] }, fontSize: { "display-hero-mobile": ["30px", { "lineHeight": "40px", "letterSpacing": "0em", "fontWeight": "700" }], "price-tag": ["18px", { "lineHeight": "22px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.08em", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "18px", "letterSpacing": "0em", "fontWeight": "400" }], "body-md": ["14px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "400" }], "headline-md": ["22px", { "lineHeight": "32px", "letterSpacing": "0em", "fontWeight": "600" }], "headline-sm": ["18px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "400" }], "headline-lg": ["26px", { "lineHeight": "36px", "letterSpacing": "0em", "fontWeight": "700" }], "display-hero": ["40px", { "lineHeight": "52px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "label-lg": ["15px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "600" }], "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "500" }] } } } }</script></head><body class="bg-surface-cream font-body-md text-on-surface antialiased flex flex-col min-h-screen selection:bg-secondary-fixed selection:text-on-secondary-fixed"><header class="fixed top-0 inset-x-0 z-50 bg-primary/95 backdrop-blur-xl pt-safe shadow-[0_8px_30px_rgba(7,23,44,0.18)]"><div class="h-20 px-margin-screen flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm"><div class="relative flex-shrink-0"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1U6DmBDs_IpfmC0q4ZHSaY7GC_MuvEzBciRxmeWaToOc3ZTNWSPJoyyRO5xF2g9GRc1bnEaQ-Npq8dXXvEyJwEDajcf4Cjj2Uk9GZJiZUeiGscp7TGIAUt6bNqa-4Zg9yELdjviCLXKBGfeqXfEF3e2ArB_52-Y0Zdwd-UDzAxxsjaMWmnlqlSBFEMSE6mH8i-jox_DDLoiNz4N3gozNay2idMTAn5OYnWT3B-AkkNTzLkTu-QC-R3O-jM"/><div class="absolute -bottom-0.5 -right-0.5 w-2.5 h-2.5 bg-secondary rounded-full"></div></div><div class="flex flex-col text-right"><div class="flex items-center gap-1.5"><span class="font-headline-sm text-headline-sm text-surface-cream font-bold leading-none tracking-normal">زوار</span><span class="px-1.5 py-0.5 rounded-full bg-secondary/20 text-gold-light font-label-sm text-label-sm">الخليل</span></div><div class="flex items-center gap-1 mt-1 text-surface-container-highest/80"><span class="material-symbols-outlined text-[14px] text-gold-light">location_on</span><span class="font-body-sm text-body-sm truncate max-w-[120px]">رأس الجورة</span></div></div></div><div class="flex items-center gap-space-xs"><button class="h-11 px-space-sm rounded-full bg-navy-elevated/80 text-surface-cream flex items-center gap-1.5 active:scale-95 transition-transform duration-150"><span class="material-symbols-outlined text-gold-light text-[18px]">room_service</span><span class="font-label-md text-label-md font-semibold text-gold-light hidden xs:inline">طلب نادل</span></button><button aria-label="سلة الطلبات" class="relative w-11 h-11 rounded-full bg-navy-elevated/80 text-surface-cream flex items-center justify-center active:scale-95 transition-transform duration-150"><span class="material-symbols-outlined text-[20px] text-surface-cream">shopping_bag</span><span class="absolute top-1 right-1 w-4 h-4 rounded-full bg-pomegranate text-on-error font-label-sm text-label-sm flex items-center justify-center font-bold">2</span></button></div></div></header><main class="flex flex-col relative w-full pt-20 pb-safe-bottom-action bg-surface-cream min-h-screen"><div class="flex flex-col w-full text-right" dir="rtl">
+<!-- Search and Header Filter Bar -->
+<div class="sticky top-20 z-40 bg-surface-cream/95 backdrop-blur-md px-margin-screen pt-space-sm pb-space-xs shadow-sm flex flex-col gap-space-xs">
+<div class="relative w-full flex items-center">
+<input class="w-full h-12 pr-11 pl-11 rounded-full bg-surface-cream-alt text-on-surface placeholder:text-on-surface-variant/60 text-body-md font-body-md focus:outline-none focus:bg-surface-container-lowest transition-all shadow-sm" id="menu-search-input" placeholder="ابحث عن وجبتك المفضلة (ستيك، بيتزا، برغر...)" type="text"/>
+<span class="material-symbols-outlined absolute right-3.5 text-secondary text-[22px] pointer-events-none">search</span>
+<button class="material-symbols-outlined absolute left-3.5 text-on-surface-variant/50 hover:text-on-surface text-[20px] hidden" id="clear-search-btn" onclick="clearSearch()">
+        cancel
+      </button>
+</div>
+<!-- Quick Status / Recommendation Badge -->
+<div class="flex items-center justify-between py-1 px-1 text-on-surface-variant">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary animate-ping"></span>
+<span class="font-label-md text-label-md text-secondary-fixed-variant font-bold">المطبخ يستقبل الطلبات</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant/80">الخليل • رأس الجورة</span>
+</div>
+</div>
+<!-- Category Pills Slider (Horizontal Scroll) -->
+<div class="w-full overflow-x-auto py-space-xs px-margin-screen flex items-center gap-space-xs no-scrollbar">
+<button class="cat-tab-btn flex-shrink-0 px-4 py-2 rounded-full text-body-sm font-headline-sm transition-all duration-200 bg-navy-elevated text-surface-cream shadow-sm flex items-center gap-1.5" data-cat="all">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-container"></span>
+<span>كافة الأصناف</span>
+</button>
+<button class="cat-tab-btn flex-shrink-0 px-4 py-2 rounded-full text-body-sm font-body-md transition-all duration-200 bg-surface-container-lowest text-on-surface shadow-sm hover:bg-surface-container-high" data-cat="meat">
+      وجبات اللحوم
+    </button>
+<button class="cat-tab-btn flex-shrink-0 px-4 py-2 rounded-full text-body-sm font-body-md transition-all duration-200 bg-surface-container-lowest text-on-surface shadow-sm hover:bg-surface-container-high" data-cat="bbq">
+      مشاوي (.BBQ)
+    </button>
+<button class="cat-tab-btn flex-shrink-0 px-4 py-2 rounded-full text-body-sm font-body-md transition-all duration-200 bg-surface-container-lowest text-on-surface shadow-sm hover:bg-surface-container-high" data-cat="italian">
+      الباستا والإيطالي
+    </button>
+<button class="cat-tab-btn flex-shrink-0 px-4 py-2 rounded-full text-body-sm font-body-md transition-all duration-200 bg-surface-container-lowest text-on-surface shadow-sm hover:bg-surface-container-high" data-cat="pizza">
+      بيتزا ومعجنات
+    </button>
+<button class="cat-tab-btn flex-shrink-0 px-4 py-2 rounded-full text-body-sm font-body-md transition-all duration-200 bg-surface-container-lowest text-on-surface shadow-sm hover:bg-surface-container-high" data-cat="burgers">
+      برغر وساندويش
+    </button>
+<button class="cat-tab-btn flex-shrink-0 px-4 py-2 rounded-full text-body-sm font-body-md transition-all duration-200 bg-surface-container-lowest text-on-surface shadow-sm hover:bg-surface-container-high" data-cat="asian">
+      الوجبات الآسيوية
+    </button>
+<button class="cat-tab-btn flex-shrink-0 px-4 py-2 rounded-full text-body-sm font-body-md transition-all duration-200 bg-surface-container-lowest text-on-surface shadow-sm hover:bg-surface-container-high" data-cat="seafood">
+      الأكل البحري
+    </button>
+</div>
+<!-- Chef Highlight Banner (Warm Palestinian Gastronomy) -->
+<div class="mx-margin-screen mt-space-xs mb-space-sm p-4 rounded-2xl bg-primary text-surface-cream shadow-md relative overflow-hidden flex items-center justify-between">
+<div class="relative z-10 flex flex-col gap-1 max-w-[65%]">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[18px]">workspace_premium</span>
+<span class="font-label-sm text-label-sm text-gold-light tracking-wide">اختيار الشيف الأسبوعي</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-surface-cream">أصالة نكهات الخليل</h3>
+<p class="font-body-sm text-body-sm text-surface-container-highest/80 line-clamp-1">لحوم بلدية طازجة وتتبيلات إيطالية وشرقية استثنائية.</p>
+</div>
+<div class="relative z-10 flex flex-col items-center justify-center pl-2">
+<span class="font-headline-md text-headline-md font-bold text-secondary-container">130 <span class="text-xs">₪</span></span>
+<span class="font-label-sm text-[10px] text-surface-cream/70">انتركوت ريب آي</span>
+</div>
+<div class="absolute -left-6 -bottom-6 w-28 h-28 rounded-full bg-secondary/10 pointer-events-none"></div>
+</div>
+<!-- Main Culinary List Container -->
+<div class="px-margin-screen flex flex-col gap-space-md mb-space-3xl" id="menu-items-container">
+<!-- Item 1: ريب آي انتركوت (وجبات اللحوم) -->
+<div class="menu-card bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm flex flex-col transition-all duration-200" data-cat="meat" data-title="ريب آي انتركوت ستيك عجل">
+<div class="relative w-full h-48 bg-surface-container-highest">
+<img alt="ريب آي انتركوت" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1UXd3cnI8KPz0rhHg68nuTtZKowle2BzAdMGiZbVqeAPnFrdDgiJmpamaSNRw8d3JW8yarLOkv_jBK2pqaDrVY15wz-3FYBS9VuDSxGi_kw03zII1pUKhbKYoxYua660FpgykLZKRG_VZ18HxuwWGI8cTvJ0mcsXXUw9flBgFUrehWxcHdT4a9-drZCxTCkSYtQUlEdpBjp6DU_4H3TxlRmL-uzl7z5KPLBSC0bR5O_1eWa3gRTENvkLaKY"/>
+<div class="absolute top-3 right-3 bg-navy-deep/80 backdrop-blur-sm text-secondary-fixed font-label-md text-label-md px-2.5 py-1 rounded-full flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-secondary-fixed text-[14px]">star</span>
+<span>الأعلى طلباً</span>
+</div>
+</div>
+<div class="p-space-sm flex flex-col gap-2">
+<div class="flex items-baseline justify-between">
+<div>
+<h4 class="font-headline-sm text-headline-sm font-bold text-on-surface">ريب آي (انتركوت)</h4>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-price-tag">Rib-eye (Entrecote) Steak</span>
+</div>
+<div class="font-price-tag text-price-tag text-secondary font-bold">
+            130 <span class="text-sm font-normal">₪</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed line-clamp-2">
+          400-350 غم، قطعة من أفضل قطعيات العجل الفاخرة تقدم مع بطاطا شيبس وثلاث أنواع سلطات فاخرة وبدرجة استواء ميديوم.
+        </p>
+<div class="pt-2 flex items-center justify-between">
+<button class="font-body-sm text-body-sm text-navy-elevated font-semibold flex items-center gap-0.5 hover:underline" onclick="openDetailsModal('ريب آي (انتركوت)', '130 ₪', '400-350 غم، قطعة من أفضل قطعيات العجل تقدم مع بطاطا شيبس وثلاث أنواع سلطات وبدرجة إستواء ميديوم حسب اختيارك الفندقي الفاخر.', 'وجبة لحوم فاخرة')">
+<span class="material-symbols-outlined text-[16px]">info</span>
+<span>تفاصيل الوجبة</span>
+</button>
+<div class="flex items-center gap-2" id="cart-ctrl-item-8">
+<button class="h-9 px-3 rounded-full bg-navy-deep hover:bg-navy-elevated text-surface-cream font-body-sm flex items-center gap-1 active:scale-95 transition-all shadow-sm" onclick="updateCartItem('ريب آي (انتركوت)', 130, 1)">
+<span class="material-symbols-outlined text-[18px] text-secondary">add</span>
+<span class="font-label-md text-label-md">إضافة</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Item 2: شقف خاروف (مشاوي BBQ) -->
+<div class="menu-card bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm flex flex-col transition-all duration-200" data-cat="bbq" data-title="شقف خاروف مشاوي كباب">
+<div class="relative w-full h-48 bg-surface-container-highest">
+<img alt="شقف خاروف مشوية على الفحم" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1WWIImLZVMgfj1BCyxg4hUdfe9cZbYVZ7U_XTujaV7kVuxWM6UTcjTS7u3gcNz3xpbD3Jdv4f5Jaw2LLoHM9Ok6vXhK_ShY_K19m4tYz_9T0-QXrmyBgz7GGlOFnigZz8y56tiKTOBkPa-hiEu-ulm6WB74F3Y66NqBbGHply9danBbBGLz6gaiXelrzxT3BoRqt7LMmhwU18PBpdCEhGJGPjX8acbMAfcW5XIpG-KlQA4x3FFU0DurXHk"/>
+<div class="absolute top-3 right-3 bg-surface-container-lowest/90 backdrop-blur-sm text-pomegranate font-label-md text-label-md px-2.5 py-1 rounded-full font-bold shadow-sm">
+          مشاوي على الفحم
+        </div>
+</div>
+<div class="p-space-sm flex flex-col gap-2">
+<div class="flex items-baseline justify-between">
+<div>
+<h4 class="font-headline-sm text-headline-sm font-bold text-on-surface">شقف خاروف بلدي</h4>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-price-tag">Lamb Ras Asfour Charcoal</span>
+</div>
+<div class="font-price-tag text-price-tag text-secondary font-bold">
+            95 <span class="text-sm font-normal">₪</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed line-clamp-2">
+          3 أسياخ لحم خاروف طازج متبل بخلطة زوار الأصيلة، تقدم مع بطاطا شيبس مقرمشة وثلاث أنواع سلطات طازجة.
+        </p>
+<div class="pt-2 flex items-center justify-between">
+<button class="font-body-sm text-body-sm text-navy-elevated font-semibold flex items-center gap-0.5 hover:underline" onclick="openDetailsModal('شقف خاروف بلدي', '95 ₪', '3 أسياخ لحم طازج - تقدم مع بطاطا شيبس وثلاث أنواع سلطات بيتية. وجبتك تُحضّر خصيصًا لك على الفحم لتصل بأعلى طراوة.', 'مشاوي زوار')">
+<span class="material-symbols-outlined text-[16px]">info</span>
+<span>تفاصيل الوجبة</span>
+</button>
+<div class="flex items-center gap-2">
+<button class="h-9 px-3 rounded-full bg-navy-deep hover:bg-navy-elevated text-surface-cream font-body-sm flex items-center gap-1 active:scale-95 transition-all shadow-sm" onclick="updateCartItem('شقف خاروف بلدي', 95, 1)">
+<span class="material-symbols-outlined text-[18px] text-secondary">add</span>
+<span class="font-label-md text-label-md">إضافة</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Item 3: فيتوتشيني ألفريدو (الباستا والإيطالي) -->
+<div class="menu-card bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm flex flex-col transition-all duration-200" data-cat="italian" data-title="فيتوتشيني الفريدو باستا كريما فطر">
+<div class="relative w-full h-48 bg-surface-container-highest">
+<img class="w-full h-full object-cover" data-alt="Gourmet fettuccine alfredo with fresh sauteed sliced button mushrooms, rich silky parmesan cream sauce, garnished with finely grated aged parmesan cheese and fresh herbs, warm ambient restaurant table lighting, high-end food styling." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWnngcbQmUWA-elsNYXu1BaLPm6LkJq7_M-J9A8gZHioj7-rcQ8bolEs8RAveJoP3RdORVsykfzqDWeBgrsbxtBjmadjXOLEjjDuC_MJL-SxpcQUQ-N-KGKio_dsKpzHSanr8Iy-AZMncrXJRpuqCGCXS5npzyd38tXOaugNIbemY3IzdiIe9ushtw-yyHPUN7ADkji1tLgGuu5Zy08PPHyzgKnu0D9yDC8xTt7kgIVnPmYpZBf4_72g"/>
+<div class="absolute top-3 right-3 bg-surface-container-lowest/90 backdrop-blur-sm text-olive-accent font-label-md text-label-md px-2.5 py-1 rounded-full font-bold shadow-sm">
+          أطباق إيطالية
+        </div>
+</div>
+<div class="p-space-sm flex flex-col gap-2">
+<div class="flex items-baseline justify-between">
+<div>
+<h4 class="font-headline-sm text-headline-sm font-bold text-on-surface">فيتوتشيني ألفريدو</h4>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-price-tag">Fettuccine Alfredo Cream</span>
+</div>
+<div class="font-price-tag text-price-tag text-secondary font-bold">
+            37 <span class="text-sm font-normal">₪</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed line-clamp-2">
+          مشروم طازج، فريش كريم غنية، معكرونة فيتوتشيني مسلوقة بلطف، وجبنة البارميزان المعتقة الفاخرة.
+        </p>
+<div class="pt-2 flex items-center justify-between">
+<button class="font-body-sm text-body-sm text-navy-elevated font-semibold flex items-center gap-0.5 hover:underline" onclick="openDetailsModal('فيتوتشيني ألفريدو', '37 ₪', 'مشروم طازج ، فرش كريم غني ومخفوق على الطريقة الإيطالية ، جبنة البارميزان وأعشاب برية طازجة.', 'باستا إيطالية')">
+<span class="material-symbols-outlined text-[16px]">info</span>
+<span>تفاصيل الوجبة</span>
+</button>
+<div class="flex items-center gap-2">
+<button class="h-9 px-3 rounded-full bg-navy-deep hover:bg-navy-elevated text-surface-cream font-body-sm flex items-center gap-1 active:scale-95 transition-all shadow-sm" onclick="updateCartItem('فيتوتشيني ألفريدو', 37, 1)">
+<span class="material-symbols-outlined text-[18px] text-secondary">add</span>
+<span class="font-label-md text-label-md">إضافة</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Item 4: بيني تشيز باستا (الباستا والإيطالي) -->
+<div class="menu-card bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm flex flex-col transition-all duration-200" data-cat="italian" data-title="بيني تشيز باستا جبنة موتزاريلا">
+<div class="relative w-full h-48 bg-surface-container-highest">
+<img alt="بيني تشيز باستا" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1WzivSkXTzMXQ3U8lsUNycb3ztIrd9J8u71rI1yXe_XICVxV0pNLeRr08_HTUc1N5e6XIfS34xQzzMyWpT6j3VMZiVjuvnGM2Ogw2jBDl8x4q31kvYM9IAkIlmATWsP2tKxtIgFTshhIrg1C3g5acoEkNBBIHzFEcrTG4qS7HiZJnZbMCMCm0Vn5wEPPmkxBEOfkEyY0eIap4Wncpe6-ng25Dp__uioBrf5DmqDc8Ds2CLvD5rgJp0-bv6R"/>
+<div class="absolute top-3 right-3 bg-surface-container-lowest/90 backdrop-blur-sm text-secondary font-label-md text-label-md px-2.5 py-1 rounded-full font-bold shadow-sm">
+          أجبان مشكلة
+        </div>
+</div>
+<div class="p-space-sm flex flex-col gap-2">
+<div class="flex items-baseline justify-between">
+<div>
+<h4 class="font-headline-sm text-headline-sm font-bold text-on-surface">بيني تشيز باستا</h4>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-price-tag">Penne Cheese Pasta</span>
+</div>
+<div class="font-price-tag text-price-tag text-secondary font-bold">
+            37 <span class="text-sm font-normal">₪</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed line-clamp-2">
+          معكرونة بيني مطهوة بجبنة البارميزان وجبنة موتزاريلا ذائبة، فريش كريم ناعمة، ونكهة الريحان الأخضر العطري.
+        </p>
+<div class="pt-2 flex items-center justify-between">
+<button class="font-body-sm text-body-sm text-navy-elevated font-semibold flex items-center gap-0.5 hover:underline" onclick="openDetailsModal('بيني تشيز باستا', '37 ₪', 'معكرونة بيني ، جبنة البارميزان ، جبنة موتزاريلا ، فريش كريم ، ريحان طازج يقدم ساخناً من الفرن مباشرة.', 'باستا إيطالية')">
+<span class="material-symbols-outlined text-[16px]">info</span>
+<span>تفاصيل الوجبة</span>
+</button>
+<div class="flex items-center gap-2">
+<button class="h-9 px-3 rounded-full bg-navy-deep hover:bg-navy-elevated text-surface-cream font-body-sm flex items-center gap-1 active:scale-95 transition-all shadow-sm" onclick="updateCartItem('بيني تشيز باستا', 37, 1)">
+<span class="material-symbols-outlined text-[18px] text-secondary">add</span>
+<span class="font-label-md text-label-md">إضافة</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Item 5: لازانيا لحمة (الباستا والإيطالي) -->
+<div class="menu-card bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm flex flex-col transition-all duration-200" data-cat="italian" data-title="لازانيا لحمة بشاميل بارميزان">
+<div class="relative w-full h-48 bg-surface-container-highest">
+<img alt="لازانيا لحمة بالبشاميل والبارميزان" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1VdNsY_rkRWH_vV4fwq2Xc02jaJVbwO00ZNFtnE-oaQEY8jgvRWOAx8oalRDCksYoMo-0E1Be1PbYoibpBaPOHLa2JL_SC852uCkxPReWrgoIqdoK2hC0D3oyrOmhMeCUFOhMmounkqsSEDxcYivqyiE4Zl1uJoaOy9RavUObpSdWnBGNaCeN_ELNgcASWcbhojIo2njqXIxQ1dux2JSEzf4PT_ZDYzzO79ZSjHIy4dgOtKOwTZG7mQ6-m7"/>
+<div class="absolute top-3 right-3 bg-pomegranate/90 text-surface-cream font-label-md text-label-md px-2.5 py-1 rounded-full font-bold shadow-sm">
+          فرن الحطب
+        </div>
+</div>
+<div class="p-space-sm flex flex-col gap-2">
+<div class="flex items-baseline justify-between">
+<div>
+<h4 class="font-headline-sm text-headline-sm font-bold text-on-surface">لازانيا لحمة كلاسيك</h4>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-price-tag">Lasagna Bolognese &amp; Bechamel</span>
+</div>
+<div class="font-price-tag text-price-tag text-secondary font-bold">
+            50 <span class="text-sm font-normal">₪</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed line-clamp-2">
+          طبقات الباستا مع لحمة عجل مفرومة طازجة بصلصة البولونيز، صوص البشاميل المخملي وجبنة البارميزان المحمرة.
+        </p>
+<div class="pt-2 flex items-center justify-between">
+<button class="font-body-sm text-body-sm text-navy-elevated font-semibold flex items-center gap-0.5 hover:underline" onclick="openDetailsModal('لازانيا لحمة كلاسيك', '50 ₪', 'بولونيز إيطالي أصيل ، بشاميل محضر يومياً ، جبنة الباراميزان، لحمة مفرومة طازجة مطهية على نار هادئة.', 'باستا إيطالية')">
+<span class="material-symbols-outlined text-[16px]">info</span>
+<span>تفاصيل الوجبة</span>
+</button>
+<div class="flex items-center gap-2">
+<button class="h-9 px-3 rounded-full bg-navy-deep hover:bg-navy-elevated text-surface-cream font-body-sm flex items-center gap-1 active:scale-95 transition-all shadow-sm" onclick="updateCartItem('لازانيا لحمة كلاسيك', 50, 1)">
+<span class="material-symbols-outlined text-[18px] text-secondary">add</span>
+<span class="font-label-md text-label-md">إضافة</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Item 6: بيتزا مرغريتا وسلامي (بيتزا ومعجنات) -->
+<div class="menu-card bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm flex flex-col transition-all duration-200" data-cat="pizza" data-title="بيتزا سلامي مرغريتا بيتزا إيطالية جبنة">
+<div class="relative w-full h-48 bg-surface-container-highest">
+<img class="w-full h-full object-cover" data-alt="Artisanal Neapolitan style pizza on a wooden serving board with blistered crust, melted golden Italian cheese, sun-dried tomatoes, fresh vibrant basil leaves, overhead dark slate aesthetic, studio culinary photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCF8OzvNIIQj3xLi3oNvofb2EonlqvFKvgI7eo0TheQDehAu6IYfwN7nb5TL1aXzbSdjIpSCNtOkKMBliSMFb0fcyKRN0hM_Hx0uKLryMC5fDAovU3iaKNCHXAAxJdfquT7vzFG2rTCir6IA2WVXygOZZOYMYZyT9acaOy-wnKprFNQ99GIVWTCMBb-8Yn6VAO93Sm5AZmyYnd4_giiWaIYzjp1Dct9c9e-hj6_hf_UfPAGCLefp1-JGw"/>
+<div class="absolute top-3 right-3 bg-surface-container-lowest/90 backdrop-blur-sm text-olive-accent font-label-md text-label-md px-2.5 py-1 rounded-full font-bold shadow-sm">
+          عجينة إيطالية مخمرة
+        </div>
+</div>
+<div class="p-space-sm flex flex-col gap-2">
+<div class="flex items-baseline justify-between">
+<div>
+<h4 class="font-headline-sm text-headline-sm font-bold text-on-surface">بيتزا سلامي إيطالية</h4>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-price-tag">Zuwar Salami Pizza</span>
+</div>
+<div class="font-price-tag text-price-tag text-secondary font-bold">
+            38 <span class="text-sm font-normal">₪</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed line-clamp-2">
+          جبنة صفراء إيطالية، صوص طماطم زوار الخاص، شرائح لحم سلامي بقري، رشة سمسم محمصة، وأوريغانو بري.
+        </p>
+<div class="pt-2 flex items-center justify-between">
+<button class="font-body-sm text-body-sm text-navy-elevated font-semibold flex items-center gap-0.5 hover:underline" onclick="openDetailsModal('بيتزا سلامي إيطالية', '38 ₪', 'تتكون من جبنة صفراء إيطالية فاخرة ، صوص زوار السري المعتق ، شرائح سلامي بقري ، رشة سمسم محمصة ، أورجانو بري.', 'بيتزا ومعجنات')">
+<span class="material-symbols-outlined text-[16px]">info</span>
+<span>تفاصيل الوجبة</span>
+</button>
+<div class="flex items-center gap-2">
+<button class="h-9 px-3 rounded-full bg-navy-deep hover:bg-navy-elevated text-surface-cream font-body-sm flex items-center gap-1 active:scale-95 transition-all shadow-sm" onclick="updateCartItem('بيتزا سلامي إيطالية', 38, 1)">
+<span class="material-symbols-outlined text-[18px] text-secondary">add</span>
+<span class="font-label-md text-label-md">إضافة</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Item 7: برغر دجاج مقرمش (ساندويشات وبرغر) -->
+<div class="menu-card bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm flex flex-col transition-all duration-200" data-cat="burgers" data-title="برغر دجاج مقرمش كرسبي ساندويش">
+<div class="relative w-full h-48 bg-surface-container-highest">
+<img alt="برغر دجاج مقرمش" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1Xz3GbvJN8s4xTDljpCsrUaPybqYFoS-p1SodfubAQOshgM9UDAoU2SyPQtVwX-3egOKyUB7jCqFMm2QKaeUChecxkThM1JWwn7w9Pb0wsaxacxUBwCRQztQ5TfBy3UTnXPy8OC7aNuLqJ9w50VCLpKOdyXI9Fi93Gvk_32r386cFJGnvwIhp9JANQ4rleaDksUedMI_C5CpT6c8WRth0u_Dwj-tXIah2Rj_2fMZxLkvzxIBqiW-1SQGY2H"/>
+<div class="absolute top-3 right-3 bg-secondary-container text-on-secondary-container font-label-md text-label-md px-2.5 py-1 rounded-full font-bold shadow-sm">
+          مقرمش ولذيذ
+        </div>
+</div>
+<div class="p-space-sm flex flex-col gap-2">
+<div class="flex items-baseline justify-between">
+<div>
+<h4 class="font-headline-sm text-headline-sm font-bold text-on-surface">برغر دجاج مقرمش</h4>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-price-tag">Crispy Chicken Burger</span>
+</div>
+<div class="font-price-tag text-price-tag text-secondary font-bold">
+            38 <span class="text-sm font-normal">₪</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed line-clamp-2">
+          صدر دجاج مقلي ذهبي متبل بخلطة زوار، خس أمريكي مقرمش، شرائح بندورة، صوص زوار الخاص وتقدم مع بطاطا شيبس وكولسلو.
+        </p>
+<div class="pt-2 flex items-center justify-between">
+<button class="font-body-sm text-body-sm text-navy-elevated font-semibold flex items-center gap-0.5 hover:underline" onclick="openDetailsModal('برغر دجاج مقرمش', '38 ₪', 'صدر الدجاج المطحون مع تتبيلة زوار ، خس مقرمش ، بصل طازج ، بندورة ، صوص زوار المميز وتقدم مع بطاطا شيبس وسلطة كولسلو طازجة.', 'برغر وساندويش')">
+<span class="material-symbols-outlined text-[16px]">info</span>
+<span>تفاصيل الوجبة</span>
+</button>
+<div class="flex items-center gap-2">
+<button class="h-9 px-3 rounded-full bg-navy-deep hover:bg-navy-elevated text-surface-cream font-body-sm flex items-center gap-1 active:scale-95 transition-all shadow-sm" onclick="updateCartItem('برغر دجاج مقرمش', 38, 1)">
+<span class="material-symbols-outlined text-[18px] text-secondary">add</span>
+<span class="font-label-md text-label-md">إضافة</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Item 8: برغر لحمة كلاسيك (ساندويشات وبرغر) -->
+<div class="menu-card bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm flex flex-col transition-all duration-200" data-cat="burgers" data-title="برغر لحمة عجل كلاسيك تشيز برغر">
+<div class="relative w-full h-48 bg-surface-container-highest">
+<img class="w-full h-full object-cover" data-alt="Gourmet handmade beef burger on toasted sesame brioche bun with melted cheddar cheese, crisp lettuce, red onion ring, and tomato slice, set on wooden cutting board, professional food advertising style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHV9l0JB9eMZXe7XinUpm4MSPFpNjqo_0WuJpvIOqPrTXlPpmljrjJ-ijAWoS2je2TMochQES8_oFS1bhmQ-BV2IEbKmxRgERZhzc-HvQ7k6hU3rkjFywksvwWyYZv-hEzacAjgv_8A4Ue360rr18A6N-5RhCkI4VviiykFPlSUvleU4SOKZck1Zdx4ZaO2b4qJFodyB7_l5KDyweGqcWpJ_Q54OKD40CyPfYL5JIZHEef1EFkl0OC_A"/>
+<div class="absolute top-3 right-3 bg-navy-deep/90 text-surface-cream font-label-md text-label-md px-2.5 py-1 rounded-full font-bold shadow-sm">
+          عجل بلدي 100%
+        </div>
+</div>
+<div class="p-space-sm flex flex-col gap-2">
+<div class="flex items-baseline justify-between">
+<div>
+<h4 class="font-headline-sm text-headline-sm font-bold text-on-surface">برغر لحمة زوّار كلاسيك</h4>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-price-tag">Classic Beef Burger</span>
+</div>
+<div class="font-price-tag text-price-tag text-secondary font-bold">
+            40 <span class="text-sm font-normal">₪</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed line-clamp-2">
+          شريحة لحمة عجل بلدي سميكة ومتبلة، خس، بصل، بندورة، صوص خاص، تقدم مع بطاطا شيبس وسلطة كولسلو غنية.
+        </p>
+<div class="pt-2 flex items-center justify-between">
+<button class="font-body-sm text-body-sm text-navy-elevated font-semibold flex items-center gap-0.5 hover:underline" onclick="openDetailsModal('برغر لحمة زوّار كلاسيك', '40 ₪', 'لحمة عجل طازجة بتتبيلة زوار ، جبنة شيدر، خس ، بصل ، بندورة ، صوص زوار وتقدم مع بطاطا شيبس وسلطة كولسلو.', 'برغر وساندويش')">
+<span class="material-symbols-outlined text-[16px]">info</span>
+<span>تفاصيل الوجبة</span>
+</button>
+<div class="flex items-center gap-2">
+<button class="h-9 px-3 rounded-full bg-navy-deep hover:bg-navy-elevated text-surface-cream font-body-sm flex items-center gap-1 active:scale-95 transition-all shadow-sm" onclick="updateCartItem('برغر لحمة زوّار كلاسيك', 40, 1)">
+<span class="material-symbols-outlined text-[18px] text-secondary">add</span>
+<span class="font-label-md text-label-md">إضافة</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Item 9: نودلز دجاج آسيوية (الوجبات الآسيوية) -->
+<div class="menu-card bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm flex flex-col transition-all duration-200" data-cat="asian" data-title="نودلز دجاج آسيوية خضار صويا">
+<div class="relative w-full h-48 bg-surface-container-highest">
+<img alt="نودلز دجاج آسيوية" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1WhZI4PoaPAlRoL3bjYEgf8oc6zFXkIcBaPU-mv3dK33vatnW4zV8LdAMhklH0AWyKweSYijZmb17RvY-KLtDNuXLZCBaJhrDHk7lNwu3df23IfFNP-ZFywdeOE7rdR6IyJq5lHslSIjlkrhy1Wftitza9Nw8INVUlKKnUZeI57OB9RBjnfUa0gaQY8u6T-3Ol1VeG7-B68Jc1wwecvEZzqb3tMnOCdbkzVoYMhbfSk2TTLQJT8tNKZhbrv"/>
+<div class="absolute top-3 right-3 bg-surface-container-lowest/90 backdrop-blur-sm text-secondary font-label-md text-label-md px-2.5 py-1 rounded-full font-bold shadow-sm">
+          ووك صيني
+        </div>
+</div>
+<div class="p-space-sm flex flex-col gap-2">
+<div class="flex items-baseline justify-between">
+<div>
+<h4 class="font-headline-sm text-headline-sm font-bold text-on-surface">نودلز دجاج آسيوية</h4>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-price-tag">Asian Chicken Noodles</span>
+</div>
+<div class="font-price-tag text-price-tag text-secondary font-bold">
+            50 <span class="text-sm font-normal">₪</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed line-clamp-2">
+          شرائح دجاج طازجة مقلية في الووك مع خضار ملونة مشكلة، نودلز البيض الآسيوية، وصوص الصويا والسمسم المحمص.
+        </p>
+<div class="pt-2 flex items-center justify-between">
+<button class="font-body-sm text-body-sm text-navy-elevated font-semibold flex items-center gap-0.5 hover:underline" onclick="openDetailsModal('نودلز دجاج آسيوية', '50 ₪', 'نودلز محضرة بالووك الساخن مع قطع دجاج طرية، خضار فريش مقرمشة، سمسم وصوص الترياكي والصويا الآسيوي الخاص.', 'الوجبات الآسيوية')">
+<span class="material-symbols-outlined text-[16px]">info</span>
+<span>تفاصيل الوجبة</span>
+</button>
+<div class="flex items-center gap-2">
+<button class="h-9 px-3 rounded-full bg-navy-deep hover:bg-navy-elevated text-surface-cream font-body-sm flex items-center gap-1 active:scale-95 transition-all shadow-sm" onclick="updateCartItem('نودلز دجاج آسيوية', 50, 1)">
+<span class="material-symbols-outlined text-[18px] text-secondary">add</span>
+<span class="font-label-md text-label-md">إضافة</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Item 10: كيس فواكه البحر (الأكل البحري) -->
+<div class="menu-card bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm flex flex-col transition-all duration-200" data-cat="seafood" data-title="كيس فواكه البحر مشكل جمبري كاليماري سمك">
+<div class="relative w-full h-48 bg-surface-container-highest">
+<img alt="كيس فواكه البحر" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1UVwuUcj5EC18IlFBocTH_kHI7WH6ZmcMyMVksQQNNx9qMJgZCZJ9_K_su177Os97_a-UvVWseUXj3AoMovnQPdLkTxvf4nDNcoWToHwx59Al4uO72LjRWcx1xGwbdkaG6-oDKsBga_KwZqBdmM1_mDywaV1jM2XHTV286W9Ehuk4HH85tZmWbQUaG_pUUpi2n2-5_pv1-yO0gMulDcVYuKtBicf5EtdTNGBORTyf6Gy99Us5j56yd7ocE"/>
+<div class="absolute top-3 right-3 bg-navy-deep/80 text-secondary-fixed font-label-md text-label-md px-2.5 py-1 rounded-full font-bold shadow-sm">
+          تتبيلة الكاجون
+        </div>
+</div>
+<div class="p-space-sm flex flex-col gap-2">
+<div class="flex items-baseline justify-between">
+<div>
+<h4 class="font-headline-sm text-headline-sm font-bold text-on-surface">كيس فواكه البحر المشكل</h4>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-price-tag">Seafood Bag Special</span>
+</div>
+<div class="font-price-tag text-price-tag text-secondary font-bold">
+            95 <span class="text-sm font-normal">₪</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed line-clamp-2">
+          تشكيلة ثمار البحر الطازجة من الجمبري والكاليماري والذرة الصفراء بصوص الزبدة والثوم تقدم مع أرز أبيض و3 سلطات.
+        </p>
+<div class="pt-2 flex items-center justify-between">
+<button class="font-body-sm text-body-sm text-navy-elevated font-semibold flex items-center gap-0.5 hover:underline" onclick="openDetailsModal('كيس فواكه البحر المشكل', '95 ₪', 'تقدم ساخنة ومطهوة داخل الكيس الحراري للاحتفاظ بالبخار والنكهة العميقة، مع ارز ابيض وثلاث أنواع سلطات فاخرة.', 'الأكل البحري')">
+<span class="material-symbols-outlined text-[16px]">info</span>
+<span>تفاصيل الوجبة</span>
+</button>
+<div class="flex items-center gap-2">
+<button class="h-9 px-3 rounded-full bg-navy-deep hover:bg-navy-elevated text-surface-cream font-body-sm flex items-center gap-1 active:scale-95 transition-all shadow-sm" onclick="updateCartItem('كيس فواكه البحر المشكل', 95, 1)">
+<span class="material-symbols-outlined text-[18px] text-secondary">add</span>
+<span class="font-label-md text-label-md">إضافة</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Empty Search Feedback State -->
+<div class="hidden flex-col items-center justify-center p-space-2xl text-center" id="empty-search-state">
+<div class="w-16 h-16 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface-variant/70 mb-space-sm">
+<span class="material-symbols-outlined text-[32px]">dinner_dining</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm font-bold text-on-surface mb-1">لم نجد وجبات مطابقة</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-xs mb-4">جرب البحث بكلمة أخرى مثل "لحمة"، "باستا"، "مشاوي" أو اختر تصنيفاً من الأعلى.</p>
+<button class="h-10 px-4 rounded-full bg-navy-elevated text-surface-cream font-label-md text-label-md flex items-center gap-1" onclick="clearSearch()">
+<span class="material-symbols-outlined text-[18px]">restart_alt</span>
+<span>عرض كامل الأصناف</span>
+</button>
+</div>
+<!-- Floating Sticky Cart Preview Bar -->
+<div class="fixed bottom-20 inset-x-0 z-40 px-margin-screen transition-all duration-300 transform translate-y-0" id="sticky-cart-tray">
+<div class="bg-navy-deep text-surface-cream rounded-2xl p-space-sm shadow-[0_8px_32px_rgba(7,23,44,0.35)] flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="relative w-10 h-10 rounded-xl bg-secondary flex items-center justify-center text-navy-deep shadow-sm">
+<span class="material-symbols-outlined text-[22px]">shopping_bag</span>
+<span class="absolute -top-1 -right-1 w-5 h-5 rounded-full bg-pomegranate text-on-error font-label-sm text-[11px] font-bold flex items-center justify-center" id="cart-counter-badge">2</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm text-surface-cream/80">إجمالي الطلب المقدر</span>
+<span class="font-price-tag text-price-tag text-secondary font-bold"><span id="cart-total-price">167</span> ₪</span>
+</div>
+</div>
+<button class="h-11 px-5 rounded-full bg-secondary-container hover:bg-secondary text-navy-deep font-label-lg text-label-lg font-bold flex items-center gap-1.5 shadow-md active:scale-95 transition-all" onclick="confirmOrderTray()">
+<span>متابعة الطلب</span>
+<span class="material-symbols-outlined text-[18px] rotate-180">arrow_back</span>
+</button>
+</div>
+</div>
+<!-- Quick View Details Modal Drawer -->
+<div class="fixed inset-0 z-50 bg-primary/60 backdrop-blur-sm hidden items-end justify-center" id="details-modal">
+<div class="bg-surface-cream-alt w-full max-w-lg rounded-t-3xl p-space-lg flex flex-col gap-4 shadow-2xl relative transform transition-all duration-300">
+<div class="w-12 h-1 rounded-full bg-outline-variant/60 self-center mb-1"></div>
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-secondary-fixed-variant font-bold bg-secondary/15 px-2.5 py-0.5 rounded-full" id="modal-category-tag">تصنيف الطبق</span>
+<h3 class="font-headline-md text-headline-md font-bold text-on-surface mt-1" id="modal-title">اسم الصنف</h3>
+</div>
+<button class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface hover:bg-surface-container-highest" onclick="closeDetailsModal()">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed" id="modal-desc">
+        وصف الوجبة الكامل وطريقة التحضير بالبهارات الفلسطينية الخاصة.
+      </p>
+<div class="p-3 bg-surface-container-lowest rounded-xl flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-secondary text-[20px]">room_service</span>
+<span class="font-body-sm text-body-sm">التحضير طازج على الطلب (15-25 دقيقة)</span>
+</div>
+<span class="font-price-tag text-price-tag text-secondary font-bold" id="modal-price">0 ₪</span>
+</div>
+<div class="flex items-center gap-3 pt-2">
+<button class="flex-1 h-12 rounded-full bg-navy-deep text-surface-cream font-label-lg text-label-lg font-bold flex items-center justify-center gap-2 active:scale-95 transition-all shadow-md" onclick="addModalItemToCart()">
+<span class="material-symbols-outlined text-secondary text-[20px]">add_shopping_cart</span>
+<span>إضافة إلى السلة</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Toast Notification -->
+<div class="fixed top-24 inset-x-4 z-50 mx-auto max-w-sm bg-navy-elevated/95 text-surface-cream px-4 py-3 rounded-2xl shadow-xl backdrop-blur-md flex items-center gap-3 transform -translate-y-20 opacity-0 transition-all duration-300 pointer-events-none" id="cart-toast">
+<span class="material-symbols-outlined text-secondary text-[22px]">check_circle</span>
+<span class="font-body-md text-body-md font-semibold flex-1" id="cart-toast-text">تمت إضافة الوجبة إلى سلتك بنجاح</span>
+</div>
+</div>
+<script>
+  let cartTotal = 167;
+  let cartCount = 2;
+  let currentModalItem = null;
+
+  // Search Filtering
+  const searchInput = document.getElementById('menu-search-input');
+  const clearBtn = document.getElementById('clear-search-btn');
+  const menuCards = document.querySelectorAll('.menu-card');
+  const emptyState = document.getElementById('empty-search-state');
+
+  searchInput.addEventListener('input', (e) => {
+    const query = e.target.value.trim().toLowerCase();
+    if (query.length > 0) {
+      clearBtn.classList.remove('hidden');
+    } else {
+      clearBtn.classList.add('hidden');
+    }
+    filterMenu();
+  });
+
+  function clearSearch() {
+    searchInput.value = '';
+    clearBtn.classList.add('hidden');
+    filterMenu();
+  }
+
+  // Category Tabs Filter
+  let activeCategory = 'all';
+  const tabButtons = document.querySelectorAll('.cat-tab-btn');
+
+  tabButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      tabButtons.forEach(b => {
+        b.className = 'cat-tab-btn flex-shrink-0 px-4 py-2 rounded-full text-body-sm font-body-md transition-all duration-200 bg-surface-container-lowest text-on-surface shadow-sm hover:bg-surface-container-high';
+      });
+      btn.className = 'cat-tab-btn flex-shrink-0 px-4 py-2 rounded-full text-body-sm font-headline-sm transition-all duration-200 bg-navy-elevated text-surface-cream shadow-sm flex items-center gap-1.5';
+      activeCategory = btn.getAttribute('data-cat');
+      filterMenu();
+    });
+  });
+
+  function filterMenu() {
+    const query = searchInput.value.trim().toLowerCase();
+    let visibleCount = 0;
+
+    menuCards.forEach(card => {
+      const cardCat = card.getAttribute('data-cat');
+      const cardTitle = (card.getAttribute('data-title') || '').toLowerCase();
+      
+      const matchesCategory = (activeCategory === 'all' || cardCat === activeCategory);
+      const matchesSearch = query === '' || cardTitle.includes(query);
+
+      if (matchesCategory && matchesSearch) {
+        card.style.display = 'flex';
+        visibleCount++;
+      } else {
+        card.style.display = 'none';
+      }
+    });
+
+    if (visibleCount === 0) {
+      emptyState.classList.remove('hidden');
+      emptyState.classList.add('flex');
+    } else {
+      emptyState.classList.add('hidden');
+      emptyState.classList.remove('flex');
+    }
+  }
+
+  // Cart Interactions
+  function updateCartItem(name, price, countDelta) {
+    cartCount = Math.max(0, cartCount + countDelta);
+    cartTotal = Math.max(0, cartTotal + (price * countDelta));
+
+    document.getElementById('cart-counter-badge').innerText = cartCount;
+    document.getElementById('cart-total-price').innerText = cartTotal;
+
+    showToast(`تمت إضافة "${name}" إلى طلبك`);
+  }
+
+  function showToast(message) {
+    const toast = document.getElementById('cart-toast');
+    const toastText = document.getElementById('cart-toast-text');
+    toastText.innerText = message;
+
+    toast.classList.remove('-translate-y-20', 'opacity-0');
+    toast.classList.add('translate-y-0', 'opacity-100');
+
+    setTimeout(() => {
+      toast.classList.remove('translate-y-0', 'opacity-100');
+      toast.classList.add('-translate-y-20', 'opacity-0');
+    }, 2200);
+  }
+
+  // Quick View Modal
+  function openDetailsModal(title, price, desc, category) {
+    document.getElementById('modal-title').innerText = title;
+    document.getElementById('modal-price').innerText = price;
+    document.getElementById('modal-desc').innerText = desc;
+    document.getElementById('modal-category-tag').innerText = category;
+    
+    currentModalItem = {
+      title: title,
+      price: parseInt(price.replace(/[^0-9]/g, '')) || 40
+    };
+
+    const modal = document.getElementById('details-modal');
+    modal.classList.remove('hidden');
+    modal.classList.add('flex');
+  }
+
+  function closeDetailsModal() {
+    const modal = document.getElementById('details-modal');
+    modal.classList.add('hidden');
+    modal.classList.remove('flex');
+  }
+
+  function addModalItemToCart() {
+    if (currentModalItem) {
+      updateCartItem(currentModalItem.title, currentModalItem.price, 1);
+      closeDetailsModal();
+    }
+  }
+
+  function confirmOrderTray() {
+    showToast(`الانتقال لمراجعة الوجبات (${cartCount} صنف - ₪ ${cartTotal})`);
+  }
+</script></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-primary/95 backdrop-blur-xl shadow-[0_-8px_30px_rgba(7,23,44,0.15)]" data-active-classes="text-secondary-fixed font-bold"><div class="flex justify-around items-center h-20 px-space-xs"><a class="flex flex-col items-center justify-center min-w-[58px] h-14 rounded-xl text-surface-container-highest/70 hover:text-secondary-fixed transition-colors duration-200" data-path="home" href="#"><span class="material-symbols-outlined text-[24px]">home</span><span class="font-body-sm text-[11px] mt-1">الرئيسية</span></a><a aria-current="page" class="flex flex-col items-center justify-center min-w-[58px] h-14 rounded-xl transition-colors duration-200 text-secondary-fixed font-bold" data-path="menu" href="#"><span class="material-symbols-outlined text-[24px]">restaurant_menu</span><span class="font-body-sm text-[11px] mt-1">المنيو</span></a><a class="flex flex-col items-center justify-center min-w-[58px] h-14 -mt-3" data-path="table-reservation" href="#"><div class="w-12 h-12 rounded-full bg-secondary text-primary flex items-center justify-center shadow-[0_4px_16px_rgba(197,155,39,0.4)] active:scale-95 transition-transform duration-150"><span class="material-symbols-outlined text-[24px] font-bold">table_restaurant</span></div><span class="font-body-sm text-[11px] text-secondary-fixed mt-1 font-semibold">حجز طاولة</span></a><a class="flex flex-col items-center justify-center min-w-[58px] h-14 rounded-xl text-surface-container-highest/70 hover:text-secondary-fixed transition-colors duration-200" data-path="orders" href="#"><span class="material-symbols-outlined text-[24px]">receipt_long</span><span class="font-body-sm text-[11px] mt-1">طلباتي</span></a><a class="flex flex-col items-center justify-center min-w-[58px] h-14 rounded-xl text-surface-container-highest/70 hover:text-secondary-fixed transition-colors duration-200" data-path="profile" href="#"><span class="material-symbols-outlined text-[24px]">account_circle</span><span class="font-body-sm text-[11px] mt-1">حسابي</span></a></div></nav></body></html>

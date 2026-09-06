@@ -900,3 +900,170 @@ body.modal-open { overflow: hidden; }
   .hero-portrait { max-width: 210px; }
 }
 
+
+/* =========================================================
+   Zuwar Restaurant App — dedicated showcase section
+   ========================================================= */
+.btn-gold {
+  background: linear-gradient(150deg, #E5C86E, #C59B27);
+  color: #07172C;
+  box-shadow: 0 12px 26px -8px rgba(197, 155, 39, .55);
+}
+.btn-gold:hover { box-shadow: 0 18px 34px -10px rgba(197, 155, 39, .7); color: #07172C; }
+.btn-outline-gold {
+  background: transparent;
+  border-color: rgba(229, 200, 110, .5);
+  color: #f4e9c6;
+}
+.btn-outline-gold:hover { border-color: #E5C86E; color: #fff; background: rgba(229, 200, 110, .08); }
+
+.zuwar {
+  position: relative;
+  overflow: hidden;
+  color: #eaf1ff;
+  background: #07172C;
+}
+.zuwar-bg {
+  position: absolute; inset: 0; z-index: 0; pointer-events: none;
+  background:
+    radial-gradient(900px 500px at 88% -10%, rgba(197,155,39,.18), transparent 60%),
+    radial-gradient(800px 600px at 5% 108%, rgba(23,54,96,.6), transparent 60%),
+    linear-gradient(160deg, #07172C 0%, #0b2038 55%, #07172C 100%);
+}
+.zuwar .container { position: relative; z-index: 1; }
+.zuwar-head h2 { color: #fff; }
+.zuwar-head .kicker {
+  color: #E5C86E;
+  background: rgba(197,155,39,.12);
+  border: 1px solid rgba(197,155,39,.32);
+}
+.zuwar-head p { color: #b9c8e4; }
+.zuwar-head h2::after { background: linear-gradient(90deg, #E5C86E, #C59B27) !important; }
+
+.zuwar-showcase {
+  display: grid;
+  grid-template-columns: minmax(300px, 0.9fr) 1.4fr;
+  gap: 46px;
+  align-items: start;
+}
+
+/* Intro column */
+.zuwar-intro { position: sticky; top: 96px; }
+.zuwar-badge {
+  display: inline-flex; align-items: center; gap: 9px;
+  font-size: .82rem; font-weight: 700; letter-spacing: .02em;
+  color: #E5C86E;
+  background: rgba(197,155,39,.1);
+  border: 1px solid rgba(197,155,39,.3);
+  padding: 7px 15px 7px 7px; border-radius: 999px;
+}
+.zuwar-badge .zb-mark {
+  width: 24px; height: 24px; border-radius: 50%;
+  display: grid; place-items: center;
+  background: linear-gradient(150deg, #E5C86E, #9E7B1A);
+  color: #07172C; font-weight: 800; font-size: .9rem;
+}
+.zuwar-intro h3 { font-size: 1.6rem; margin: 18px 0 12px; color: #fff; font-weight: 800; line-height: 1.5; }
+.zuwar-intro > p { color: #b9c8e4; margin: 0 0 22px; font-size: 1.03rem; line-height: 1.9; }
+.zuwar-feats { list-style: none; margin: 0 0 26px; padding: 0; display: grid; gap: 12px; }
+.zuwar-feats li {
+  display: flex; align-items: center; gap: 10px;
+  font-size: .98rem; font-weight: 600; color: #dbe6ff;
+  background: rgba(255,255,255,.04);
+  border: 1px solid rgba(197,155,39,.16);
+  border-radius: 12px; padding: 11px 14px;
+}
+.zuwar-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+.zuwar-actions .btn svg { width: 19px; height: 19px; }
+
+/* Gallery of phone screens */
+.zuwar-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 26px;
+}
+.zscreen {
+  position: relative;
+  display: block;
+  background: rgba(255,255,255,.03);
+  border: 1px solid rgba(197,155,39,.18);
+  border-radius: 22px;
+  padding: 18px 18px 20px;
+  transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease;
+}
+.zscreen:hover {
+  transform: translateY(-6px);
+  border-color: rgba(229,200,110,.55);
+  box-shadow: 0 26px 50px -20px rgba(0,0,0,.7), 0 0 0 1px rgba(229,200,110,.25);
+}
+.zscreen-phone {
+  position: relative;
+  height: 300px;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #FBF9F5;
+  box-shadow: 0 10px 30px -12px rgba(0,0,0,.6);
+  border: 1px solid rgba(197,155,39,.25);
+}
+.zscreen-phone img {
+  width: 100%;
+  display: block;
+  transition: transform 3.2s ease;
+  transform: translateY(0);
+}
+.zscreen:hover .zscreen-phone img {
+  transform: translateY(calc(-100% + 300px));
+}
+.zscreen-cap {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto auto;
+  column-gap: 12px;
+  align-items: center;
+  margin-top: 16px;
+}
+.zscreen-num {
+  grid-row: 1 / 3;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem; font-weight: 700;
+  color: #E5C86E; opacity: .85;
+  align-self: center;
+}
+.zscreen-cap b { font-size: 1.12rem; color: #fff; font-weight: 700; }
+.zscreen-cap em { font-style: normal; font-size: .86rem; color: #93a6c7; }
+.zscreen-play {
+  position: absolute;
+  top: 30px; inset-inline-start: 30px;
+  width: 52px; height: 52px; border-radius: 50%;
+  display: grid; place-items: center;
+  background: rgba(7,23,44,.55);
+  border: 1px solid rgba(229,200,110,.6);
+  color: #E5C86E;
+  backdrop-filter: blur(4px);
+  opacity: 0; transform: scale(.8);
+  transition: opacity .3s ease, transform .3s ease, background .3s ease;
+  pointer-events: none;
+}
+.zscreen-play svg { width: 22px; height: 22px; margin-inline-start: 3px; }
+.zscreen:hover .zscreen-play {
+  opacity: 1; transform: scale(1);
+  background: linear-gradient(150deg, #E5C86E, #C59B27);
+  color: #07172C; border-color: transparent;
+}
+
+/* Reveal + responsive */
+.zscreen.reveal { transform: translateY(28px) scale(.98); }
+.zscreen.reveal.visible { transform: none; }
+
+@media (max-width: 900px) {
+  .zuwar-showcase { grid-template-columns: 1fr; gap: 34px; }
+  .zuwar-intro { position: static; text-align: center; }
+  .zuwar-feats { text-align: start; max-width: 420px; margin-inline: auto; margin-bottom: 26px; }
+  .zuwar-actions { justify-content: center; }
+}
+@media (max-width: 560px) {
+  .zuwar-gallery { grid-template-columns: 1fr; gap: 22px; max-width: 380px; margin-inline: auto; }
+  .zscreen-phone { height: 340px; }
+  .zscreen:hover .zscreen-phone img { transform: translateY(calc(-100% + 340px)); }
+}

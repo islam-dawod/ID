@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ar"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&amp;family=Montserrat:wght@500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#FBF9F5;}body{overscroll-behavior:none;font-family:'Cairo',sans-serif;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-primary-fixed-variant": "#30476b", "surface-container-lowest": "#ffffff", "on-secondary": "#ffffff", "secondary-fixed": "#ffdf98", "secondary-container": "#fece57", "surface-container-highest": "#dbe3f2", "error": "#ba1a1a", "surface-container-low": "#eff4ff", "olive-accent": "#526343", "surface-container-high": "#e1e8f8", "surface-cream": "#FBF9F5", "surface-dim": "#d2daea", "on-error": "#ffffff", "on-primary": "#ffffff", "outline-variant": "#c4c6cf", "on-secondary-container": "#735700", "on-surface-variant": "#44474e", "on-surface": "#141c27", "on-error-container": "#93000a", "surface-variant": "#dbe3f2", "inverse-surface": "#29313c", "background": "#f8f9ff", "primary": "#00142f", "surface-cream-alt": "#F3EFE6", "primary-fixed": "#d5e3ff", "inverse-primary": "#b0c8f2", "tertiary-container": "#352600", "on-tertiary": "#ffffff", "on-primary-fixed": "#001b3c", "on-background": "#141c27", "surface-bright": "#f8f9ff", "on-secondary-fixed": "#251a00", "error-container": "#ffdad6", "gold-light": "#E5C86E", "inverse-on-surface": "#eaf1ff", "on-tertiary-fixed": "#251a00", "navy-deep": "#07172C", "surface": "#f8f9ff", "secondary-fixed-dim": "#eec14b", "tertiary-fixed": "#ffdf9c", "on-tertiary-container": "#ad8b3b", "primary-container": "#0e294b", "pomegranate": "#8A242B", "surface-tint": "#485f84", "surface-container": "#e6eefe", "primary-fixed-dim": "#b0c8f2", "outline": "#74777f", "navy-elevated": "#173660", "on-secondary-fixed-variant": "#5a4300", "on-primary-container": "#7991b9", "tertiary": "#1c1300", "on-tertiary-fixed-variant": "#5b4300", "secondary": "#775a00", "gold-pressed": "#9E7B1A", "tertiary-fixed-dim": "#e8c26b" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-sm": "0.75rem", "space-xxs": "0.25rem", "gutter-mobile": "1rem", "safe-bottom-action": "5.5rem", "space-2xl": "3rem", "space-3xl": "4rem", "space-xs": "0.5rem", "space-lg": "1.5rem", "space-xl": "2rem", "gutter-tablet": "1.5rem", "margin-screen": "1.25rem", "space-md": "1rem" }, fontFamily: { "display-hero-mobile": ["Cairo"], "price-tag": ["Montserrat"], "label-md": ["Montserrat"], "body-sm": ["Cairo"], "body-md": ["Cairo"], "headline-md": ["Cairo"], "headline-sm": ["Cairo"], "body-lg": ["Cairo"], "headline-lg": ["Cairo"], "display-hero": ["Cairo"], "label-lg": ["Cairo"], "label-sm": ["Montserrat"] }, fontSize: { "display-hero-mobile": ["30px", { "lineHeight": "40px", "letterSpacing": "0em", "fontWeight": "700" }], "price-tag": ["18px", { "lineHeight": "22px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.08em", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "18px", "letterSpacing": "0em", "fontWeight": "400" }], "body-md": ["14px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "400" }], "headline-md": ["22px", { "lineHeight": "32px", "letterSpacing": "0em", "fontWeight": "600" }], "headline-sm": ["18px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "400" }], "headline-lg": ["26px", { "lineHeight": "36px", "letterSpacing": "0em", "fontWeight": "700" }], "display-hero": ["40px", { "lineHeight": "52px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "label-lg": ["15px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "600" }], "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "500" }] } } } }</script></head><body class="bg-surface-cream font-body-md text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 inset-x-0 z-50 bg-primary/95 backdrop-blur-xl pt-safe shadow-[0_8px_30px_rgba(7,23,44,0.18)]"><div class="h-16 px-margin-screen flex items-center justify-between"><div class="flex items-center gap-space-sm"><button class="w-11 h-11 rounded-full bg-navy-elevated/70 text-surface-cream flex items-center justify-center active:scale-95 transition-transform duration-150" onclick="history.back()"><span class="material-symbols-outlined text-[22px]">arrow_forward</span></button><h1 class="font-headline-sm text-headline-sm font-bold text-surface-cream truncate">Table Service Call</h1></div><div class="flex items-center gap-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1U6DmBDs_IpfmC0q4ZHSaY7GC_MuvEzBciRxmeWaToOc3ZTNWSPJoyyRO5xF2g9GRc1bnEaQ-Npq8dXXvEyJwEDajcf4Cjj2Uk9GZJiZUeiGscp7TGIAUt6bNqa-4Zg9yELdjviCLXKBGfeqXfEF3e2ArB_52-Y0Zdwd-UDzAxxsjaMWmnlqlSBFEMSE6mH8i-jox_DDLoiNz4N3gozNay2idMTAn5OYnWT3B-AkkNTzLkTu-QC-R3O-jM"/></div></div></header><main class="flex flex-col relative w-full pt-16 bg-surface-cream min-h-screen"><div class="flex flex-col w-full pb-safe-bottom-action">
+<!-- Toast Notification Modal for Service Actions -->
+<div class="fixed top-20 inset-x-4 z-50 transform -translate-y-28 opacity-0 pointer-events-none transition-all duration-300 ease-out" id="service-toast">
+<div class="bg-navy-deep text-surface-cream rounded-xl p-space-md shadow-xl flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-secondary flex items-center justify-center text-navy-deep">
+<span class="material-symbols-outlined text-[20px]" id="toast-icon">notifications_active</span>
+</div>
+<div>
+<p class="font-headline-sm text-headline-sm font-bold text-secondary-fixed" id="toast-title">تم إرسال الطلب</p>
+<p class="font-body-sm text-body-sm text-surface-container-high" id="toast-desc">طاقم الضيافة في طريقه إليك الآن</p>
+</div>
+</div>
+<button class="text-surface-cream-alt opacity-70 hover:opacity-100 p-space-xxs" onclick="dismissToast()">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+</div>
+<!-- Hero Ambience Header with Restaurant Identity -->
+<div class="relative bg-navy-deep text-surface-cream px-margin-screen pt-space-lg pb-space-xl overflow-hidden rounded-b-[2rem] shadow-md">
+<div class="relative z-10 flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="inline-flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-navy-elevated text-gold-light">
+<span class="w-2 h-2 rounded-full bg-gold-light animate-pulse"></span>
+<span class="font-label-sm text-label-sm font-semibold tracking-wider">الخدمة الحية داخل الصالة</span>
+</div>
+<div class="flex items-center gap-1.5 text-gold-light">
+<span class="material-symbols-outlined text-[18px]">location_on</span>
+<span class="font-body-sm text-body-sm">الخليل، الطابق 9</span>
+</div>
+</div>
+<div>
+<h2 class="font-headline-lg text-headline-lg font-bold text-surface-cream tracking-tight">مطعم وكافيه زوّار</h2>
+<p class="font-body-md text-body-md text-surface-container-high mt-0.5">أنتم في ضيافتنا .. نلبي طلباتكم بلمسة فاخرة</p>
+</div>
+<!-- Quick Active Table Status Pill -->
+<div class="mt-space-xs bg-navy-elevated/90 rounded-xl p-space-sm flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-gold-pressed/20 text-gold-light flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">table_restaurant</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-surface-container-highest">طاولتك الحالية</span>
+<p class="font-headline-sm text-headline-sm font-bold text-surface-cream" id="active-table-display">طاولة 22 (عائلات - 6 مقاعد)</p>
+</div>
+</div>
+<button class="bg-secondary text-navy-deep px-space-sm py-1.5 rounded-full font-label-md text-label-md font-bold active:scale-95 transition-transform flex items-center gap-1" onclick="scrollToSelector()">
+<span>تغيير</span>
+<span class="material-symbols-outlined text-[16px]">expand_more</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Primary One-Tap Waiter Actions Grid -->
+<div class="px-margin-screen -mt- space-y-space-md relative z-20 mt-space-md">
+<div class="flex items-center justify-between mb-space-xs">
+<div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">خدمات الضيافة الفورية</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">طلب فوري لطاقم الصالة بنقرة واحدة</p>
+</div>
+<span class="material-symbols-outlined text-gold-pressed">room_service</span>
+</div>
+<!-- Actions 2x2 Bento Grid -->
+<div class="grid grid-cols-2 gap-space-sm">
+<!-- Call Waiter Button -->
+<button class="group text-right bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between active:scale-95 transition-transform duration-150" onclick="triggerService('طلب الجرسون', 'تم استدعاء النادل لطاولتك، سيصل خلال دقيقة واحدة', 'notifications_active')">
+<div class="w-12 h-12 rounded-full bg-surface-container-low text-primary flex items-center justify-center mb-space-sm group-hover:bg-primary group-hover:text-surface-cream transition-colors">
+<span class="material-symbols-outlined text-[26px]">notifications</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm font-semibold text-gold-pressed uppercase tracking-wider block">نداء فوري</span>
+<h4 class="font-headline-sm text-headline-sm font-bold text-navy-deep">طلب الجرسون</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">استدعاء طاقم الضيافة</p>
+</div>
+</button>
+<!-- Bill & Checkout Request -->
+<button class="group text-right bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between active:scale-95 transition-transform duration-150" onclick="openBillSheet()">
+<div class="w-12 h-12 rounded-full bg-surface-container-low text-primary flex items-center justify-center mb-space-sm group-hover:bg-primary group-hover:text-surface-cream transition-colors">
+<span class="material-symbols-outlined text-[26px]">receipt_long</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm font-semibold text-olive-accent uppercase tracking-wider block">الحساب والطلب</span>
+<h4 class="font-headline-sm text-headline-sm font-bold text-navy-deep">طلب الفاتورة</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">كاش أو بطاقة بنكية</p>
+</div>
+</button>
+<!-- Shisha Coal Change Button -->
+<button class="group text-right bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between active:scale-95 transition-transform duration-150" onclick="triggerService('تغيير الفحم للأرجيلة', 'تم إرسال فني الأراجيل لتجديد وتغيير الفحم لطاولتك', 'local_fire_department')">
+<div class="w-12 h-12 rounded-full bg-secondary-container/40 text-on-secondary-container flex items-center justify-center mb-space-sm group-hover:bg-secondary-container transition-colors">
+<span class="material-symbols-outlined text-[26px]">local_fire_department</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm font-semibold text-secondary uppercase tracking-wider block">قسم الأراجيل</span>
+<h4 class="font-headline-sm text-headline-sm font-bold text-navy-deep">تغيير الفحم</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">تجديد الفحم الفوري</p>
+</div>
+</button>
+<!-- Extra Cutlery / Water -->
+<button class="group text-right bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between active:scale-95 transition-transform duration-150" onclick="triggerService('أدوات ومستلزمات', 'طاقم السيرفيس يحضر لك الماء والمستلزمات الإضافية', 'restaurant')">
+<div class="w-12 h-12 rounded-full bg-surface-container-low text-primary flex items-center justify-center mb-space-sm group-hover:bg-primary group-hover:text-surface-cream transition-colors">
+<span class="material-symbols-outlined text-[26px]">flatware</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm font-semibold text-on-surface-variant uppercase tracking-wider block">ضيافة إضافية</span>
+<h4 class="font-headline-sm text-headline-sm font-bold text-navy-deep">أدوات / ماء</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">صحون، مناديل، ماء</p>
+</div>
+</button>
+</div>
+</div>
+<!-- Bill Modal Bottom-Sheet Preview -->
+<div class="fixed inset-0 z-50 bg-navy-deep/60 backdrop-blur-sm hidden items-end justify-center p-0 transition-opacity" id="bill-modal">
+<div class="bg-surface-cream rounded-t-3xl p-space-lg w-full max-w-lg shadow-2xl flex flex-col gap-space-md animate-in slide-in-from-bottom duration-200">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[24px]">receipt</span>
+<h3 class="font-headline-sm text-headline-sm font-bold text-navy-deep">طلب الحساب والدفع</h3>
+</div>
+<button class="w-8 h-8 rounded-full bg-surface-container-highest flex items-center justify-center text-on-surface" onclick="closeBillSheet()">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-md space-y-space-sm">
+<div class="flex items-center justify-between font-body-md text-body-md text-on-surface">
+<span>الطاولة المحددة:</span>
+<span class="font-headline-sm text-headline-sm font-bold text-navy-deep" id="modal-table-label">طاولة 22 (عائلات)</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">حدد وسيلة الدفع المفضلة ليحضر الكابتن جهاز الدفع المناسب:</p>
+<div class="grid grid-cols-2 gap-space-sm pt-space-xs">
+<label class="cursor-pointer bg-surface-cream-alt p-space-sm rounded-lg flex flex-col items-center gap-1.5 text-center active:scale-98">
+<input checked="" class="accent-navy-deep" name="paymethod" type="radio" value="cash"/>
+<span class="material-symbols-outlined text-gold-pressed text-[28px]">payments</span>
+<span class="font-headline-sm text-headline-sm font-bold text-navy-deep">نقداً (كاش)</span>
+</label>
+<label class="cursor-pointer bg-surface-cream-alt p-space-sm rounded-lg flex flex-col items-center gap-1.5 text-center active:scale-98">
+<input class="accent-navy-deep" name="paymethod" type="radio" value="card"/>
+<span class="material-symbols-outlined text-navy-deep text-[28px]">credit_card</span>
+<span class="font-headline-sm text-headline-sm font-bold text-navy-deep">بطاقة ائتمان (فيزا)</span>
+</label>
+</div>
+</div>
+<div class="flex gap-space-sm">
+<button class="flex-1 bg-navy-deep text-surface-cream py-space-sm rounded-full font-label-lg text-label-lg font-bold active:scale-95 transition-transform flex items-center justify-center gap-2" onclick="confirmBill()">
+<span class="material-symbols-outlined text-[20px]">check_circle</span>
+<span>تأكيد طلب الفاتورة</span>
+</button>
+<button class="px-space-md py-space-sm rounded-full bg-surface-container-highest text-on-surface font-label-lg text-label-lg" onclick="closeBillSheet()">
+          إلغاء
+        </button>
+</div>
+</div>
+</div>
+<!-- Table Selection Section (Extracted directly from Zuwar system) -->
+<div class="px-margin-screen mt-space-xl space-y-space-md" id="table-selector-section">
+<div class="flex items-center justify-between">
+<div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">تحديد رقم الطاولة بالصالة</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">حدد طاولتك الحالية لربط طلبك بالنظام</p>
+</div>
+<!-- QR Scanner Launch Button -->
+<button class="bg-surface-container-lowest text-navy-deep p-space-xs rounded-xl shadow-sm flex items-center gap-1.5 px-space-sm active:scale-95 transition-transform" onclick="simulateQrScan()">
+<span class="material-symbols-outlined text-secondary text-[22px]">qr_code_scanner</span>
+<span class="font-label-md text-label-md font-bold">مسح QR</span>
+</button>
+</div>
+<!-- Zone Selector Tabs -->
+<div class="flex bg-surface-cream-alt p-1 rounded-xl gap-1">
+<button class="zone-tab flex-1 py-2 rounded-lg font-label-md text-label-md font-bold bg-navy-deep text-surface-cream shadow-sm transition-all text-center" onclick="filterZone('family', this)">
+        قسم العائلات
+      </button>
+<button class="zone-tab flex-1 py-2 rounded-lg font-label-md text-label-md font-bold text-on-surface-variant hover:text-on-surface transition-all text-center" onclick="filterZone('youth', this)">
+        قسم الشباب
+      </button>
+<button class="zone-tab flex-1 py-2 rounded-lg font-label-md text-label-md font-bold text-on-surface-variant hover:text-on-surface transition-all text-center" onclick="filterZone('vip', this)">
+        غرفة VIP
+      </button>
+</div>
+<!-- Table Dropdown & Quick Select Grid -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm space-y-space-md">
+<div>
+<label class="font-body-sm text-body-sm text-on-surface-variant font-medium block mb-1.5" for="table-dropdown">
+          اختر من القائمة الكاملة لطاولات زوّار:
+        </label>
+<div class="relative">
+<select class="w-full bg-surface-cream-alt text-on-surface rounded-xl px-space-md py-3 appearance-none font-body-md text-body-md focus:outline-none focus:bg-surface-container-lowest shadow-inner" id="table-dropdown" onchange="onDropdownSelect(this.value)">
+<optgroup label="قسم العائلات (طاولة 16 إلى 55)">
+<option value="طاولة رقم (16) - الحجم 8 - قسم العائلات">طاولة رقم (16) - الحجم 8 - قسم العائلات</option>
+<option value="طاولة رقم (17) - الحجم 6 - قسم العائلات">طاولة رقم (17) - الحجم 6 - قسم العائلات</option>
+<option value="طاولة رقم (18) - الحجم 6 - قسم العائلات">طاولة رقم (18) - الحجم 6 - قسم العائلات</option>
+<option value="طاولة رقم (20) - الحجم 6 - قسم العائلات">طاولة رقم (20) - الحجم 6 - قسم العائلات</option>
+<option selected="" value="طاولة رقم (22) - الحجم 6 - قسم العائلات">طاولة رقم (22) - الحجم 6 - قسم العائلات</option>
+<option value="طاولة رقم (25) - الحجم 4 - قسم العائلات">طاولة رقم (25) - الحجم 4 - قسم العائلات</option>
+<option value="طاولة رقم (30) - الحجم 6 - قسم العائلات">طاولة رقم (30) - الحجم 6 - قسم العائلات</option>
+<option value="طاولة رقم (43) - الحجم 8 - قسم العائلات">طاولة رقم (43) - الحجم 8 - قسم العائلات</option>
+<option value="طاولة رقم (55) - الحجم 4 - قسم العائلات">طاولة رقم (55) - الحجم 4 - قسم العائلات</option>
+</optgroup>
+<optgroup label="قسم الشباب (طاولة 1 إلى 15)">
+<option value="طاولة رقم (1) - الحجم 6 - قسم الشباب">طاولة رقم (1) - الحجم 6 - قسم الشباب</option>
+<option value="طاولة رقم (2) - الحجم 6 - قسم الشباب">طاولة رقم (2) - الحجم 6 - قسم الشباب</option>
+<option value="طاولة رقم (4) - الحجم 4 - قسم الشباب">طاولة رقم (4) - الحجم 4 - قسم الشباب</option>
+<option value="طاولة رقم (7) - الحجم 4 - قسم الشباب">طاولة رقم (7) - الحجم 4 - قسم الشباب</option>
+<option value="طاولة رقم (14) - الحجم 6 - قسم الشباب">طاولة رقم (14) - الحجم 6 - قسم الشباب</option>
+<option value="طاولة رقم (15) - الحجم 4 - قسم الشباب">طاولة رقم (15) - الحجم 4 - قسم الشباب</option>
+</optgroup>
+<optgroup label="الجناح الخاص VIP">
+<option value="غرفة VIP - الحجم 16 - غرفة VIP">غرفة VIP - الحجم 16 - غرفة VIP</option>
+</optgroup>
+</select>
+<span class="material-symbols-outlined absolute left-3 top-3.5 text-on-surface-variant pointer-events-none text-[20px]">expand_more</span>
+</div>
+</div>
+<!-- Interactive Table Chips representation -->
+<div>
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-semibold">اختيار سريع متاح:</span>
+<span class="font-label-sm text-label-sm text-gold-pressed font-medium">الأخضر متاح</span>
+</div>
+<div class="grid grid-cols-4 gap-space-xs" id="table-chips-container">
+<!-- Populated via JS / Server state -->
+<button class="table-chip bg-surface-cream-alt p-2 rounded-lg text-center flex flex-col items-center" onclick="pickQuickTable(16, 8, 'عائلات', this)">
+<span class="font-headline-sm text-headline-sm font-bold text-navy-deep">16</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">8 مقاعد</span>
+</button>
+<button class="table-chip bg-surface-cream-alt p-2 rounded-lg text-center flex flex-col items-center" onclick="pickQuickTable(17, 6, 'عائلات', this)">
+<span class="font-headline-sm text-headline-sm font-bold text-navy-deep">17</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">6 مقاعد</span>
+</button>
+<button class="table-chip bg-navy-deep text-surface-cream p-2 rounded-lg text-center flex flex-col items-center" onclick="pickQuickTable(22, 6, 'عائلات', this)">
+<span class="font-headline-sm text-headline-sm font-bold text-secondary-fixed">22</span>
+<span class="font-label-sm text-label-sm text-surface-container-high">6 مقاعد</span>
+</button>
+<button class="table-chip bg-surface-cream-alt p-2 rounded-lg text-center flex flex-col items-center" onclick="pickQuickTable(25, 4, 'عائلات', this)">
+<span class="font-headline-sm text-headline-sm font-bold text-navy-deep">25</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">4 مقاعد</span>
+</button>
+<button class="table-chip bg-surface-cream-alt p-2 rounded-lg text-center flex flex-col items-center" onclick="pickQuickTable(30, 6, 'عائلات', this)">
+<span class="font-headline-sm text-headline-sm font-bold text-navy-deep">30</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">6 مقاعد</span>
+</button>
+<button class="table-chip bg-surface-cream-alt p-2 rounded-lg text-center flex flex-col items-center" onclick="pickQuickTable(43, 8, 'عائلات', this)">
+<span class="font-headline-sm text-headline-sm font-bold text-navy-deep">43</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">8 مقاعد</span>
+</button>
+<button class="table-chip bg-surface-cream-alt p-2 rounded-lg text-center flex flex-col items-center" onclick="pickQuickTable(50, 6, 'عائلات', this)">
+<span class="font-headline-sm text-headline-sm font-bold text-navy-deep">50</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">6 مقاعد</span>
+</button>
+<button class="table-chip bg-surface-cream-alt p-2 rounded-lg text-center flex flex-col items-center" onclick="pickQuickTable(55, 4, 'عائلات', this)">
+<span class="font-headline-sm text-headline-sm font-bold text-navy-deep">55</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">4 مقاعد</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Reservation Form Card (حجز موعد داخل المكان) -->
+<div class="px-margin-screen mt-space-xl space-y-space-md">
+<div class="flex items-center justify-between">
+<div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">حجز طاولة مسبق داخل المكان</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">احجز جلستك الفاخرة في مطل الطابق التاسع</p>
+</div>
+<span class="material-symbols-outlined text-secondary text-[24px]">event_seat</span>
+</div>
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm space-y-space-md">
+<!-- Date & Time Row -->
+<div class="grid grid-cols-2 gap-space-sm">
+<div>
+<label class="font-body-sm text-body-sm text-on-surface-variant block mb-1">تاريخ الحجز</label>
+<div class="relative">
+<input class="w-full bg-surface-cream-alt text-on-surface rounded-xl px-space-sm py-2.5 font-body-sm text-body-sm focus:outline-none" type="date" value="2025-05-20"/>
+</div>
+</div>
+<div>
+<label class="font-body-sm text-body-sm text-on-surface-variant block mb-1">وقت الوصول</label>
+<div class="relative">
+<select class="w-full bg-surface-cream-alt text-on-surface rounded-xl px-space-sm py-2.5 font-body-sm text-body-sm focus:outline-none">
+<option>02:00 م - غداء</option>
+<option>04:30 م - شاي وغروب</option>
+<option selected="">07:00 م - عشاء</option>
+<option>09:30 م - سهرة ومشروبات</option>
+</select>
+</div>
+</div>
+</div>
+<!-- Guests & Preferred Location -->
+<div class="grid grid-cols-2 gap-space-sm">
+<div>
+<label class="font-body-sm text-body-sm text-on-surface-variant block mb-1">عدد الضيوف</label>
+<div class="flex items-center justify-between bg-surface-cream-alt rounded-xl px-2 py-1">
+<button class="w-8 h-8 rounded-lg bg-navy-deep text-surface-cream flex items-center justify-center active:scale-90 font-bold" onclick="adjustGuests(-1)" type="button">-</button>
+<span class="font-headline-sm text-headline-sm font-bold text-navy-deep" id="guests-count">4</span>
+<button class="w-8 h-8 rounded-lg bg-navy-deep text-surface-cream flex items-center justify-center active:scale-90 font-bold" onclick="adjustGuests(1)" type="button">+</button>
+</div>
+</div>
+<div>
+<label class="font-body-sm text-body-sm text-on-surface-variant block mb-1">المنطقة المفضلة</label>
+<select class="w-full bg-surface-cream-alt text-on-surface rounded-xl px-space-sm py-2.5 font-body-sm text-body-sm focus:outline-none">
+<option>واجهة الإطلالة الزجاجية</option>
+<option>التراس الخارجي</option>
+<option>جلسات العائلات الهادئة</option>
+<option>غرفة VIP الفاخرة (16 شخص)</option>
+</select>
+</div>
+</div>
+<!-- Occasion Selector -->
+<div>
+<label class="font-body-sm text-body-sm text-on-surface-variant block mb-1">مناسبة الزيارة (اختياري)</label>
+<div class="flex gap-space-xs overflow-x-auto pb-1">
+<button class="occasion-pill whitespace-nowrap px-space-sm py-1.5 rounded-full bg-surface-cream-alt text-on-surface font-label-md text-label-md active:scale-95 transition-colors" onclick="selectOccasion(this)" type="button">
+            عشاء عائلي
+          </button>
+<button class="occasion-pill whitespace-nowrap px-space-sm py-1.5 rounded-full bg-surface-cream-alt text-on-surface font-label-md text-label-md active:scale-95 transition-colors" onclick="selectOccasion(this)" type="button">
+            🎉 عيد ميلاد
+          </button>
+<button class="occasion-pill whitespace-nowrap px-space-sm py-1.5 rounded-full bg-surface-cream-alt text-on-surface font-label-md text-label-md active:scale-95 transition-colors" onclick="selectOccasion(this)" type="button">
+            💍 ذكرى زواج
+          </button>
+<button class="occasion-pill whitespace-nowrap px-space-sm py-1.5 rounded-full bg-surface-cream-alt text-on-surface font-label-md text-label-md active:scale-95 transition-colors" onclick="selectOccasion(this)" type="button">
+            💼 اجتماع عمل
+          </button>
+</div>
+</div>
+<!-- Notes input -->
+<div>
+<label class="font-body-sm text-body-sm text-on-surface-variant block mb-1">ملاحظات إضافية لطاقم زوّار</label>
+<input class="w-full bg-surface-cream-alt text-on-surface rounded-xl px-space-md py-2.5 font-body-sm text-body-sm focus:outline-none placeholder:text-outline-variant" placeholder="مثال: يرجى تجهيز قالب كيك أو كرسي أطفال..." type="text"/>
+</div>
+<button class="w-full bg-navy-deep text-surface-cream py-3 rounded-full font-label-lg text-label-lg font-bold active:scale-95 transition-transform flex items-center justify-center gap-2 shadow-md" onclick="submitReservation()">
+<span class="material-symbols-outlined text-[20px] text-secondary">verified</span>
+<span>تأكيد طلب حجز الموعد</span>
+</button>
+</div>
+</div>
+<!-- Highlights from Zuwar Menu (Teaser) -->
+<div class="px-margin-screen mt-space-xl space-y-space-md">
+<div class="flex items-center justify-between">
+<div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">أطباق مميزة في صالتنا اليوم</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">تحضر خصيصاً لك عند الطلب</p>
+</div>
+<a class="font-label-md text-label-md font-bold text-gold-pressed flex items-center gap-0.5" href="https://zuwar.ps/menu/menu">
+<span>المنيو كاملة</span>
+<span class="material-symbols-outlined text-[16px]">arrow_back</span>
+</a>
+</div>
+<!-- Horizontal Bleed Culinary Rail -->
+<div class="flex gap-space-md overflow-x-auto pb-space-xs -mx-margin-screen px-margin-screen">
+<!-- Dish 1: Santa Fe Steak -->
+<div class="min-w-[240px] max-w-[240px] bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm flex flex-col justify-between">
+<div class="relative h-32 w-full bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Exquisite Santa Fe Steak Fillet served with golden French fries and vibrant fresh gourmet salads on an elegant deep blue Palestinian ceramic platter in warm atmospheric dining lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcYZbMrlIqJEdPyV2HY_OFIj5cosf1X7FD_YlNH-5O4EFjOM-Tavf12axeaveAwKITn0XEuREaRFgeKNtehRflqMbOY_OE7cOeFvptDXJtB8HoS1866Ok7sEtsZy8i-Sz7lWGLxsUKJM3GLEpDwJLOIhOxeOkPXzvOrPEhExJdMv7Q27G2WiTmRbQuAbEGw8V3MP3TP3gUhzj5OC942AhvAqnpJbqn3cOoCtJsMqsprQ0aaV7CGs3svQ"/>
+<div class="absolute top-2 right-2 bg-navy-deep/80 backdrop-blur-md px-2 py-0.5 rounded-full text-gold-light font-label-sm text-label-sm">
+            لحوم مميزة
+          </div>
+</div>
+<div class="p-space-sm flex flex-col flex-1 justify-between gap-space-xs">
+<div>
+<h4 class="font-headline-sm text-headline-sm font-bold text-navy-deep truncate">سنتا ستيك فيليه</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-0.5">مزيج نكهات مختلفة، بطاطا شيبس وثلاث سلطات استواء ميديوم</p>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-price-tag text-price-tag text-navy-deep">₪ 100</span>
+<button class="w-8 h-8 rounded-full bg-secondary text-navy-deep flex items-center justify-center active:scale-95" onclick="triggerService('طلب سنتا ستيك', 'تمت إضافة سنتا ستيك فيليه إلى قائمة طلباتك', 'restaurant_menu')">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Dish 2: Grill Salmon Fillet -->
+<div class="min-w-[240px] max-w-[240px] bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm flex flex-col justify-between">
+<div class="relative h-32 w-full bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Charcoal grilled fresh Atlantic salmon fillet with seasoned sautéed Mediterranean vegetables and crispy chips plated on a luxurious plate in restaurant lounge" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcOHIRX2tJAWX9wgmIde2i5VaOTh_hmMSYJQqj6GdNObDqqlhEhtuuIuI84kt9Tk5JNKkA3O0Zp1PGh2GIzEeELhZk2997I-RTDIE5RKbIFGZLgQB7TbR81wcVqTM37ny2aXw35qu90juDDUsSSCOo0_hVSxPPe0z_x-09m81iP4IQX-WRYdOtF8S4s96dz07so0x0UMaGDTalRazcgpKvHE6bDtgS9NMAP2CNUlKZEHPX132EDa5XYQ"/>
+<div class="absolute top-2 right-2 bg-navy-deep/80 backdrop-blur-md px-2 py-0.5 rounded-full text-gold-light font-label-sm text-label-sm">
+            أكل بحري
+          </div>
+</div>
+<div class="p-space-sm flex flex-col flex-1 justify-between gap-space-xs">
+<div>
+<h4 class="font-headline-sm text-headline-sm font-bold text-navy-deep truncate">سلمون مشوي ع الفحم</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-0.5">يقدم مع خضار سوتيه، بطاطا شيبس وثلاثة أنواع سلطات طازجة</p>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-price-tag text-price-tag text-navy-deep">₪ 80</span>
+<button class="w-8 h-8 rounded-full bg-secondary text-navy-deep flex items-center justify-center active:scale-95" onclick="triggerService('طلب سلمون مشوي', 'تمت إضافة سلمون مشوي إلى طلبات طاولتك', 'restaurant_menu')">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Dish 3: Zuwar Shisha -->
+<div class="min-w-[240px] max-w-[240px] bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm flex flex-col justify-between">
+<div class="relative h-32 w-full bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Traditional luxury engraved brass shisha water pipe on Hebron stone terrace with panoramic city views during golden sunset hour" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvtBlKDNwxUg4dis7dUlwZ53ln8NCIbImEtA0KO8viGnKYBabXr1w5-wgukb81NGSETt7ZQiVWjWfOFkef2OYoVF6nDhhoWdlYX9ZxbEmcyCAqFhkjNfLLBwPvud6EmVyKi2nUDgPWKJur0grl4lHNS3EbxV0ZQqpzRV3L4VKMnVeXmWeJXjRYDUCpRv8hjU55jWuVEoukqD2vny9tK9xyLgmOoY2JBaK3NjGSw4TrCYkG_R-Ogebm6w"/>
+<div class="absolute top-2 right-2 bg-pomegranate/90 backdrop-blur-md px-2 py-0.5 rounded-full text-surface-cream font-label-sm text-label-sm">
+            أراجيل زوار
+          </div>
+</div>
+<div class="p-space-sm flex flex-col flex-1 justify-between gap-space-xs">
+<div>
+<h4 class="font-headline-sm text-headline-sm font-bold text-navy-deep truncate">أرجيلة زوّار الفاخرة</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-0.5">نكهات فاخرة وتفاحتين نخلة مع عناية دقيقة بالفحم الطبيعي</p>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-price-tag text-price-tag text-navy-deep">₪ 35</span>
+<button class="w-8 h-8 rounded-full bg-secondary text-navy-deep flex items-center justify-center active:scale-95" onclick="triggerService('طلب أرجيلة زوار', 'طلب الأرجيلة وصل إلى المعلم المسؤول وسيجهزها لطاولتك', 'local_fire_department')">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Location, Hours & Contact Details Section -->
+<div class="px-margin-screen mt-space-xl space-y-space-md mb-space-lg">
+<div class="flex items-center justify-between">
+<div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">موقعنا وساعات العمل</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">الخليل - رأس الجورة - عمارة ميدان القدس</p>
+</div>
+<span class="material-symbols-outlined text-gold-pressed">access_time</span>
+</div>
+<!-- Map & Address Container -->
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm">
+<div class="w-full h-44 bg-cover bg-center relative" data-location="Hebron, Ras Al Jora, Jerusalem Square Building, Floor 9" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCkh3yyE2s0oobIxCDs58wunsxqjR3pqEh2fvktvHL8wDu6ROFsmHbDqJ65X43FLURBIjE9nvqq5yAcSXhRkdpgvY5IJzguqjFM-zvOqt6HdkTOKf1xpD__q5PSREeYJXduRUf7IjIBgbAkd6I1-_VmsUlhdN2Qib6abXdskfZklSUfnXDHAoLsp5jygjimLZoZKMGHcodg5H5MHAHy5ACoRw-zIFBi5pu_voQQt6nowgWb5X0S-OVDVg')">
+<div class="absolute inset-0 bg-gradient-to-t from-navy-deep/90 via-navy-deep/30 to-transparent flex flex-col justify-end p-space-md text-surface-cream">
+<div class="flex items-center gap-1.5 text-secondary-fixed mb-1">
+<span class="material-symbols-outlined text-[20px]">apartment</span>
+<span class="font-label-md text-label-md font-bold">الطابق التاسع (9) - إطلالة بانورامية</span>
+</div>
+<p class="font-body-sm text-body-sm text-surface-cream-alt">الخليل - رأس الجورة - عمارة ميدان القدس</p>
+</div>
+</div>
+<!-- Action Contact Buttons -->
+<div class="grid grid-cols-3 gap-space-xs p-space-sm bg-surface-cream-alt">
+<a class="flex flex-col items-center justify-center p-2 rounded-xl bg-surface-container-lowest text-navy-deep shadow-xs active:scale-95 transition-transform" href="https://api.whatsapp.com/send?phone=+9720594422054&amp;text=مرحباً%20مطعم%20زوار">
+<span class="material-symbols-outlined text-[22px] text-olive-accent">chat</span>
+<span class="font-label-sm text-label-sm font-bold mt-1">واتساب</span>
+</a>
+<a class="flex flex-col items-center justify-center p-2 rounded-xl bg-surface-container-lowest text-navy-deep shadow-xs active:scale-95 transition-transform" href="tel:+9720594422054">
+<span class="material-symbols-outlined text-[22px] text-primary">call</span>
+<span class="font-label-sm text-label-sm font-bold mt-1">اتصال</span>
+</a>
+<a class="flex flex-col items-center justify-center p-2 rounded-xl bg-surface-container-lowest text-navy-deep shadow-xs active:scale-95 transition-transform" href="https://www.google.com/maps/search/?api=1&amp;query=31.555739127828318,35.10106859825878">
+<span class="material-symbols-outlined text-[22px] text-pomegranate">near_me</span>
+<span class="font-label-sm text-label-sm font-bold mt-1">الخريطة</span>
+</a>
+</div>
+<!-- Weekly Schedule Accordion List -->
+<div class="p-space-md space-y-space-xs">
+<div class="flex items-center justify-between pb-space-xs border-b border-surface-container">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-semibold">أيام العمل المتاحة</span>
+<span class="font-label-sm text-label-sm text-olive-accent font-bold">مفتوح الآن</span>
+</div>
+<div class="space-y-1.5 pt-1 text-on-surface">
+<div class="flex justify-between font-body-sm text-body-sm py-0.5">
+<span class="font-semibold text-navy-deep">الأحد</span>
+<span class="font-price-tag text-label-sm text-on-surface-variant">09:00 am - 10:00 pm</span>
+</div>
+<div class="flex justify-between font-body-sm text-body-sm py-0.5">
+<span class="font-semibold text-navy-deep">الاثنين</span>
+<span class="font-price-tag text-label-sm text-on-surface-variant">08:00 am - 11:30 pm</span>
+</div>
+<div class="flex justify-between font-body-sm text-body-sm py-0.5">
+<span class="font-semibold text-navy-deep">الثلاثاء</span>
+<span class="font-price-tag text-label-sm text-on-surface-variant">09:00 am - 10:00 pm</span>
+</div>
+<div class="flex justify-between font-body-sm text-body-sm py-0.5">
+<span class="font-semibold text-navy-deep">الأربعاء</span>
+<span class="font-price-tag text-label-sm text-on-surface-variant">09:00 am - 11:30 pm</span>
+</div>
+<div class="flex justify-between font-body-sm text-body-sm py-0.5">
+<span class="font-semibold text-navy-deep">الخميس</span>
+<span class="font-price-tag text-label-sm text-on-surface-variant">09:00 am - 10:00 pm</span>
+</div>
+<div class="flex justify-between font-body-sm text-body-sm py-0.5 bg-surface-cream-alt px-2 rounded">
+<span class="font-bold text-pomegranate">الجمعة</span>
+<span class="font-price-tag text-label-sm font-semibold text-navy-deep">01:00 pm - 10:00 pm</span>
+</div>
+<div class="flex justify-between font-body-sm text-body-sm py-0.5">
+<span class="font-semibold text-navy-deep">السبت</span>
+<span class="font-price-tag text-label-sm text-on-surface-variant">09:00 am - 10:00 pm</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Persistent Floating Bottom Action Bar for Dine-In Experience -->
+<div class="fixed bottom-0 inset-x-0 z-40 bg-navy-deep/95 backdrop-blur-xl px-margin-screen py-3 pb-safe shadow-[0_-8px_30px_rgba(7,23,44,0.25)] flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-secondary flex items-center justify-center text-navy-deep shadow-md">
+<span class="material-symbols-outlined text-[22px]">restaurant</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-secondary-fixed block font-medium">جلسة زوّار المباشرة</span>
+<p class="font-headline-sm text-headline-sm font-bold text-surface-cream" id="dock-table-title">طاولة 22 (عائلات)</p>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="bg-navy-elevated text-surface-cream px-space-md py-2 rounded-full font-label-md text-label-md font-bold active:scale-95 transition-transform flex items-center gap-1.5" onclick="triggerService('طلب الجرسون السريع', 'كابتن الصالة في طريقه إلى طاولتك الآن', 'notifications_active')">
+<span class="material-symbols-outlined text-[18px] text-secondary">notifications</span>
+<span>الجرسون</span>
+</button>
+<button class="bg-secondary text-navy-deep px-space-md py-2 rounded-full font-label-md text-label-md font-bold active:scale-95 transition-transform flex items-center gap-1 shadow-sm" onclick="openBillSheet()">
+<span class="material-symbols-outlined text-[18px]">receipt</span>
+<span>الفاتورة</span>
+</button>
+</div>
+</div>
+</div>
+<script>
+  let toastTimer = null;
+
+  function triggerService(title, desc, iconName) {
+    const toast = document.getElementById('service-toast');
+    const toastTitle = document.getElementById('toast-title');
+    const toastDesc = document.getElementById('toast-desc');
+    const toastIcon = document.getElementById('toast-icon');
+
+    if (toastTitle) toastTitle.textContent = title;
+    if (toastDesc) toastDesc.textContent = desc;
+    if (toastIcon) toastIcon.textContent = iconName;
+
+    toast.classList.remove('opacity-0', '-translate-y-28', 'pointer-events-none');
+    toast.classList.add('opacity-100', 'translate-y-0');
+
+    if (toastTimer) clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => {
+      dismissToast();
+    }, 4000);
+  }
+
+  function dismissToast() {
+    const toast = document.getElementById('service-toast');
+    if (toast) {
+      toast.classList.add('opacity-0', '-translate-y-28', 'pointer-events-none');
+      toast.classList.remove('opacity-100', 'translate-y-0');
+    }
+  }
+
+  function openBillSheet() {
+    const modal = document.getElementById('bill-modal');
+    modal.classList.remove('hidden');
+    modal.classList.add('flex');
+  }
+
+  function closeBillSheet() {
+    const modal = document.getElementById('bill-modal');
+    modal.classList.add('hidden');
+    modal.classList.remove('flex');
+  }
+
+  function confirmBill() {
+    closeBillSheet();
+    const selectedPay = document.querySelector('input[name="paymethod"]:checked')?.value;
+    const methodArabic = selectedPay === 'cash' ? 'نقداً (كاش)' : 'بطاقة فيزا الائتمانية';
+    triggerService('تم طلب الفاتورة', 'المحاسب يجهز فاتورتك لطريقة الدفع: ' + methodArabic, 'receipt_long');
+  }
+
+  function scrollToSelector() {
+    const section = document.getElementById('table-selector-section');
+    if (section) section.scrollIntoView({ behavior: 'smooth' });
+  }
+
+  function onDropdownSelect(val) {
+    updateActiveTable(val);
+  }
+
+  function pickQuickTable(num, size, zone, elem) {
+    document.querySelectorAll('.table-chip').forEach(c => {
+      c.className = 'table-chip bg-surface-cream-alt p-2 rounded-lg text-center flex flex-col items-center';
+      const spans = c.querySelectorAll('span');
+      if (spans[0]) spans[0].className = 'font-headline-sm text-headline-sm font-bold text-navy-deep';
+      if (spans[1]) spans[1].className = 'font-label-sm text-label-sm text-on-surface-variant';
+    });
+
+    elem.className = 'table-chip bg-navy-deep text-surface-cream p-2 rounded-lg text-center flex flex-col items-center';
+    const spans = elem.querySelectorAll('span');
+    if (spans[0]) spans[0].className = 'font-headline-sm text-headline-sm font-bold text-secondary-fixed';
+    if (spans[1]) spans[1].className = 'font-label-sm text-label-sm text-surface-container-high';
+
+    const fullStr = 'طاولة رقم (' + num + ') - الحجم ' + size + ' - قسم ' + zone;
+    updateActiveTable(fullStr);
+  }
+
+  function updateActiveTable(fullStr) {
+    const displayElem = document.getElementById('active-table-display');
+    const dockElem = document.getElementById('dock-table-title');
+    const modalLabel = document.getElementById('modal-table-label');
+
+    if (displayElem) displayElem.textContent = fullStr;
+    if (dockElem) dockElem.textContent = fullStr;
+    if (modalLabel) modalLabel.textContent = fullStr;
+
+    triggerService('تم تعيين الطاولة', fullStr, 'check_circle');
+  }
+
+  function filterZone(zone, tabElem) {
+    document.querySelectorAll('.zone-tab').forEach(t => {
+      t.className = 'zone-tab flex-1 py-2 rounded-lg font-label-md text-label-md font-bold text-on-surface-variant hover:text-on-surface transition-all text-center';
+    });
+    tabElem.className = 'zone-tab flex-1 py-2 rounded-lg font-label-md text-label-md font-bold bg-navy-deep text-surface-cream shadow-sm transition-all text-center';
+
+    const chipsContainer = document.getElementById('table-chips-container');
+    if (zone === 'youth') {
+      chipsContainer.innerHTML = `
+        <button onclick="pickQuickTable(1, 6, 'الشباب', this)" class="table-chip bg-surface-cream-alt p-2 rounded-lg text-center flex flex-col items-center">
+          <span class="font-headline-sm text-headline-sm font-bold text-navy-deep">1</span>
+          <span class="font-label-sm text-label-sm text-on-surface-variant">6 مقاعد</span>
+        </button>
+        <button onclick="pickQuickTable(2, 6, 'الشباب', this)" class="table-chip bg-surface-cream-alt p-2 rounded-lg text-center flex flex-col items-center">
+          <span class="font-headline-sm text-headline-sm font-bold text-navy-deep">2</span>
+          <span class="font-label-sm text-label-sm text-on-surface-variant">6 مقاعد</span>
+        </button>
+        <button onclick="pickQuickTable(4, 4, 'الشباب', this)" class="table-chip bg-surface-cream-alt p-2 rounded-lg text-center flex flex-col items-center">
+          <span class="font-headline-sm text-headline-sm font-bold text-navy-deep">4</span>
+          <span class="font-label-sm text-label-sm text-on-surface-variant">4 مقاعد</span>
+        </button>
+        <button onclick="pickQuickTable(8, 4, 'الشباب', this)" class="table-chip bg-surface-cream-alt p-2 rounded-lg text-center flex flex-col items-center">
+          <span class="font-headline-sm text-headline-sm font-bold text-navy-deep">8</span>
+          <span class="font-label-sm text-label-sm text-on-surface-variant">4 مقاعد</span>
+        </button>
+      `;
+    } else if (zone === 'vip') {
+      chipsContainer.innerHTML = `
+        <button onclick="pickQuickTable('VIP', 16, 'غرفة VIP الفاخرة', this)" class="col-span-4 table-chip bg-surface-cream-alt p-3 rounded-lg text-center flex items-center justify-center gap-3">
+          <span class="material-symbols-outlined text-secondary text-[24px]">stars</span>
+          <div>
+            <span class="font-headline-sm text-headline-sm font-bold text-navy-deep">غرفة الجناح VIP الخاص</span>
+            <span class="font-body-sm text-body-sm text-on-surface-variant block">سعة تتسع لـ 16 شخص مع إطلالة كاملة وخصوصية تامة</span>
+          </div>
+        </button>
+      `;
+    } else {
+      chipsContainer.innerHTML = `
+        <button onclick="pickQuickTable(16, 8, 'عائلات', this)" class="table-chip bg-surface-cream-alt p-2 rounded-lg text-center flex flex-col items-center">
+          <span class="font-headline-sm text-headline-sm font-bold text-navy-deep">16</span>
+          <span class="font-label-sm text-label-sm text-on-surface-variant">8 مقاعد</span>
+        </button>
+        <button onclick="pickQuickTable(22, 6, 'عائلات', this)" class="table-chip bg-navy-deep text-surface-cream p-2 rounded-lg text-center flex flex-col items-center">
+          <span class="font-headline-sm text-headline-sm font-bold text-secondary-fixed">22</span>
+          <span class="font-label-sm text-label-sm text-surface-container-high">6 مقاعد</span>
+        </button>
+        <button onclick="pickQuickTable(30, 6, 'عائلات', this)" class="table-chip bg-surface-cream-alt p-2 rounded-lg text-center flex flex-col items-center">
+          <span class="font-headline-sm text-headline-sm font-bold text-navy-deep">30</span>
+          <span class="font-label-sm text-label-sm text-on-surface-variant">6 مقاعد</span>
+        </button>
+        <button onclick="pickQuickTable(55, 4, 'عائلات', this)" class="table-chip bg-surface-cream-alt p-2 rounded-lg text-center flex flex-col items-center">
+          <span class="font-headline-sm text-headline-sm font-bold text-navy-deep">55</span>
+          <span class="font-label-sm text-label-sm text-on-surface-variant">4 مقاعد</span>
+        </button>
+      `;
+    }
+  }
+
+  function simulateQrScan() {
+    triggerService('جارٍ فتح الكاميرا...', 'امسح ملصق رمز QR المثبت على زاويتك الحالية', 'qr_code_scanner');
+    setTimeout(() => {
+      updateActiveTable('طاولة رقم (18) - الحجم 6 - قسم العائلات');
+      triggerService('تم مسح الطاولة بنجاح', 'أنت الآن متصل بطاولة 18 تلقائياً', 'qr_code');
+    }, 1500);
+  }
+
+  function adjustGuests(change) {
+    const el = document.getElementById('guests-count');
+    let current = parseInt(el.textContent, 10) || 1;
+    current = Math.max(1, Math.min(25, current + change));
+    el.textContent = current;
+  }
+
+  function selectOccasion(btn) {
+    document.querySelectorAll('.occasion-pill').forEach(p => {
+      p.className = 'occasion-pill whitespace-nowrap px-space-sm py-1.5 rounded-full bg-surface-cream-alt text-on-surface font-label-md text-label-md active:scale-95 transition-colors';
+    });
+    btn.className = 'occasion-pill whitespace-nowrap px-space-sm py-1.5 rounded-full bg-navy-deep text-surface-cream font-label-md text-label-md active:scale-95 transition-colors';
+  }
+
+  function submitReservation() {
+    const guests = document.getElementById('guests-count').textContent;
+    triggerService('تم استلام طلب الحجز', 'تم تسجيل طلب حجز لطاولة ' + guests + ' أفراد بنجاح. سنتواصل معكم هاتفياً للتأكيد', 'verified');
+  }
+</script></main></body></html>
