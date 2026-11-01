@@ -334,6 +334,49 @@
 <p class="text-[11px] text-stoneWarm-600 text-center">وجّه كاميرا هاتفك نحو الرمز لفتح البطاقة مباشرةً</p>
 </div>
 </div>
+<!-- Share Modal -->
+<div class="fixed inset-0 z-[60] hidden items-center justify-center bg-stoneWarm-900/60 backdrop-blur-sm p-6" id="shareModal">
+<div class="relative bg-stoneWarm-50 rounded-3xl p-6 w-full max-w-[330px] shadow-floating-card border border-white/60 flex flex-col gap-5">
+<button aria-label="إغلاق" class="absolute top-3 left-3 w-8 h-8 rounded-full bg-stoneWarm-200/70 hover:bg-stoneWarm-300 text-stoneWarm-700 flex items-center justify-center active:scale-95 transition" id="shareClose">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M6 18L18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+</button>
+<h3 class="text-sm font-bold text-stoneWarm-900 text-center mt-1">مشاركة البطاقة</h3>
+<div class="grid grid-cols-4 gap-x-2 gap-y-4">
+<a class="flex flex-col items-center gap-1.5 active:scale-95 transition" id="shareWhatsapp" rel="noopener noreferrer" target="_blank">
+<span class="w-12 h-12 rounded-full bg-[#25D366]/15 text-[#1b7a3e] flex items-center justify-center"><svg class="w-6 h-6 fill-current" viewbox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.885-9.885 9.885M20.52 3.449C18.24 1.245 15.24 0 12.045 0 5.463 0 .104 5.334.101 11.892c0 2.096.549 4.142 1.595 5.945L0 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.581 0 11.94-5.335 11.943-11.893a11.821 11.821 0 00-3.416-8.452z"></path></svg></span>
+<span class="text-[10px] text-stoneWarm-700 font-medium">واتساب</span>
+</a>
+<a class="flex flex-col items-center gap-1.5 active:scale-95 transition" id="shareFacebook" rel="noopener noreferrer" target="_blank">
+<span class="w-12 h-12 rounded-full bg-[#1877F2]/15 text-[#1877F2] flex items-center justify-center"><svg class="w-6 h-6 fill-current" viewbox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"></path></svg></span>
+<span class="text-[10px] text-stoneWarm-700 font-medium">فيسبوك</span>
+</a>
+<a class="flex flex-col items-center gap-1.5 active:scale-95 transition" id="shareX" rel="noopener noreferrer" target="_blank">
+<span class="w-12 h-12 rounded-full bg-stoneWarm-900/10 text-stoneWarm-900 flex items-center justify-center"><svg class="w-5 h-5 fill-current" viewbox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg></span>
+<span class="text-[10px] text-stoneWarm-700 font-medium">X</span>
+</a>
+<a class="flex flex-col items-center gap-1.5 active:scale-95 transition" id="shareLinkedin" rel="noopener noreferrer" target="_blank">
+<span class="w-12 h-12 rounded-full bg-[#0077b5]/15 text-[#0077b5] flex items-center justify-center"><svg class="w-6 h-6 fill-current" viewbox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.5 1.5 0 0 0 1.5-1.5 1.5 1.5 0 0 0-1.5-1.5 1.5 1.5 0 0 0-1.5 1.5 1.5 1.5 0 0 0 1.5 1.5m1.39 9.74v-8.37H5.07v8.37h2.78z"></path></svg></span>
+<span class="text-[10px] text-stoneWarm-700 font-medium">لينكد إن</span>
+</a>
+<a class="flex flex-col items-center gap-1.5 active:scale-95 transition" id="shareTelegram" rel="noopener noreferrer" target="_blank">
+<span class="w-12 h-12 rounded-full bg-[#229ED9]/15 text-[#229ED9] flex items-center justify-center"><svg class="w-6 h-6 fill-current" viewbox="0 0 24 24"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"></path></svg></span>
+<span class="text-[10px] text-stoneWarm-700 font-medium">تيليجرام</span>
+</a>
+<a class="flex flex-col items-center gap-1.5 active:scale-95 transition" id="shareEmail">
+<span class="w-12 h-12 rounded-full bg-tatreezRed/10 text-tatreezRed flex items-center justify-center"><svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
+<span class="text-[10px] text-stoneWarm-700 font-medium">إيميل</span>
+</a>
+<button class="flex flex-col items-center gap-1.5 active:scale-95 transition" id="shareNative" type="button">
+<span class="w-12 h-12 rounded-full bg-stoneWarm-200 text-stoneWarm-700 flex items-center justify-center"><svg class="w-5 h-5 fill-current" viewbox="0 0 24 24"><path d="M12 8a2 2 0 100-4 2 2 0 000 4zm0 6a2 2 0 100-4 2 2 0 000 4zm0 6a2 2 0 100-4 2 2 0 000 4z"></path></svg></span>
+<span class="text-[10px] text-stoneWarm-700 font-medium">المزيد</span>
+</button>
+</div>
+<button class="w-full py-2.5 rounded-xl bg-oliveLeaf hover:bg-oliveLeaf-dark text-stoneWarm-50 font-bold text-xs flex items-center justify-center gap-2 active:scale-[0.99] transition" id="shareCopy" type="button">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M13.828 10.172a4 4 0 010 5.656l-3 3a4 4 0 01-5.656-5.656l1.5-1.5m6.828-1.828a4 4 0 010-5.656l3-3a4 4 0 015.656 5.656l-1.5 1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+نسخ الرابط
+</button>
+</div>
+</div>
 </footer>
 <!-- END: Card Footer & Heritage Attribution -->
 </div>
@@ -356,28 +399,61 @@
       }, 2400);
     }
 
-    // Share / Copy Link handling
+    // Share modal — always opens a share screen on click (works on every device)
     const shareBtn = document.getElementById('shareButton');
-    if (shareBtn) {
-      shareBtn.addEventListener('click', async () => {
-        const shareData = {
-          title: 'إسلام داود | Islam Dawod',
-          text: 'بطاقة الأعمال الرقمية للمطور وخبير التسويق الرقمي إسلام داود',
-          url: window.location.href,
-        };
+    const shareModal = document.getElementById('shareModal');
+    const shareClose = document.getElementById('shareClose');
+    const shareNative = document.getElementById('shareNative');
+    const shareCopy = document.getElementById('shareCopy');
+    const shareText = 'بطاقة الأعمال الرقمية | إسلام داود';
 
-        if (navigator.share) {
+    function buildShareLinks() {
+      const url = window.location.href;
+      const enc = encodeURIComponent;
+      const set = (id, href) => { const el = document.getElementById(id); if (el) el.href = href; };
+      set('shareWhatsapp', 'https://wa.me/?text=' + enc(shareText + ' ' + url));
+      set('shareFacebook', 'https://www.facebook.com/sharer/sharer.php?u=' + enc(url));
+      set('shareX', 'https://twitter.com/intent/tweet?url=' + enc(url) + '&text=' + enc(shareText));
+      set('shareLinkedin', 'https://www.linkedin.com/sharing/share-offsite/?url=' + enc(url));
+      set('shareTelegram', 'https://t.me/share/url?url=' + enc(url) + '&text=' + enc(shareText));
+      set('shareEmail', 'mailto:?subject=' + enc(shareText) + '&body=' + enc(url));
+    }
+
+    function openShareModal() {
+      if (!shareModal) return;
+      buildShareLinks();
+      shareModal.classList.remove('hidden');
+      shareModal.classList.add('flex');
+    }
+    function closeShareModal() {
+      if (!shareModal) return;
+      shareModal.classList.add('hidden');
+      shareModal.classList.remove('flex');
+    }
+
+    if (shareBtn) shareBtn.addEventListener('click', openShareModal);
+    if (shareClose) shareClose.addEventListener('click', closeShareModal);
+    if (shareModal) shareModal.addEventListener('click', (e) => {
+      if (e.target === shareModal) closeShareModal();
+    });
+
+    // "More" = native OS share sheet, shown only when the device supports it
+    if (shareNative) {
+      if (navigator.share) {
+        shareNative.addEventListener('click', async () => {
           try {
-            await navigator.share(shareData);
-          } catch (err) {
-            // User cancelled or fallback to clipboard
-            if (err.name !== 'AbortError') {
-              copyToClipboard(window.location.href);
-            }
-          }
-        } else {
-          copyToClipboard(window.location.href);
-        }
+            await navigator.share({ title: 'إسلام داود | Islam Dawod', text: shareText, url: window.location.href });
+          } catch (err) { /* user cancelled */ }
+        });
+      } else {
+        shareNative.style.display = 'none';
+      }
+    }
+
+    if (shareCopy) {
+      shareCopy.addEventListener('click', () => {
+        copyToClipboard(window.location.href);
+        closeShareModal();
       });
     }
 
@@ -457,7 +533,7 @@
       if (e.target === qrModal) closeQrModal();
     });
     document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape') closeQrModal();
+      if (e.key === 'Escape') { closeQrModal(); closeShareModal(); }
     });
   </script>
 <!-- END: Interactive Logic Scripts -->
