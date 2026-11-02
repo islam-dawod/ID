@@ -225,33 +225,23 @@
 <svg class="w-4 h-4 rtl:rotate-180" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
 </div>
 </a>
-<!-- 3. Facebook & LinkedIn (one row) -->
-<div class="grid grid-cols-2 gap-2.5" data-purpose="social-row-fb-li">
-<!-- Facebook -->
-<a class="pill-button group flex items-center gap-2.5 px-3.5 py-2.5 rounded-2xl shadow-warm-pill hover:shadow-pill-hover" data-purpose="link-facebook" href="https://www.facebook.com/islam.daw.2025" rel="noopener noreferrer" target="_blank">
-<div class="w-8 h-8 rounded-lg bg-[#1877F2]/15 text-[#1877F2] flex items-center justify-center shrink-0">
-<svg class="w-4 h-4 fill-current" viewbox="0 0 24 24">
+<!-- 3. Facebook (full width, one line) -->
+<a class="pill-button group flex items-center justify-between px-4 py-3 rounded-2xl shadow-warm-pill hover:shadow-pill-hover hover:border-oliveLeaf/40" data-purpose="link-facebook" href="https://www.facebook.com/islam.daw.2025" rel="noopener noreferrer" target="_blank">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-[#1877F2]/15 text-[#1877F2] flex items-center justify-center transition-transform group-hover:scale-110">
+<svg class="w-5 h-5 fill-current" viewbox="0 0 24 24">
 <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"></path>
 </svg>
 </div>
-<div class="overflow-hidden text-right">
-<span class="block text-xs font-bold text-stoneWarm-900 truncate">فيسبوك</span>
-<span class="block text-[10px] text-stoneWarm-600 truncate" dir="ltr">@islam.daw.2025</span>
+<div class="text-right">
+<span class="block text-sm font-bold text-stoneWarm-900 group-hover:text-oliveLeaf transition-colors">فيسبوك | Facebook</span>
+<span class="block text-[11px] text-stoneWarm-600 font-medium" dir="ltr">@islam.daw.2025</span>
+</div>
+</div>
+<div class="flex items-center gap-1 text-stoneWarm-400 group-hover:text-oliveLeaf group-hover:-translate-x-1 transition-all">
+<svg class="w-4 h-4 rtl:rotate-180" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
 </div>
 </a>
-<!-- LinkedIn -->
-<a class="pill-button group flex items-center gap-2.5 px-3.5 py-2.5 rounded-2xl shadow-warm-pill hover:shadow-pill-hover" data-purpose="link-linkedin" href="https://www.linkedin.com/in/islam-dawod/" rel="noopener noreferrer" target="_blank">
-<div class="w-8 h-8 rounded-lg bg-[#0077b5]/15 text-[#0077b5] flex items-center justify-center shrink-0">
-<svg class="w-4 h-4 fill-current" viewbox="0 0 24 24">
-<path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.5 1.5 0 0 0 1.5-1.5 1.5 1.5 0 0 0-1.5-1.5 1.5 1.5 0 0 0-1.5 1.5 1.5 1.5 0 0 0 1.5 1.5m1.39 9.74v-8.37H5.07v8.37h2.78z"></path>
-</svg>
-</div>
-<div class="overflow-hidden text-right">
-<span class="block text-xs font-bold text-stoneWarm-900 truncate">لينكد إن</span>
-<span class="block text-[10px] text-stoneWarm-600 truncate" dir="ltr">islam-dawod</span>
-</div>
-</a>
-</div>
 <!-- 4. Portfolio / See My Works -->
 <a class="pill-button group flex items-center justify-between px-4 py-3 rounded-2xl shadow-warm-pill hover:shadow-pill-hover hover:border-oliveLeaf/40" data-purpose="link-portfolio" href="https://islam-dawod.github.io/ID/#portfolio" rel="noopener noreferrer" target="_blank">
 <div class="flex items-center gap-3">
@@ -269,24 +259,33 @@
 <svg class="w-4 h-4 rtl:rotate-180" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
 </div>
 </a>
-<!-- 5. My CV -->
-<a class="pill-button group flex items-center justify-between px-4 py-3 rounded-2xl shadow-warm-pill hover:shadow-pill-hover hover:border-oliveLeaf/40" data-purpose="link-cv" href="https://islam-dawod.github.io/ID/cv.html" rel="noopener noreferrer" target="_blank">
-<div class="flex items-center gap-3">
-<div class="w-10 h-10 rounded-xl bg-accentGold/20 text-[#916a2b] flex items-center justify-center transition-transform group-hover:scale-110">
-<svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+<!-- 5. My CV & LinkedIn (one row) -->
+<div class="grid grid-cols-2 gap-2.5" data-purpose="row-cv-linkedin">
+<!-- My CV -->
+<a class="pill-button group flex items-center gap-2.5 px-3.5 py-2.5 rounded-2xl shadow-warm-pill hover:shadow-pill-hover" data-purpose="link-cv" href="https://islam-dawod.github.io/ID/cv.html" rel="noopener noreferrer" target="_blank">
+<div class="w-8 h-8 rounded-lg bg-accentGold/20 text-[#916a2b] flex items-center justify-center shrink-0">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
 <path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" stroke-linecap="round" stroke-linejoin="round"></path>
 </svg>
 </div>
-<div class="text-right">
-<span class="block text-sm font-bold text-stoneWarm-900 group-hover:text-oliveLeaf transition-colors">السيرة الذاتية | My CV</span>
-<span class="block text-[11px] text-stoneWarm-600 font-medium">الخبرات والمهارات التقنية والتسويقية</span>
-</div>
-</div>
-<div class="flex items-center gap-1 text-stoneWarm-400 group-hover:text-oliveLeaf group-hover:-translate-x-1 transition-all">
-<span class="text-[10px] font-semibold text-stoneWarm-600 bg-white/70 px-2 py-0.5 rounded-full">PDF</span>
-<svg class="w-4 h-4 rtl:rotate-180" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+<div class="overflow-hidden text-right">
+<span class="block text-xs font-bold text-stoneWarm-900 truncate">السيرة الذاتية</span>
+<span class="block text-[10px] text-stoneWarm-600 truncate">My CV · PDF</span>
 </div>
 </a>
+<!-- LinkedIn -->
+<a class="pill-button group flex items-center gap-2.5 px-3.5 py-2.5 rounded-2xl shadow-warm-pill hover:shadow-pill-hover" data-purpose="link-linkedin" href="https://www.linkedin.com/in/islam-dawod/" rel="noopener noreferrer" target="_blank">
+<div class="w-8 h-8 rounded-lg bg-[#0077b5]/15 text-[#0077b5] flex items-center justify-center shrink-0">
+<svg class="w-4 h-4 fill-current" viewbox="0 0 24 24">
+<path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.5 1.5 0 0 0 1.5-1.5 1.5 1.5 0 0 0-1.5-1.5 1.5 1.5 0 0 0-1.5 1.5 1.5 1.5 0 0 0 1.5 1.5m1.39 9.74v-8.37H5.07v8.37h2.78z"></path>
+</svg>
+</div>
+<div class="overflow-hidden text-right">
+<span class="block text-xs font-bold text-stoneWarm-900 truncate">لينكد إن</span>
+<span class="block text-[10px] text-stoneWarm-600 truncate" dir="ltr">islam-dawod</span>
+</div>
+</a>
+</div>
 <!-- 6. Quick Save Contact (vCard action button) -->
 <button class="w-full mt-1 py-3 px-4 rounded-2xl bg-oliveLeaf hover:bg-oliveLeaf-dark active:scale-[0.99] text-stoneWarm-50 font-bold text-xs sm:text-sm flex items-center justify-center gap-2 shadow-md transition-all duration-200" data-purpose="action-save-vcard" id="saveContactBtn">
 <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
